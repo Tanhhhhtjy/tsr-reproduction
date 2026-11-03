@@ -1,0 +1,13 @@
+{
+ "rejected_from_M0": 4870,
+ "chosen_from_Mf": 4986,
+ "chosen_from_Mf_by_tie": 4964,
+ "identical_pair": 3,
+ "tie_pair": 77,
+ "rejected_from_Mi": 130,
+ "chosen_from_Mi": 14,
+ "n_prompts": 5000,
+ "n_pairs": 5000,
+ "gap_mean": 2.005,
+ "gap_median": 1.0
+}

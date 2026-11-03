@@ -1,0 +1,6 @@
+config.env
+.venv/
+work/
+third_party/
+__pycache__/
+*.pyc
