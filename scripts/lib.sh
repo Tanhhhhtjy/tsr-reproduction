@@ -89,19 +89,19 @@ pairs() {
   [ "${1:-}" = "--" ] && shift
   [ -f "$out/train.json" ] && { log "skip pairs $(basename "$out") (exists)"; return 0; }
   need "$c" "$r" ${f:+"$f"}
-  # The upstream script's output goes under $LOGS, never inside a pairs directory: the datasets loader globs a
-  # directory recursively, so a second train.json next to ours would silently double the training set.
-  local check=() od=$LOGS/official_check/$(basename "$out")
+  local check=()
   if [ $# -eq 0 ]; then
-    rm -rf "$od"; mkdir -p "$od"
+    # datasets recursively discovers train.json; keep comparison output outside the dataset directory.
+    local official="${out%/}.official.json"
+    mkdir -p "$(dirname "$official")"
     if [ "$mode" = past ]; then
       "$PY" "$TSR_DIR/settings/tsr/reformat2DPO_past.py" --input_path_chosen "$c" --input_path_rejected "$r" \
-        --output_path "$od/train.json" >> "$LOGS/run.log" 2>&1 || die "official past script"
+        --output_path "$official" >> "$LOGS/run.log" 2>&1 || die "official past script"
     else
       "$PY" "$TSR_DIR/settings/tsr/reformat2DPO_future.py" --input_path_chosen "$c" --input_path_future "$f" \
-        --input_path_rejected "$r" --output_path "$od/train.json" >> "$LOGS/run.log" 2>&1 || die "official future script"
+        --input_path_rejected "$r" --output_path "$official" >> "$LOGS/run.log" 2>&1 || die "official future script"
     fi
-    check=(--check "$od/train.json")
+    check=(--check "$official")
   fi
   "$PY" "$REPO/src/build_pairs.py" "$mode" --chosen "$c" --rejected "$r" ${f:+--future "$f"} --out "$out.tmp" \
     "${check[@]}" "$@" > "$LOGS/pairs_$(basename "$out").log" 2>&1 || die "build_pairs $(basename "$out")"
