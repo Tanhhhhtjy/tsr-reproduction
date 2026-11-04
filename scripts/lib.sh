@@ -89,17 +89,19 @@ pairs() {
   [ "${1:-}" = "--" ] && shift
   [ -f "$out/train.json" ] && { log "skip pairs $(basename "$out") (exists)"; return 0; }
   need "$c" "$r" ${f:+"$f"}
-  local check=()
+  # The upstream script's output goes under $LOGS, never inside a pairs directory: the datasets loader globs a
+  # directory recursively, so a second train.json next to ours would silently double the training set.
+  local check=() od=$LOGS/official_check/$(basename "$out")
   if [ $# -eq 0 ]; then
-    mkdir -p "$out/official"
+    rm -rf "$od"; mkdir -p "$od"
     if [ "$mode" = past ]; then
       "$PY" "$TSR_DIR/settings/tsr/reformat2DPO_past.py" --input_path_chosen "$c" --input_path_rejected "$r" \
-        --output_path "$out/official/train.json" >> "$LOGS/run.log" 2>&1 || die "official past script"
+        --output_path "$od/train.json" >> "$LOGS/run.log" 2>&1 || die "official past script"
     else
       "$PY" "$TSR_DIR/settings/tsr/reformat2DPO_future.py" --input_path_chosen "$c" --input_path_future "$f" \
-        --input_path_rejected "$r" --output_path "$out/official/train.json" >> "$LOGS/run.log" 2>&1 || die "official future script"
+        --input_path_rejected "$r" --output_path "$od/train.json" >> "$LOGS/run.log" 2>&1 || die "official future script"
     fi
-    check=(--check "$out/official/train.json")
+    check=(--check "$od/train.json")
   fi
   "$PY" "$REPO/src/build_pairs.py" "$mode" --chosen "$c" --rejected "$r" ${f:+--future "$f"} --out "$out.tmp" \
     "${check[@]}" "$@" > "$LOGS/pairs_$(basename "$out").log" 2>&1 || die "build_pairs $(basename "$out")"
@@ -117,6 +119,13 @@ dpo() {
   local name=$1 init=$2 data=$3
   [ -f "$MODELS/$name/.done" ] && { log "skip dpo $name (exists)"; return 0; }
   need "$init/config.json" "$data/train.json"
+  # A dataset directory must hold exactly one train.json: the loader reads subdirectories too, and a stray copy
+  # would train on duplicated pairs at the same nominal epoch count.
+  local nj; nj=$(find "$data" -name '*.json' ! -name stats.json | wc -l)
+  [ "$nj" = 1 ] || die "$data holds $nj json files besides stats.json; expected only train.json"
+  local np nl; np=$("$PY" -c "import json,sys; print(json.load(open(sys.argv[1]))['n_pairs'])" "$data/stats.json" 2>/dev/null || echo "")
+  nl=$(wc -l < "$data/train.json")
+  [ -z "$np" ] || [ "$np" = "$nl" ] || die "$data/train.json has $nl pairs but stats.json says $np"
   local cfg=$WORK_DIR/configs/$name.yaml
   "$PY" "$REPO/src/make_cfg.py" dpo --name "$name" --init "$init" --data "$data" --out_dir "$MODELS/$name" \
     --ngpu "$NGPU" --max_steps "$MAX_STEPS" --cfg "$cfg" > /dev/null || die "config $name"
