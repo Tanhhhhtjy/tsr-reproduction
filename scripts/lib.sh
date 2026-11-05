@@ -119,16 +119,15 @@ dpo() {
   local name=$1 init=$2 data=$3
   [ -f "$MODELS/$name/.done" ] && { log "skip dpo $name (exists)"; return 0; }
   need "$init/config.json" "$data/train.json"
-  # A dataset directory must hold exactly one train.json: the loader reads subdirectories too, and a stray copy
-  # would train on duplicated pairs at the same nominal epoch count.
-  local nj; nj=$(find "$data" -name '*.json' ! -name stats.json | wc -l)
-  [ "$nj" = 1 ] || die "$data holds $nj json files besides stats.json; expected only train.json"
-  local np nl; np=$("$PY" -c "import json,sys; print(json.load(open(sys.argv[1]))['n_pairs'])" "$data/stats.json" 2>/dev/null || echo "")
-  nl=$(wc -l < "$data/train.json")
-  [ -z "$np" ] || [ "$np" = "$nl" ] || die "$data/train.json has $nl pairs but stats.json says $np"
   local cfg=$WORK_DIR/configs/$name.yaml
+  # make_cfg.py trains from an isolated copy of $data/train.json (<cfg>.data/), so stray files in $data, such as the
+  # official/ copy left by older runs, cannot be read. Check that the copy holds exactly the pairs stats.json reports.
   "$PY" "$REPO/src/make_cfg.py" dpo --name "$name" --init "$init" --data "$data" --out_dir "$MODELS/$name" \
     --ngpu "$NGPU" --max_steps "$MAX_STEPS" --cfg "$cfg" > /dev/null || die "config $name"
+  local snap np nl; snap=${cfg%.yaml}.data
+  np=$("$PY" -c "import json,sys; print(json.load(open(sys.argv[1]))['n_pairs'])" "$data/stats.json" 2>/dev/null || echo "")
+  nl=$(wc -l < "$snap/train.json")
+  [ -z "$np" ] || [ "$np" = "$nl" ] || die "$snap/train.json has $nl pairs but $data/stats.json says $np"
   log "dpo $name  init=$(basename "$init") data=$(basename "$data")  ($NGPU GPUs)"
   _train "$cfg" "$TSR_DIR/alignment-handbook/scripts/run_dpo.py" "$LOGS/dpo_$name.log" || die "dpo $name, see $LOGS/dpo_$name.log"
   [ -f "$MODELS/$name/config.json" ] || die "dpo $name produced no model"
