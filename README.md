@@ -104,6 +104,7 @@ All start from the same M1 and change one thing in iter1. `bash run.sh iter1 <na
 | main | upstream rules | 21.78 / 28.38 / 2656 |
 | `strict` | paper Alg. 1: upgrade only if the future model is strictly better, keep only s_chosen > s_rejected | 22.30 / 22.87 / 2012 * |
 | `iter0_strict` | the same rule at iter0 (M1_strict) | 14.36 / 12.53 / 1637 |
+| `drop_ties` | upstream `>=` upgrade, but drop pairs whose chosen and rejected scores are equal (77 of 5,000) | 23.51 / 27.89 / 2595 |
 | `rej_past` | rejected: past/current tie goes to past | 20.50 / 23.48 / 2233 |
 | `rej_past_conf` | as above, and among same-score candidates take the highest p(score token) | 21.62 / 25.18 / 2288 |
 | `cho_longest` | chosen: longest among top-score ties | length 3004 |
@@ -116,6 +117,10 @@ All start from the same M1 and change one thing in iter1. `bash run.sh iter1 <na
 
 \* Under the strict rule only 21 of 5,000 iter1 chosen responses are upgraded, so we reported Mf1 (trained on D1) as a stand-in; `run.sh iter1 strict` trains M2 on the strict, filtered D2 directly.
 Rows without LC were not judged by gpt-4o; their outputs are in `results/alpaca_eval/`.
+
+Dropping the 77 equal-score pairs is the only change that raised LC at nearly the same length: +1.73 against main,
+95% CI [−1.52, +3.37], so the effect is small and not resolved by a single run. Even then the future step adds
+little: against Mf1 (the same M1 trained on D1 alone) the difference is +1.21 LC, 95% CI [−2.18, +3.04].
 
 Two observations from the pair data (`src/analysis/tie_stats.py`):
 

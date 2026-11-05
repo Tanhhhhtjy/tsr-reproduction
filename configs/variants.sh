@@ -4,6 +4,7 @@
 # "-" = same as the main run. If D1, Mf1 init and seed are all "-", the main run's Mf1 and future responses are reused.
 VARIANTS=(
   "strict|-|--strict --filter|M1|-|0"                                    # paper Alg. 1: upgrade only if strictly better, keep s_chosen > s_rejected
+  "drop_ties|-|--filter|M1|-|0"                                          # upstream >= upgrade, but drop pairs with s_chosen == s_rejected
   "rej_past|--rej_tie past|--rej_tie past|M1|-|0"                        # rejected past/current tie -> past
   "rej_past_conf|--rej_tie past --within conf|--rej_tie past --within conf|M1|-|1"  # + among same-score candidates take the highest p(score token)
   "cho_longest|-|--cho_len longest|M1|-|0"                               # chosen: longest among top-score ties

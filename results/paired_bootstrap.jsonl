@@ -10,3 +10,4 @@
 {"A": "M2_rej_past_conf", "B": "M2", "dWin": -3.2, "dWin_CI95": [-5.12, -1.17], "dLC": -0.16, "dLC_CI95": [-2.92, 2.25], "n_boot": 1000}
 {"A": "M2_rej_past_conf", "B": "M2_rej_past", "dWin": 1.7, "dWin_CI95": [-0.21, 3.49], "dLC": 1.12, "dLC_CI95": [-1.0, 3.1], "n_boot": 1000}
 {"A": "W1", "B": "Mf0", "dWin": 11.95, "dWin_CI95": [9.77, 14.18], "dLC": 8.63, "dLC_CI95": [5.75, 10.7], "n_boot": 1000}
+{"A": "M2_drop_ties", "B": "M2", "dWin": -0.49, "dWin_CI95": [-2.16, 1.33], "dLC": 1.73, "dLC_CI95": [-1.52, 3.37], "n_boot": 1000}
