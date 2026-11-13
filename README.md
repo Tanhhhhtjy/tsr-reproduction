@@ -2,7 +2,7 @@
 
 This branch adds the best completed TSR configuration directly to the official code. Use **`scripts/run_best.sh`** after preparing a fresh run; it calls this checkout's native generators, formatters and SFT/DPO trainers. See [configuration, fixes, launch instructions and storage policy](docs/BEST_PROFILE.md).
 
-[Native eight-GPU run record](experiments/tsr-official-best-20261113/README.md) · [Earlier complete best-run results](experiments/tsr-best-cap2500-judge0-20261113/README.md) · [Original reproduction report](docs/ORIGINAL_REPRODUCTION.md)
+[Standardized protocol & baseline decomposition](docs/PROTOCOL_AND_BASELINES.md) · [Native eight-GPU run record](experiments/tsr-official-best-20261113/README.md) · [Completed `cap2500-judge0` run (`29.28%` LC)](experiments/tsr-best-cap2500-judge0-20261113/README.md) · [Original reproduction report (`T=1` & `T=0` ablations)](docs/ORIGINAL_REPRODUCTION.md)
 
 - All four DPO stages remove equal-score pairs and invalid raw scores; chosen source ties prefer future, rejected source ties prefer current.
 - After score/source selection, require distinct text and chosen length ≤2,500 Unicode characters.
@@ -10,7 +10,7 @@ This branch adds the best completed TSR configuration directly to the official c
 - Fresh Base → SFT M0 → Mf0 → M1 → Mf1 → M2; **Mf1 and M2 initialize from M1**.
 - Eight H200, global batch 32, ZeRO-2, parallel vLLM inference; compact metrics and final artifacts only.
 
-The earlier reference run scored LC Win **29.28%**, Win **27.19%** (805 questions). These are not a new score for this official-source run. The original reference workflow is documented below and remains separately selectable.
+The completed reference run (`tsr-llama31-8b-cap2500-judge0-1113a`) scored LC Win **29.28%**, Win **27.19%**, mean length **1,762** chars (805 questions; vs un-capped `M2_temp0` at LC Win **24.74%**, Win **31.44%**, mean length **2,581** chars — see [`docs/PROTOCOL_AND_BASELINES.md`](docs/PROTOCOL_AND_BASELINES.md) for the full evaluation protocol, factor decomposition, and baseline table). These are not a new score for the in-progress official-source run. The original reference workflow is documented below and remains separately selectable.
 
 ---
 

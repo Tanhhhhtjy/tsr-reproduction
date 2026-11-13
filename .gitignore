@@ -15,3 +15,5 @@ config.env
 .env
 data/SelfPlayBeginData/
 data/sft_data/
+results/alpaca_eval/*/annotations.json
+results/alpaca_eval/*/annotator/

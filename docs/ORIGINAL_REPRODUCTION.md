@@ -54,7 +54,7 @@ makes the outputs 644 characters longer and raises Win by 5.51 [+3.35, +7.64], w
 | iter0 rejected set | generated a second time with the same model, prompts and seed | the chosen set is reused (identical by construction) |
 | AlpacaEval generation | not in upstream | `src/gen_alpaca.py`: training system prompt and chat template, temperature 1.0, top_p 1.0, max 1024 tokens |
 
-`docs/CONFIG.md` lists every hyperparameter, and `results/pairs/*/stats.json` gives the source and length statistics of each pair set.
+`docs/CONFIG.md` lists every hyperparameter, `docs/PROTOCOL_AND_BASELINES.md` documents the standardized `T=0` / `cap2500` evaluation & baseline reference, and `results/pairs/*/stats.json` gives the source and length statistics of each pair set.
 
 ## Quick start
 
@@ -112,6 +112,8 @@ All start from the same M1 and change one thing in iter1. `bash run.sh iter1 <na
 | `mf1_from_mf0` | iter1 future model initialised from Mf0 (upstream config) | 18.89 / 28.86 / 3007 |
 | `resample` | every generation and judgement redone with vLLM seed 1234 | 21.20 / 27.93 / 2618 |
 | `iter1_mix` | iter1 DPO on iter0 D2 + iter1 D2 (not the authors' setup) | 23.79 / 26.80 / 2332 |
+| `seed43` | DPO training seed 43 on main D2 | 23.01 / 27.51 / 2462 |
+| `eval_temp0` | `M1` / `M2` evaluated at decoding temperature 0.0 (`M1_temp0`, `M2_temp0`) | M1: 23.19 / 19.31 / 1680; M2: 24.74 / 31.44 / 2581 |
 | `iter0_conf` | iter0 with score × p(score token) as the score | M1 worse than main (cheap judge only) |
 | old package versions | trl 0.9.6 / transformers 4.43.4 / deepspeed 0.14.4 | length 2697, same Win as main (cheap judge only) |
 
@@ -155,6 +157,7 @@ src/                 tsr_shard.py, build_pairs.py, make_cfg.py, gen_alpaca.py, e
 results/             alpaca_eval/<model>/ (model_outputs.json, leaderboard.csv), pairs/*/stats.json,
                      training/<model>/trainer_state.json, paired_bootstrap.jsonl, summary tables
 docs/CONFIG.md       full configuration
+docs/PROTOCOL_AND_BASELINES.md  standardized T=0 & cap2500 protocol and baseline decomposition
 ```
 
 The [release](https://github.com/Tanhhhhtjy/tsr-reproduction/releases) has the large files:
