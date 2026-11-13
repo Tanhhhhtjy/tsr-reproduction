@@ -1,0 +1,40 @@
+{
+  "run_dir": "/mnt/sn-007/zaninzeng/TSR-official-best/work/runs/tsr-official-best-1113b",
+  "created_utc": "2026-11-13T04:13:25.666870+00:00",
+  "source_commit": "28144212105c648113ca7e158f3d711961a5fc3f",
+  "official_upstream": "a9a379d",
+  "pipeline": "native official SFT, inference, formatters and DPO",
+  "gpus": 8,
+  "node": "any-sn5",
+  "base_directory": "/mnt/sn-007/zaninzeng/tsr-reproduction/work/base/Llama-3.1-8B",
+  "global_batch": 32,
+  "seed": 42,
+  "initialization": {
+    "M0": "Base",
+    "Mf0": "M0",
+    "M1": "M0",
+    "Mf1": "M1",
+    "M2": "M1"
+  },
+  "pair_policy": "future_tie_charcap_distinct",
+  "max_chosen_characters": 2500,
+  "strict_gap_all_stages": true,
+  "drop_invalid_scores": true,
+  "distinct_stripped_text": true,
+  "source_priorities": {
+    "chosen_tie": "future",
+    "rejected_tie": "current"
+  },
+  "generation_temperature": 1,
+  "self_judge_temperature": 0,
+  "eval": {
+    "judge": "gpt-4o-2024-08-06",
+    "reference": "gpt4_1106_preview",
+    "model_outputs": [
+      "M2_future_tie_charcap_distinct"
+    ],
+    "generation_temperature": 0,
+    "questions": 805
+  },
+  "retention": "scalar metrics/configs/canonical pairs/final stage models/evaluation answers; delete consumed raw caches; no optimizer checkpoints"
+}

@@ -1,0 +1,11 @@
+{
+  "stage": "M0",
+  "initialization_stage": "Base",
+  "model_name_or_path": "/mnt/sn-007/zaninzeng/tsr-reproduction/work/base/Llama-3.1-8B",
+  "output_dir": "/mnt/sn-007/zaninzeng/TSR-official-best/work/runs/tsr-official-best-1113b/trial/models/Llama-3.1-8B-mix-sft-epoch3",
+  "native_template": "/mnt/sn-007/zaninzeng/TSR-official-best/work/runs/tsr-official-best-1113b/bundle/settings/sft/config/config.yaml",
+  "global_batch": 32,
+  "gpus": 8,
+  "micro_batch": 2,
+  "accumulation": 2
+}

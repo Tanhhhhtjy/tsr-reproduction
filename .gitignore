@@ -1,9 +1,17 @@
-config.env
-.venv/
-work/
-third_party/
 __pycache__/
-*.pyc
-
-# Isolated TSR runtime and downloaded toolchain
+*.py[cod]
+.venv/
+.cache/
+cache/
+models/
+logs/
+tsr/iter/
+settings/sr/data_dpo/
+settings/tsr/data_dpo/
+validation/
+work/
 .runtime/
+config.env
+.env
+data/SelfPlayBeginData/
+data/sft_data/

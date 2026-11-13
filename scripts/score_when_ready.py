@@ -130,7 +130,7 @@ def main():
     if not 1 <= args.max_model_attempts <= 20:
         ap.error("--max-model-attempts must be between 1 and 20")
     run = args.run.resolve()
-    eval_script = args.eval_script.resolve() if args.eval_script else run / "bundle/src/eval_alpaca.py"
+    eval_script = args.eval_script.resolve() if args.eval_script else run / "bundle/tsr/eval_alpaca.py"
     if run not in eval_script.resolve().parents:
         raise RuntimeError("Scoring overlay must belong to this run")
     plan = json.loads((run / "run-plan.json").read_text())
@@ -152,7 +152,7 @@ def main():
     if len(reference_rows) != 805:
         raise RuntimeError("Frozen reference must contain 805 questions")
     names = plan["eval"]["model_outputs"]
-    if len(names) != 7 or any(Path(n).name != n for n in names):
+    if not names or len(names) != len(set(names)) or any(Path(n).name != n for n in names):
         raise RuntimeError("Unexpected evaluation model list")
     if args.only is not None:
         if not args.only or len(set(args.only)) != len(args.only) or any(n not in names for n in args.only):
@@ -161,7 +161,7 @@ def main():
     names = prioritize_names(names, args.prioritize)
     configured = dict(judge=credentials["JUDGE_MODEL"], base_url=credentials["JUDGE_BASE_URL"],
                       credential_file=str(args.credentials), gpu_required=False, names=names,
-                      frozen_eval_sha256=digest(run / "bundle/src/eval_alpaca.py"),
+                      frozen_eval_sha256=digest(run / "bundle/tsr/eval_alpaca.py"),
                       active_eval_script=str(eval_script), active_eval_sha256=digest(eval_script),
                       api_concurrency=args.api_concurrency, max_model_attempts=args.max_model_attempts,
                       request_cache_root=str(state_dir / "request-cache"))
