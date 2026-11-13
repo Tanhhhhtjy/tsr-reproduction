@@ -1,0 +1,11 @@
+{
+  "stage": "Mf0",
+  "initialization_stage": "M0",
+  "model_name_or_path": "/mnt/sn-007/zaninzeng/TSR-official-best/work/runs/tsr-official-best-1113b/trial/models/Llama-3.1-8B-mix-sft-epoch3",
+  "output_dir": "/mnt/sn-007/zaninzeng/TSR-official-best/work/runs/tsr-official-best-1113b/trial/models/Llama-3.1-8B-mix-sft-epoch3-temporal-iterjudge-iter0_tmp",
+  "native_template": "/mnt/sn-007/zaninzeng/TSR-official-best/work/runs/tsr-official-best-1113b/bundle/settings/tsr/config/dpo/config_full_iter0_tmp.yaml",
+  "global_batch": 32,
+  "gpus": 8,
+  "micro_batch": 4,
+  "accumulation": 1
+}

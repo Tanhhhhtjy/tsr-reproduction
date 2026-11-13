@@ -1,0 +1,12 @@
+{
+  "recorded_utc": "2026-11-13T04:39:44.444690+00:00",
+  "shards": 8,
+  "generation_temperatures": [
+    1.0
+  ],
+  "judge_temperatures": [
+    0.0
+  ],
+  "response_requests": 35000,
+  "judge_requests": 35000
+}

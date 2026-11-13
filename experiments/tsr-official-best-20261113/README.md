@@ -13,3 +13,5 @@ The GPU job trains and generates all 805 final evaluation answers. A CPU worker 
 Included: actual run plan, source hashes, base-weight hashes (weights excluded), submission record, deployment manifest and available actual SFT configuration/initialization proof. No credentials, raw training-generation caches, optimizer states or model weights are included.
 
 The completed native SFT state, final scalar metrics and results are under `training/M0/` and `training-metrics/M0.json`. Model weights remain on training storage.
+
+The first native preference set retained 4,163/5,000 pairs; retained score ties, identical texts and over-cap chosen texts are all zero. `inference-sampling-validation.json` confirms 35,000 candidate generations at T=1 and 35,000 self-judgments at T=0. Mf0 DPO produced finite training metrics; progress is timestamped in `progress-snapshot.json`.
