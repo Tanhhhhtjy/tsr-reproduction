@@ -1,0 +1,11 @@
+{
+  "run": "tsr-official-best-1113a",
+  "status": "failed",
+  "phase": "SFT",
+  "at_least_one_optimizer_update": true,
+  "failure": "TensorBoard append on shared FSx raised OSError errno 22",
+  "fix": "Node-local TensorBoard event writing, followed by closed-file synchronization after each stage",
+  "fixed_source_commit": "28144212105c648113ca7e158f3d711961a5fc3f",
+  "reused_weights": false,
+  "external_judge_requests": 0
+}

@@ -1,168 +1,155 @@
-# Reproducing Temporal Self-Rewarding (TSR) on Llama-3.1-8B
+## Best configuration on the official source
 
-Code and outputs for our reproduction of *Temporal Self-Rewarding Language Models* ([arXiv:2508.06026](https://arxiv.org/abs/2508.06026))
-with the official code, [TemporalSelfRewarding/TSR](https://github.com/TemporalSelfRewarding/TSR) at commit `020266a`.
-The upstream code is used as is, apart from three small patches (listed below). This repository adds a driver that runs
-the whole pipeline (SFT, TSR iter0 and iter1, the SR and w/o Future baselines, AlpacaEval 2.0) with one command, together
-with every output behind the numbers reported here.
+This branch adds the best completed TSR configuration directly to the official code. Use **`scripts/run_best.sh`** after preparing a fresh run; it calls this checkout's native generators, formatters and SFT/DPO trainers. See [configuration, fixes, launch instructions and storage policy](docs/BEST_PROFILE.md).
 
-## Results
+[Native eight-GPU run record](experiments/tsr-official-best-20261113/README.md) · [Earlier complete best-run results](experiments/tsr-best-cap2500-judge0-20261113/README.md) · [Original reproduction report](docs/ORIGINAL_REPRODUCTION.md)
 
-AlpacaEval 2.0, judge `gpt-4o-2024-08-06`, reference `gpt4_1106_preview`. LC / Win / mean length (characters).
+- All four DPO stages remove equal-score pairs and invalid raw scores; chosen source ties prefer future, rejected source ties prefer current.
+- After score/source selection, require distinct text and chosen length ≤2,500 Unicode characters.
+- Candidate generation T=1; local self-judge T=0; final evaluation answer generation T=0.
+- Fresh Base → SFT M0 → Mf0 → M1 → Mf1 → M2; **Mf1 and M2 initialize from M1**.
+- Eight H200, global batch 32, ZeRO-2, parallel vLLM inference; compact metrics and final artifacts only.
 
-| Model | Ours | Paper |
-|---|---|---|
-| SFT (M0, mean of 3 generation seeds) | 7.26 / 5.73 / 1367 | 8.73 / 5.96 / 1324 |
-| SR iter0 = w/o Future iter0 (Mf0) | 13.81 / 11.43 / 1597 | SR 13.29 / 10.99 / 1567; w/o Future 14.35 / 11.61 |
-| SR iter1 (SR1) | 16.78 / 16.09 / 1827 | 17.00 / 15.71 / 1789 |
-| w/o Future iter1 (W1) | 22.45 / 23.37 / 2035 | 20.96 / 19.69 |
-| TSR iter0 (M1) | 20.93 / 19.32 / 1810 | 20.48 / 19.07 / 1820 |
-| **TSR iter1 (M2)** | **21.78 / 28.38 / 2656** | **27.94 / 29.44 / 2063** |
+The earlier reference run scored LC Win **29.28%**, Win **27.19%** (805 questions). These are not a new score for this official-source run. The original reference workflow is documented below and remains separately selectable.
 
-Everything except TSR iter1 is within 1.5 LC of the paper. The gap is confined to the iter1 step of TSR:
+---
 
-| Change in LC | Paper | Ours [95% CI] |
-|---|---|---|
-| w/o Future, iter0 → iter1 | +6.61 | +8.63 [+5.75, +10.70] |
-| TSR, iter0 → iter1 (M1 → M2) | +7.46 | +0.85 [−2.18, +3.72] |
-| TSR − w/o Future at iter0 | +6.13 | +7.12 [+4.51, +9.25] |
-| TSR − w/o Future at iter1 | +6.98 | −0.67 [−3.56, +2.20] |
+# <div align="center">Temporal Self-Rewarding Language Models: Decoupling Chosen-Rejected via Past-Future</div>
 
-CIs are paired bootstraps over the 805 instructions (`src/analysis/paired_bootstrap.py`, results in `results/paired_bootstrap.jsonl`).
-Within iter1, training M1 on the past-anchored pairs alone (Mf1) gives 22.30 / 22.87 / 2012; adding the future upgrade (M2)
-makes the outputs 644 characters longer and raises Win by 5.51 [+3.35, +7.64], while LC changes by −0.52 [−3.08, +2.20].
+<div align="center">
+<a href="https://arxiv.org/abs/2508.06026" target="_blank"><img src=https://img.shields.io/badge/arXiv-b5212f.svg?logo=arxiv></a>
+<a href="https://github.com/TemporalSelfRewarding/TSR/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/badge/LICENSE-MIT-green"></a>
+<a><img alt="Static Badge" src="https://img.shields.io/badge/made_with-Python-blue"></a>
+</div>
 
-## Differences from upstream
+Self-Rewarding Language Models let a single model act as both the policy that generates responses and the judge that scores them, producing its own preference pairs for iterative DPO training. However, the chosen and rejected responses are drawn from the same model at the same moment, so the reward signal collapses as the model improves. **Temporal Self-Rewarding (TSR)** decouples the chosen and rejected signals along a temporal axis: it anchors *chosen* responses with a stronger **future** model and grounds *rejected* responses with a weaker **past** model, keeping the preference margin informative across iterations. This repository provides the full training pipeline—Supervised Fine-Tuning (SFT), vanilla Self-Rewarding (SR), and Temporal Self-Rewarding (TSR).
 
-**Patches** (`patches/`, applied by `setup.sh`):
+**If you have any question, feel free to contact wx2013831686@gmail.com and yidongwang37@gmail.com**
 
-| Patch | Why |
+## Install environment
+
+This corrected checkout is based on official commit `020266aa9ef3cc35bf81384c9b59f98cff62aa1c`.
+Use Python 3.11 on a CUDA training host. The core training packages are pinned to the verified reproduction stack:
+
+```bash
+# Run inside this corrected checkout.
+pip install torch==2.5.1 --index-url https://download.pytorch.org/whl/cu124
+pip install -r requirements.txt
+pip install -e ./alignment-handbook
+pip install flash-attn==2.7.2.post1 --no-build-isolation
+```
+
+An activated environment containing training and vLLM dependencies can run all scripts; leave `CONDA_PATH` unset.
+For the original two-environment layout, export `CONDA_PATH` (with `myenv` for generation and `handbook` for training).
+Export `HF_TOKEN` only when authenticated model access is needed; credentials are not written into scripts.
+`SFT_BASE_MODEL` can point to an existing base-model directory. `CUDA_VISIBLE_DEVICES` selects the GPUs.
+The launcher keeps global batch size 32 for supported GPU counts. Training requires GPUs; CPU tests below do not.
+
+`requirements-reproduction-lock.txt` preserves the historical full package snapshot for reference. The supported
+core versions are torch 2.5.1, Transformers 4.46.3, TRL 0.12.2, Accelerate 1.1.1, DeepSpeed 0.15.4,
+PEFT 0.13.2, datasets 2.21.0, and vLLM 0.6.4.post1.
+
+## Usage
+
+### 1. Data
+
+The `data/` directory contains the SFT data and the self-play seed prompts:
+
+- [`data/sft_data/`](./data/sft_data) — Instruction Fine-Tuning (IFT) and Evaluation Fine-Tuning (EFT) data used for SFT.
+- [`data/SelfPlayBeginData/`](./data/SelfPlayBeginData) — seed question sets (`qa1.jsonl` … `qa4.jsonl`) consumed during the self-rewarding iterations.
+
+### 2. Training Pipeline
+
+The `scripts/` directory contains three bash scripts that make up the end-to-end pipeline:
+
+- `sft.sh` — Supervised Fine-Tuning (SFT with IFT and EFT data).
+- `sr.sh` — vanilla Self-Rewarding iterative DPO training.
+- `tsr.sh` — Temporal Self-Rewarding training (past-future decoupling of chosen/rejected).
+
+Run them in order:
+
+```bash
+# Step 1: Supervised Fine-Tuning
+bash scripts/sft.sh
+
+# Step 2 (baseline): vanilla Self-Rewarding
+bash scripts/sr.sh
+
+# Step 2 (ours): Temporal Self-Rewarding
+bash scripts/tsr.sh
+```
+
+Each self-rewarding script loops over iterations: it generates candidate responses with vLLM, has the model judge them, reformats the results into DPO preference pairs, and launches DPO training via `accelerate`. Intermediate data and per-iteration configs live under [`settings/`](./settings).
+
+### Corrections applied to the official code
+
+| Area | Corrected behavior |
 |---|---|
-| `0001-dpo-prepend-bos.patch` | trl 0.12.2's `DPOTrainer` drops BOS, while SFT and vLLM inference both start with it. Prepends BOS to every DPO prompt. Without it the M2 output length is 2633 instead of 2656. |
-| `0002-sft-model-card-trl012.patch` | `create_model_card(finetuned_from=...)` raises with trl 0.12; the call runs after the weights are saved and is now wrapped in `try`. |
-| `0003-iter1-tmp-init-from-iter0.patch` | `config_full_iter1_tmp.yaml` initialises the iter1 future model from `iter0_tmp` (Mf0). The paper (Eq. 5, Alg. 1) and the authors use `iter0` (M1). With upstream's setting M2 gets 18.89 / 28.86 / 3007. |
+| SFT launch | Uses the upstream ZeRO-3 configuration with bf16 computation and fp32 optimizer/master weights, matching the validated reproduction. Keeps full-token SFT loss, 3 epochs, lr 2e-6, and seed 42. The launcher saves the final weights without epoch checkpoints. |
+| SFT model ID | Corrects the default to `meta-llama/Llama-3.1-8B`. |
+| Batch size | All launched SFT/DPO stages have global batch 32. On 2 GPUs: SFT micro-batch 2 × accumulation 8; DPO micro-batch 1 × accumulation 16. The 8-GPU Mf0 template is also corrected from batch 16 to 32. |
+| Future initialization | `iter1_tmp` (Mf1) starts from `iter0` (M1), not `iter0_tmp` (Mf0). Final iter1 M2 also starts from M1. |
+| DPO BOS | A local `TSRDPOTrainer` subclass adds a missing BOS without changing TRL globally. It preserves the reproduction's post-truncation placement: 512 prompt tokens may become 513 with BOS; total sequence cap stays 2048. |
+| DPO data loading | Explicitly loads only the requested local directory's `train.json`. Nested `official/train.json` and other JSON copies cannot silently double training rows. SFT continues to load IFT and EFT together. |
+| SFT model card | Uses the TRL 0.12.2 model-card API; the post-save step no longer fails on `finetuned_from`. |
+| Launch failure | Scripts stop at the first failed generation, judging, formatting, or training command. GPU/environment selection can be supplied externally. |
+| Pair validation | Imports `sys` so mismatched prompts/row counts exit with the intended error. |
 
-**Other differences:**
+The duplicate validation file originated in the reproduction wrapper; official TSR does not itself create that
+copy. The explicit local DPO loader also protects this official checkout when such a directory is supplied.
 
-| | Upstream | Here |
-|---|---|---|
-| GPUs | 8, per-device 4 (SFT) or 2 (DPO) | any count; per-device 2 (SFT) or 1 (DPO), gradient accumulation keeps the global batch at 32 |
-| Mf0 global batch | 16 (`config_full_iter0_tmp.yaml` has per-device 1) | 32, like every other DPO run |
-| Package versions | lower bounds in `requirements.txt` | the exact environment we ran (`requirements.txt` here): torch 2.5.1, transformers 4.46.3, trl 0.12.2, deepspeed 0.15.4, vllm 0.6.4.post1. Retraining M2 with trl 0.9.6 / transformers 4.43.4 / deepspeed 0.14.4 gave the same length (2697). |
-| Generation and judging | `tsr/*.py` with tensor parallelism | the same code, data-parallel over GPUs (`src/tsr_shard.py` imports the upstream class and splits the prompts) |
-| Pair construction | `settings/tsr/reformat2DPO_{past,future}.py` | the upstream scripts are run and our re-implementation (`src/build_pairs.py`, which adds the variant flags) must give byte-identical pairs, otherwise the run stops |
-| iter0 rejected set | generated a second time with the same model, prompts and seed | the chosen set is reused (identical by construction) |
-| AlpacaEval generation | not in upstream | `src/gen_alpaca.py`: training system prompt and chat template, temperature 1.0, top_p 1.0, max 1024 tokens |
+### Pair rules and the best archived configuration
 
-`docs/CONFIG.md` lists every hyperparameter, and `results/pairs/*/stats.json` gives the source and length statistics of each pair set.
+Default pair behavior remains upstream: future wins a best-score tie (`>=`), rejected is the minimum across
+current and M0 (current wins ties), and same-score chosen/rejected pairs are kept. Model-internal ties select the
+first candidate. Self-judging is by M0 at iter0 and by M1 at iter1, including the future model's answers.
 
-## Quick start
-
-Requirements: x86_64 Linux, Python 3.11, CUDA driver ≥ 12.4, 2 or more 80 GB GPUs (tested on 2 × A800 80GB),
-about 200 GB of disk, a Hugging Face token with access to `meta-llama/Llama-3.1-8B`, and an OpenAI (or OpenRouter) key.
-
-```bash
-git clone https://github.com/Tanhhhhtjy/tsr-reproduction.git && cd tsr-reproduction
-cp config.env.example config.env        # fill in HF_TOKEN, JUDGE_API_KEY, GPUS
-bash setup.sh                           # venv with pinned packages, upstream TSR @020266a + patches, base model
-SMOKE=1 bash run.sh all                 # optional: whole pipeline on 16 prompts, 2 steps per training run (~1 h)
-bash run.sh all                         # full run; results in work/alpaca_eval/summary.csv
-```
-
-Stages can also be run one by one: `bash run.sh sft | iter0 | iter1 | sr | wof | eval [MODEL ...]`.
-Each step writes its output once and is skipped when the output exists, so an interrupted run resumes with the same command.
-If the judge is reached through a SOCKS proxy, also `pip install socksio`.
-
-### DPO input files
-
-`pairs` stores the upstream comparison beside the pair directory (for example, `D2.official.json`), outside the
-training dataset. `make_cfg.py` copies only the requested directory's `train.json` into `configs/<model>.data/`
-and points DPO at that isolated directory. SFT keeps its original multi-file dataset loading.
-
-Older pair directories may contain both `train.json` and an identical `official/train.json`. Hugging Face datasets
-discovers both recursively, turning 5,000 pairs into 10,000 training rows. The isolated DPO input also fixes loading
-from these existing directories without deleting their verification files. Completed checkpoints are still skipped;
-use a fresh `WORK_DIR` to retrain checkpoints produced with duplicated inputs. Existing result artifacts are unchanged.
-
-Run the data-loading regression tests in the configured environment:
+The formatters now expose explicit `--filter` (keep only chosen score > rejected score), and the future formatter
+also exposes `--strict` (future must score strictly higher). These are experimental choices, not silent bug fixes.
+To reproduce the pair policy of the archived LC 25.35 run, change **only iter1 D2**:
 
 ```bash
-.venv/bin/python -m unittest discover -s tests -v
+CUDA_VISIBLE_DEVICES=0,1 TSR_ITER1_FILTER_EQUAL_SCORES=1 bash scripts/tsr.sh
 ```
 
-On 2 × A800 80GB one generation pass (5,000 prompts × 7 responses) takes about 20 min, one judging pass about 27 min,
-one DPO run about 40 min of training plus loading and saving, and SFT about 40 min. The full run takes roughly 13 hours.
-Each AlpacaEval evaluation with `gpt-4o-2024-08-06` costs about $2.3.
+`TSR_ITER1_STRICT_FUTURE=1` selects the `>` ablation instead. Both switches default to `0`; iter0 and both D1
+stages keep the original rules. Use a separate checkout/output tree for another variant: the official scripts
+write fixed per-iteration filenames and do not provide the reproduction wrapper's resume/skip behavior.
 
-## Variants we tried
+The archived run used data-parallel vLLM generation, while these official scripts retain tensor parallelism.
+These changes reproduce the verified pair construction and training settings; rerunning generation can change
+the sampled answers. No new end-to-end GPU run or LC score is claimed for this checkout. No AlpacaEval driver is
+added here; the archived reproduction repository retains that evaluation code and all original results.
 
-All start from the same M1 and change one thing in iter1. `bash run.sh iter1 <name>` reproduces a row
-(definitions in `configs/variants.sh`); `bash run.sh eval M2_<name>` evaluates it.
+### Validation
 
-| Variant | Change | LC / Win / length |
-|---|---|---|
-| main | upstream rules | 21.78 / 28.38 / 2656 |
-| `strict` | paper Alg. 1: upgrade only if the future model is strictly better, keep only s_chosen > s_rejected | 22.30 / 22.87 / 2012 * |
-| `iter0_strict` | the same rule at iter0 (M1_strict) | 14.36 / 12.53 / 1637 |
-| `drop_ties` | upstream `>=` upgrade, but drop pairs whose chosen and rejected scores are equal (77 of 5,000) | 23.51 / 27.89 / 2595 |
-| `rej_past` | rejected: past/current tie goes to past | 20.50 / 23.48 / 2233 |
-| `rej_past_conf` | as above, and among same-score candidates take the highest p(score token) | 21.62 / 25.18 / 2288 |
-| `cho_longest` | chosen: longest among top-score ties | length 3004 |
-| `len_control` | chosen shortest, rejected longest among ties (Meta-Rewarding) | length 1238 |
-| `mf1_from_mf0` | iter1 future model initialised from Mf0 (upstream config) | 18.89 / 28.86 / 3007 |
-| `resample` | every generation and judgement redone with vLLM seed 1234 | 21.20 / 27.93 / 2618 |
-| `iter1_mix` | iter1 DPO on iter0 D2 + iter1 D2 (not the authors' setup) | 23.79 / 26.80 / 2332 |
-| `iter0_conf` | iter0 with score × p(score token) as the score | M1 worse than main (cheap judge only) |
-| old package versions | trl 0.9.6 / transformers 4.43.4 / deepspeed 0.14.4 | length 2697, same Win as main (cheap judge only) |
-
-\* Under the strict rule only 21 of 5,000 iter1 chosen responses are upgraded, so we reported Mf1 (trained on D1) as a stand-in; `run.sh iter1 strict` trains M2 on the strict, filtered D2 directly.
-Rows without LC were not judged by gpt-4o; their outputs are in `results/alpaca_eval/`.
-
-Dropping the 77 equal-score pairs is the only change that raised LC at nearly the same length: +1.73 against main,
-95% CI [−1.52, +3.37], so the effect is small and not resolved by a single run. Even then the future step adds
-little: against Mf1 (the same M1 trained on D1 alone) the difference is +1.21 LC, 95% CI [−2.18, +3.04].
-
-Two observations from the pair data (`src/analysis/tie_stats.py`):
-
-- At iter1, the future and current best scores tie on 99.4% of prompts (4,968 / 5,000, all at 5); the future model is
-  strictly better on 21. Under the `>=` rule the chosen response is therefore almost always the future model's.
-- The judge writes "earns N points" before `Score: N`, so p(score token) is close to 1 (exactly 1.0 for 31% of judgements).
-  Rules based on that probability mostly act as a random tie-break.
-
-## How this was validated
-
-The reported numbers come from the original runs, before the code was reorganised into this repository. Afterwards:
-
-- every pair set was rebuilt from the saved judgement files with `src/build_pairs.py` and compared byte for byte
-  against the original pairs (iter0 D1/D2, iter1 D1/D2, all eight variants, SR and w/o Future: identical);
-- `src/make_cfg.py` reproduces the SFT and DPO configs of the original runs exactly;
-- `setup.sh` was run from scratch into an empty virtualenv, and the whole pipeline (SFT → iter0 → iter1 → SR →
-  w/o Future → AlpacaEval generation → judging → summary) was run end to end on 16 prompts with a randomly initialised
-  2-layer model. The pair-construction check against the upstream scripts passes at every stage of that run.
-
-A full rerun with Llama-3.1-8B has not been repeated through these scripts.
-
-## What is in this repository
-
-```
-config.env.example   the only file to edit (copy to config.env)
-setup.sh  run.sh     setup and the pipeline driver
-scripts/             lib.sh (gen / judge / pairs / dpo / sft / alpaca helpers), stages.sh (paper stages)
-configs/variants.sh  iter1 variants
-patches/             the three patches to upstream TSR @020266a
-src/                 tsr_shard.py, build_pairs.py, make_cfg.py, gen_alpaca.py, eval_alpaca.py, tsr_conf.py,
-                     judge_stats.py, summarize.py, analysis/ (paired bootstrap, tie statistics, Figure 1 pair gap)
-results/             alpaca_eval/<model>/ (model_outputs.json, leaderboard.csv), pairs/*/stats.json,
-                     training/<model>/trainer_state.json, paired_bootstrap.jsonl, summary tables
-docs/CONFIG.md       full configuration
+```bash
+HF_HUB_OFFLINE=1 HF_DATASETS_OFFLINE=1 python -m unittest discover -s tests -v
+python tests/verify_archived_pairs.py \
+  --work /path/to/work-tsr-singlecopy-20261104 \
+  --report /tmp/official-pair-validation.json
 ```
 
-The [release](https://github.com/Tanhhhhtjy/tsr-reproduction/releases) has the large files:
-`alpaca_eval_annotations.tar.gz` (per-instruction gpt-4o annotations for every judged model) and
-`pipeline_data.tar.gz` (all judgement files with the 7 responses, judgements and scores per prompt, the p(score token)
-files, and every DPO pair set). The directory names match what `run.sh` writes under `work/data/`.
+The regression suite runs real CPU SFT/DPO optimizer steps with tiny random models, checks the model-card API,
+single-file DPO loading, multi-file SFT loading, BOS handling, tie rules, launch arguments, and failure handling.
+The archive check rebuilds seven saved pair sets (iter0 D1/D2, iter1 D1, four iter1 D2 variants), requires
+byte-identical outputs, and verifies the real dataset loader yields 5,000/4,770 rows and 156/149 steps at batch 32.
+The CPU validation environment uses torch 2.7.1 from this server, with the pinned TRL/Transformers/datasets stack;
+production training remains pinned to torch 2.5.1 and has not been run on this CPU machine.
+
+## Citation
+
+If you find this repository useful, please cite our work.
+
+```
+@article{wang2025temporal,
+  title={Temporal self-rewarding language models: Decoupling chosen-rejected via past-future},
+  author={Wang, Yidong and Wang, Xin and Wang, Cunxiang and Fang, Junfeng and Wang, Qiufeng and Chu, Jianing and Meng, Xuran and Yang, Shuxun and Qin, Libo and Zhang, Yue and others},
+  journal={arXiv preprint arXiv:2508.06026},
+  year={2025}
+}
+```
 
 ## License
 
-MIT. The patches modify the MIT-licensed upstream code (© 2025 Yidong Wang & Xin Wang). Model outputs were produced
-with Llama 3.1 and are subject to the Llama 3.1 Community License.
+TSR is licensed under the [MIT License](./LICENSE).

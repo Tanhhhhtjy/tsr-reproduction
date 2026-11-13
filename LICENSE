@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2026 Jinyu Tian
+Copyright (c) 2025 Yidong Wang & Xin Wang
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,11 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
----
-
-The patches in patches/ modify code from https://github.com/TemporalSelfRewarding/TSR,
-MIT License, Copyright (c) 2025 Yidong Wang & Xin Wang.
-
-Model outputs under results/ were produced with Meta Llama 3.1 and are subject to the
-Llama 3.1 Community License Agreement (https://llama.meta.com/llama3_1/license/).

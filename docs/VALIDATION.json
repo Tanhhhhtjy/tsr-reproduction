@@ -1,0 +1,84 @@
+{
+  "checked_utc": "2026-11-13T04:26:56.914958+00:00",
+  "tests": 28,
+  "passed": 28,
+  "failed": 0,
+  "command": "HF_HUB_OFFLINE=1 HF_DATASETS_OFFLINE=1 PYTHONDONTWRITEBYTECODE=1 python -m unittest discover -s tests -q",
+  "native_cpu_optimizer_steps": [
+    "SFT",
+    "DPO"
+  ],
+  "external_api_calls": 0,
+  "gpu_jobs_started_by_tests": 0,
+  "training_config_comparison_to_best": {
+    "M0": {
+      "matched": true,
+      "differences": {},
+      "ignored_path_or_label_fields": [
+        "dataset_mixer",
+        "hub_model_id",
+        "logging_dir",
+        "model_name_or_path",
+        "output_dir"
+      ]
+    },
+    "Mf0": {
+      "matched": true,
+      "differences": {},
+      "ignored_path_or_label_fields": [
+        "dataset_mixer",
+        "hub_model_id",
+        "logging_dir",
+        "model_name_or_path",
+        "output_dir"
+      ]
+    },
+    "M1": {
+      "matched": true,
+      "differences": {},
+      "ignored_path_or_label_fields": [
+        "dataset_mixer",
+        "hub_model_id",
+        "logging_dir",
+        "model_name_or_path",
+        "output_dir"
+      ]
+    },
+    "Mf1": {
+      "matched": true,
+      "differences": {},
+      "ignored_path_or_label_fields": [
+        "dataset_mixer",
+        "hub_model_id",
+        "logging_dir",
+        "model_name_or_path",
+        "output_dir"
+      ]
+    },
+    "M2": {
+      "matched": true,
+      "differences": {},
+      "ignored_path_or_label_fields": [
+        "dataset_mixer",
+        "hub_model_id",
+        "logging_dir",
+        "model_name_or_path",
+        "output_dir"
+      ]
+    }
+  },
+  "versions": {
+    "torch": "2.5.1+cu124",
+    "transformers": "4.46.3",
+    "trl": "0.12.2",
+    "deepspeed": "0.15.4",
+    "vllm": "0.6.4.post1",
+    "datasets": "2.21.0",
+    "accelerate": "1.1.1",
+    "alpaca_eval": "0.6.6"
+  },
+  "tensorboard_regression": "Node-local real scalar write -> closed-file sync -> scalar readback passed",
+  "tensorboard_path_note": "The earlier reproduction set a node-local logging_dir via runtime CLI; native configs now record it explicitly.",
+  "legacy_sr_contract": "Combined generator preserves valid chosen/rejected text after strict score parsing",
+  "dataset_freeze_regression": "Ignored original data is hash-checked and explicitly included in immutable bundles"
+}

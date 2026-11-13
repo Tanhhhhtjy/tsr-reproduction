@@ -1,0 +1,19 @@
+[
+  {
+    "run": "tsr-llama31-8b-cap2500-judge0-1113a",
+    "model": "M2_future_tie_charcap_distinct",
+    "questions": "805",
+    "pair_selection": "future_tie_charcap_distinct",
+    "self_judge_temperature": "0.0",
+    "generation_temperature": "0.0",
+    "generation_seed": "0",
+    "max_chosen_characters": "2500",
+    "lc_win": "29.27982054398985",
+    "win": "27.1869097989354",
+    "mean_characters": "1761.7552795031056",
+    "truncation_percent": "0.2484472049689441",
+    "completed_utc": "2026-11-12T19:19:46.579057+00:00",
+    "judge": "gpt-4o-2024-08-06",
+    "source_run": "tsr-llama31-8b-cap2500-judge0-1113a"
+  }
+]

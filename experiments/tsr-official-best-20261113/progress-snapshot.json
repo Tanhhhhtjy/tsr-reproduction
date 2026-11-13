@@ -1,0 +1,17 @@
+{
+  "recorded_utc": "2026-11-13T04:39:44.444690+00:00",
+  "phase": "iter0_future_generation_and_judging",
+  "sft_optimizer_step_observed": 180,
+  "sft_optimizer_steps_total": 180,
+  "latest_training_metrics": {
+    "epoch": 2.975206611570248,
+    "grad_norm": 0.6289076805114746,
+    "learning_rate": 0.0,
+    "loss": 0.8585,
+    "step": 180
+  },
+  "failed": false,
+  "sft_complete": true,
+  "mf0_optimizer_updates_observed": 130,
+  "mf0_optimizer_updates_total": 130
+}

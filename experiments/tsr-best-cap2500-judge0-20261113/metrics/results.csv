@@ -1,0 +1,2 @@
+run,model,questions,pair_selection,self_judge_temperature,generation_temperature,generation_seed,max_chosen_characters,lc_win,win,mean_characters,truncation_percent,completed_utc,judge,source_run
+tsr-llama31-8b-cap2500-judge0-1113a,M2_future_tie_charcap_distinct,805,future_tie_charcap_distinct,0.0,0.0,0,2500,29.27982054398985,27.1869097989354,1761.7552795031056,0.2484472049689441,2026-11-12T19:19:46.579057+00:00,gpt-4o-2024-08-06,tsr-llama31-8b-cap2500-judge0-1113a

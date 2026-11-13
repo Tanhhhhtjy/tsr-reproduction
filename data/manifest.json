@@ -1,0 +1,34 @@
+{
+  "upstream_repository": "https://github.com/TemporalSelfRewarding/TSR",
+  "upstream_commit": "a9a379d82b632e6aa9cb0a350662eca11da16cc8",
+  "files": {
+    "data/SelfPlayBeginData/qa1.jsonl": {
+      "sha256": "8244f42114c44e873186e8202cc538cd89a511bb23e40872112f8c25cb64d633",
+      "bytes": 9066691
+    },
+    "data/SelfPlayBeginData/qa2.jsonl": {
+      "sha256": "e5403e71f32cb054ad97d4e5e258fb3ec15b949e8639492964635b4e5b26abf3",
+      "bytes": 9303437
+    },
+    "data/SelfPlayBeginData/qa3.jsonl": {
+      "sha256": "039dae210d3a070c100731f548cece3afcff4a7eaa151698dbc10d64464ed36b",
+      "bytes": 9323010
+    },
+    "data/SelfPlayBeginData/qa4.jsonl": {
+      "sha256": "7c12a9cdc234bce4f63d4caa312ee5f82fbbeb1d88ecad52d45c20cadb4fcd46",
+      "bytes": 9169219
+    },
+    "data/sft_data/eft_train.jsonl": {
+      "sha256": "19b0d7de076d5df69e0e4d48c191a5006bb4e08934e6c9fb9114786205030ecd",
+      "bytes": 14429539
+    },
+    "data/sft_data/ift_train.jsonl": {
+      "sha256": "4d206b6e691445536ec24022943378753f34b8c7cd10313b9a86c21b9b67b44a",
+      "bytes": 13830518
+    },
+    "data/sft_data/ultrachat_test.json": {
+      "sha256": "e7ea6edeb9c4de12509c055a44db4108f516f5306ce1c3a3e50bf6f470a01484",
+      "bytes": 7099644
+    }
+  }
+}
