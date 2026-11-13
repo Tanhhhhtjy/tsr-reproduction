@@ -1,0 +1,5 @@
+run,dataset,n_pairs,score_ties_filtered,identical_text_filtered,no_chosen_longer_pair,no_chosen_within_cap,chosen_max_characters,chosen_mean_characters,mean_absolute_gap,invalid_score_candidates_removed
+tsr-llama31-8b-cap2500-judge0-1113a,iter0/D1,4256,223,0,0,521,2500,1066.8322368421052,639.6581296992481,1
+tsr-llama31-8b-cap2500-judge0-1113a,iter0/D2,4598,93,0,0,309,2500,1169.006742061766,645.5606785558939,1
+tsr-llama31-8b-cap2500-judge0-1113a,iter1/D1,4137,705,0,0,158,2500,1395.2596084118927,681.7722987672227,2
+tsr-llama31-8b-cap2500-judge0-1113a,iter1_future_tie_charcap_distinct/D2,4160,705,0,0,135,2500,1487.3721153846154,728.0334134615384,2

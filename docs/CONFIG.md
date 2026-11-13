@@ -1,3 +1,5 @@
+> Historical baseline configuration. For the best completed run and its overrides, see [BEST_RUN.md](BEST_RUN.md).
+
 # Configuration
 
 Everything below is what produced the numbers in the README. `src/make_cfg.py` writes the training configs from the

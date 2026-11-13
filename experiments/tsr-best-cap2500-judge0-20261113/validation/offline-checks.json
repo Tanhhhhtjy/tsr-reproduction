@@ -1,0 +1,13 @@
+{
+  "checked_utc": "2026-11-13T02:36:06.110106+00:00",
+  "tests": 67,
+  "passed": 67,
+  "failed": 0,
+  "test_command": "PYTHONDONTWRITEBYTECODE=1 /mnt/sn-007/zaninzeng/tsr-reproduction/.venv/bin/python -m unittest discover -s tests -q",
+  "environment": "Existing pinned Python 3.11 environment; ignored third_party symlink to the verified upstream checkout",
+  "syntax": "passed",
+  "secret_scan": "passed",
+  "diff_check": "active code/config/test/docs paths passed; immutable frozen source retains original whitespace",
+  "external_api_calls": 0,
+  "gpu_jobs_started": 0
+}

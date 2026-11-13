@@ -1,0 +1,594 @@
+{
+  "created_utc": "2026-11-13T02:34:36.270421+00:00",
+  "source_commit": "48c67ce491ad894634bf538601e70649f6c3a893",
+  "files": {
+    "README.md": {
+      "bytes": 3111,
+      "sha256": "d9d876887225c4006511b027d4f4d0d0bae2d29c312433468b1513d16178f5c8"
+    },
+    "figures/training-loss.png": {
+      "bytes": 268031,
+      "sha256": "a9aeb404b20f4669f269d528c9943363a13f618628d1b7264d0bef2b7f6f1b7c"
+    },
+    "figures/training-loss.svg": {
+      "bytes": 112341,
+      "sha256": "69b0ca0bae8d70d3bc899de23514945c1cf25440a6b4ee2b67b8c4818aebc6c6"
+    },
+    "inputs/alpaca_reference.json": {
+      "bytes": 1864670,
+      "sha256": "f90dac29878557296f0f2d79adbd25eeef69bc09478a2af1e708a8ed2016950d"
+    },
+    "metrics/pair-filtering.csv": {
+      "bytes": 658,
+      "sha256": "3e7e4031198ec255dbe03b550a689c0a360e8df7770de1d025784e7be8e2fbf4"
+    },
+    "metrics/results.csv": {
+      "bytes": 472,
+      "sha256": "d4b245b26ce119b1fe8ae01c2f88a1aedd0fad16c05ab5228537f055a248edcc"
+    },
+    "metrics/results.json": {
+      "bytes": 631,
+      "sha256": "3a8215823d6abf1dd45a08dc06b407a4478fc2d7c501ebea090014877b4bd471"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/configs/M0.yaml": {
+      "bytes": 1657,
+      "sha256": "cfac8f359e4320a2e3b933dc81051c2dbda08456c12cc5ae33d3589acec41e12"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/configs/M1.yaml": {
+      "bytes": 1095,
+      "sha256": "1f43eb2883ec3c27f0710e0ad728a8c1256d7bd3178c2f751dfbc49aff736426"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/configs/M2_future_tie_charcap_distinct.yaml": {
+      "bytes": 1184,
+      "sha256": "b46802e541fe99d39d27a9cbd9ba5d031fa39f2415f3b1a10465f019f3711e4a"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/configs/Mf0.yaml": {
+      "bytes": 1098,
+      "sha256": "d2ac552d60f5b97f5f11a77098032a78474f9b13c3d9a04764dbaf7bb18b6f08"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/configs/Mf1.yaml": {
+      "bytes": 1098,
+      "sha256": "8cb4a33692f9cf90a112588cee25852a72c06f0c57e649221b7d5a738ccbbec5"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/evaluation/M2_future_tie_charcap_distinct/GPT4O_SCORE_COMPLETE.json": {
+      "bytes": 380,
+      "sha256": "175c6f723f79eeb3007ed63aab2f4eaf076d8e0fab18cf70504a650346318771"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/evaluation/M2_future_tie_charcap_distinct/annotations.json.gz": {
+      "bytes": 1230101,
+      "sha256": "424e05b80ac287e7abd73b63ef7cff29b2453c3341ca630f8458a43a803404bd"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/evaluation/M2_future_tie_charcap_distinct/leaderboard.csv": {
+      "bytes": 291,
+      "sha256": "e3fe0a91707ffef7fe365480028080fdbeab02e8bde5b9ccb3f71203cfd5a021"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/evaluation/M2_future_tie_charcap_distinct/model_outputs.diag.json": {
+      "bytes": 326,
+      "sha256": "418e8762938349600fd4861dd3856c97ef5ca6b3bffb7044de3509ac0d1f45f6"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/evaluation/M2_future_tie_charcap_distinct/model_outputs.json.gz": {
+      "bytes": 553481,
+      "sha256": "3dfbeb5d048fb532b8b8463afd9c1b7b57d9d156133b6c5957382152be0ba4c1"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/lifecycle.json": {
+      "bytes": 345,
+      "sha256": "90567b6a72a765c303d6b8fe4ad374d972bd4b84af43f487135db86a21b24033"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/pair_statistics/iter0/D1/stats.json": {
+      "bytes": 4188,
+      "sha256": "917cf1eaa1c1d15e364da3faf85a644b559aba78462173e7cdbe0dac76c99c97"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/pair_statistics/iter0/D2/stats.json": {
+      "bytes": 5190,
+      "sha256": "0dadb5fcb1de57e351c5bf30739eca50f14673ecbd475e26cf922188de25cb1e"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/pair_statistics/iter1/D1/stats.json": {
+      "bytes": 5104,
+      "sha256": "ea09d3776bd55a82d9af759002cedfdb365fd11a3db66064f94ace842e76a98e"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/pair_statistics/iter1_future_tie_charcap_distinct/D2/stats.json": {
+      "bytes": 6038,
+      "sha256": "b88f0002111cc59ba067ba8d42f80d5f43fa5b56afc78a5c9de531ddefb6788c"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/provenance/EVALUATION_COMPLETED.json": {
+      "bytes": 531,
+      "sha256": "ae8b4c76b50c8355d6f0f7fe6c4165a7beafeb3a6f7203db3315784f48f5ff7d"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/provenance/EXECUTION_REQUEST.json": {
+      "bytes": 678,
+      "sha256": "0d9fd76b1aafdfe7684fcb52399aef546ab360bb96e9b1a592cfaec664f8a3ad"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/provenance/TRAINING_AND_GENERATION_COMPLETED.json": {
+      "bytes": 255,
+      "sha256": "eea8ca21da870f5f667da0987b47c11b058eb0b00e52540704bdc2526a5f3c88"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/provenance/base-model-manifest.json": {
+      "bytes": 2359,
+      "sha256": "e84c1c204529e9df28bbe7427c737d33e06a987484826e33d063712a149d3325"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/provenance/dataset-manifest.json": {
+      "bytes": 865,
+      "sha256": "9f40d957bce8f4f3578df1395adde26afeb6899167615a94edac4958a7fe57be"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/provenance/gpu-validated.json": {
+      "bytes": 232,
+      "sha256": "4e088390b1acc4a17b2fc35c0744e3d484e6ab87152015df82c333186e22a15f"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/provenance/job.json": {
+      "bytes": 4053,
+      "sha256": "3845f654c17ce9dc9fb2116e65d4488ced02248413b7ce72ab7090c04d04d792"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/provenance/pip-freeze.txt": {
+      "bytes": 3190,
+      "sha256": "d6304820dbe5ea2c1bd1e900c4c2254dc2f7ffbacbe58c789cb1ba1212b37731"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/provenance/run-plan.json": {
+      "bytes": 5070,
+      "sha256": "c96c53a6a5d9342d301e9f1825dc6bc81e3748f7ebe923458b9d20f1b50ce654"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/provenance/score-job.json": {
+      "bytes": 5200,
+      "sha256": "412ec208e6c98fb4bf8d7ebf7ba29e66d9a2aa26aa55a54f1b0c700920aa5d66"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/provenance/source-sha256.json": {
+      "bytes": 17460,
+      "sha256": "324782967ec9cd33aeffb05f3a3c4087941cc3b76748b2c4124d1c455f53ce8a"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/provenance/submission.json": {
+      "bytes": 677,
+      "sha256": "55659408f7204ac999dfbf48124823de83631a661c0b9dc684bf5f9c3ba86ad1"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/source_snapshot/configs/accelerate-fast.yaml": {
+      "bytes": 472,
+      "sha256": "c3de922bcf7a833e6ed86ed2ca0e4ecec6ed7b074c547a0a50968298feec5f54"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/source_snapshot/configs/deepspeed-fast.json": {
+      "bytes": 432,
+      "sha256": "6d46e2eff7ef10d032053be19e99d84cdb9138bc7e4e913f6574149b2a805175"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/source_snapshot/configs/variants.sh": {
+      "bytes": 3284,
+      "sha256": "545a55fcacf1032572f151cc29be2d0fa765885c8184599bdd94ffd41c54970a"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/source_snapshot/patches/0001-dpo-prepend-bos.patch": {
+      "bytes": 1175,
+      "sha256": "038c5c0e29dbad5a6fb0390034fca1a94758f32220c62e444dc48fb9485b691b"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/source_snapshot/patches/0002-sft-model-card-trl012.patch": {
+      "bytes": 748,
+      "sha256": "e7197868cd69122690c09310a82f00daad783d74c0b91a4e22476b5f973cf71a"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/source_snapshot/patches/0003-iter1-tmp-init-from-iter0.patch": {
+      "bytes": 499,
+      "sha256": "8499502cf0f59ed539d30a583ade5326872ba47cf53beeaacf54106dde231e5a"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/source_snapshot/scripts/archive_future_only_run.py": {
+      "bytes": 6602,
+      "sha256": "40d19115c33ede8fc63d531d48577729ddca9d06845f47feb789b7ebca29672a"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/source_snapshot/scripts/early_eval.py": {
+      "bytes": 5162,
+      "sha256": "a5424e971367ff69af54a1bdfaab5cadf7683922c0e2816193aad7dcca24a21a"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/source_snapshot/scripts/lib.sh": {
+      "bytes": 20683,
+      "sha256": "b36da2762930213fc8bef929c9b862ab68cf6393d368d6c858a5140b8bcbd320"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/source_snapshot/scripts/plot_future_only_results.py": {
+      "bytes": 3674,
+      "sha256": "045c47ad858c449e57fa78316fa8afea3084877c2ba507bd590bb6c9d2abac64"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/source_snapshot/scripts/prepare_sn5.py": {
+      "bytes": 22398,
+      "sha256": "9b6843144defd1d9c159fb3b5d390975b0d47065407036cb4834e20bbc27dc23"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/source_snapshot/scripts/reuse_iter0.py": {
+      "bytes": 2855,
+      "sha256": "3b8f68213c9f0e34a6ff617b63f3d092f22949d4d6df35a159306604e2bc82e5"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/source_snapshot/scripts/score_when_ready.py": {
+      "bytes": 11815,
+      "sha256": "485922bdf18b764d01f9456569837451da8c3873dfec8160eac5b99aef5888df"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/source_snapshot/scripts/sn5_bootstrap.sh": {
+      "bytes": 1555,
+      "sha256": "64fdde2576515bc2c821fdb12502bbe9a9d83c2cc28c4df128042549759f18f5"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/source_snapshot/scripts/sn5_driver.py": {
+      "bytes": 23119,
+      "sha256": "dd3922576fedd4cb7fda80847d54eb5cb9ff49273b6146130961bff2dd4b790f"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/source_snapshot/scripts/stages.sh": {
+      "bytes": 10963,
+      "sha256": "cf2fb75a5607f29f86a97a01a485bf36353c7db4edf44d1cf3adf72b5d3bed0a"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/source_snapshot/scripts/verify_result_archive.py": {
+      "bytes": 2454,
+      "sha256": "eda659e1ab806270522b84493958a2b1be33ae10cfa3a12e3c5064df47ea1bd5"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/source_snapshot/src/analysis/pair_gap.py": {
+      "bytes": 2944,
+      "sha256": "400c769895793d30d3d16211d162dc7eb6fd7fd99c0d80cc781322ea15d6a30c"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/source_snapshot/src/analysis/paired_bootstrap.py": {
+      "bytes": 1971,
+      "sha256": "e289f9a644936abbe435cad29724656b24b5e58f5bfa455799d381aebf52ed34"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/source_snapshot/src/analysis/tie_stats.py": {
+      "bytes": 954,
+      "sha256": "f5512bdba532cc2d49f2e36cd6408623b9311e70ef84251c3b9027b6a3aad46a"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/source_snapshot/src/build_pairs.py": {
+      "bytes": 20954,
+      "sha256": "2fcf35d511bf816c13c2049060652cf53a2940f30482b873a6c546a9cbd99b1e"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/source_snapshot/src/eval_alpaca.py": {
+      "bytes": 3608,
+      "sha256": "99064c4dd73e3d214e4e39dedb51b4df7c29a8578287a74e0441c150d7a2d766"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/source_snapshot/src/gen_alpaca.py": {
+      "bytes": 3324,
+      "sha256": "d15459146f9c06bd29ed61c11817b00c8f11ea7a7a7f943b4b4f8e3f99acf0a1"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/source_snapshot/src/inference_sampling.py": {
+      "bytes": 1074,
+      "sha256": "f2a5567750c7b2b6da1445f6b705b1e1c3dc561937ccd162fe87d4a9793f2b60"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/source_snapshot/src/judge_request_cache.py": {
+      "bytes": 2571,
+      "sha256": "181f9d30c7433551411fd85e4d06ac1dbcf2ef58be41493a6cc7c94671ccab3d"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/source_snapshot/src/judge_stats.py": {
+      "bytes": 1419,
+      "sha256": "d6dec379cce239d4ae2355a88c12675d3d5c860359014b3fa9d5d511504a832b"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/source_snapshot/src/length_pairing.py": {
+      "bytes": 5198,
+      "sha256": "9af69ded1f0a230f620250e4276acfa9370ac8ea9d04e2c4048e084202d2e3d8"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/source_snapshot/src/make_cfg.py": {
+      "bytes": 4426,
+      "sha256": "d8c3bf0cc339e30f238501237914fa8b2e323e62abcafe502e7e8de27811bdff"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/source_snapshot/src/rank_training.py": {
+      "bytes": 2259,
+      "sha256": "2d29e341c974949d6b4d8ec14d9f2fc14be14f83aa4b2fa353ce92c39690e1bd"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/source_snapshot/src/score_validation.py": {
+      "bytes": 3637,
+      "sha256": "914eaa458b88a09b22b3f074a5eb55b5fc37c04eb6bcfc06643e5ddd2f44fdb9"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/source_snapshot/src/summarize.py": {
+      "bytes": 839,
+      "sha256": "38f397ce43c1e78723e77103dc12f34b318a1cfa524188f0f04234952cf35a7d"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/source_snapshot/src/tsr_conf.py": {
+      "bytes": 2747,
+      "sha256": "04b105e6dcb1e87085b7c5c692becd1aa87cd3516d694b3ec1e6c9876dab445e"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/source_snapshot/src/tsr_shard.py": {
+      "bytes": 6022,
+      "sha256": "0a566964842310b48d0ed779c1f10bc6f1cf716130cfa89d9912099c0ee8de93"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training/M0/all_results.json": {
+      "bytes": 392,
+      "sha256": "354cf693cd2365ac5cda08dc7574b2e132701593789f6b7142b0141fe31556d4"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training/M0/train_results.json": {
+      "bytes": 235,
+      "sha256": "61c85e79ca504176928925e70c24611da014efddffe7cbc782b25b6f66dd21d1"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training/M0/trainer_state.json": {
+      "bytes": 8008,
+      "sha256": "ecb590ded395f1d74b39d788970feff07f00ac095940c857c4041d19dd594ba9"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training/M1/all_results.json": {
+      "bytes": 203,
+      "sha256": "f01a0db861b74d53a51d00bb5ee313894ffa4bd1006fa8877bf9ad566632888d"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training/M1/train_results.json": {
+      "bytes": 203,
+      "sha256": "f01a0db861b74d53a51d00bb5ee313894ffa4bd1006fa8877bf9ad566632888d"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training/M1/trainer_state.json": {
+      "bytes": 64199,
+      "sha256": "d5caf1d1a5d98a670f1330b811b78d123d0bdaa4e221773ff4e4878c1cdd572f"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training/M2_future_tie_charcap_distinct/all_results.json": {
+      "bytes": 204,
+      "sha256": "88af97353b9b3318cf1a4aeeb7f38e76e410584eeb710fd41185e96e925e0ad6"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training/M2_future_tie_charcap_distinct/train_results.json": {
+      "bytes": 204,
+      "sha256": "88af97353b9b3318cf1a4aeeb7f38e76e410584eeb710fd41185e96e925e0ad6"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training/M2_future_tie_charcap_distinct/trainer_state.json": {
+      "bytes": 57882,
+      "sha256": "e4b650d17701315fed12d5dfc77c6e9185fb185143131e570d89ab41da91d942"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training/Mf0/all_results.json": {
+      "bytes": 202,
+      "sha256": "1546e5223510819974352da6a31df03e68c4ee0e7829a0d49be574e61a93890a"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training/Mf0/train_results.json": {
+      "bytes": 202,
+      "sha256": "1546e5223510819974352da6a31df03e68c4ee0e7829a0d49be574e61a93890a"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training/Mf0/trainer_state.json": {
+      "bytes": 60626,
+      "sha256": "b3551f8446a173a8a8dbe44a053b66ed9425528c06cddfc55c24e14ac1d64a6d"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training/Mf1/all_results.json": {
+      "bytes": 203,
+      "sha256": "6d7f599040b785cf4bc30b5b5f035f716614ab63c0669d6373923b4e6fb86e7b"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training/Mf1/train_results.json": {
+      "bytes": 203,
+      "sha256": "6d7f599040b785cf4bc30b5b5f035f716614ab63c0669d6373923b4e6fb86e7b"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training/Mf1/trainer_state.json": {
+      "bytes": 57728,
+      "sha256": "8d827fdb09f58bfb7840a7be9f098203142cd0ba18bca83b8db69575ecc42546"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/M0.json": {
+      "bytes": 8092,
+      "sha256": "6480a370e794cc14f1895302b68ff7375dd108d19c21d126a345b1ded9a2f4ad"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/M1.json": {
+      "bytes": 64070,
+      "sha256": "75f8c34da235cbabcc56121430596c808bf633992a04f4a8bf05e6b44690df22"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/M2_future_tie_charcap_distinct.json": {
+      "bytes": 57783,
+      "sha256": "48e741da2ab073e468bbec4b1fa881fc2cf82bc493e25af3835b6ca49b0bc5a8"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/Mf0.json": {
+      "bytes": 60496,
+      "sha256": "7aa734cadb038e246ea8f0f8c08c4e7b01fee9d132f6f15d5ca4c96486abbaff"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/Mf1.json": {
+      "bytes": 57600,
+      "sha256": "9fe37dc53434286ace22e69aa3a52230d06d90d920ae3a07d802d60be6dee0fa"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/inference/0_chosen_judgement.part0.json": {
+      "bytes": 1519,
+      "sha256": "9751bdc5d35229fa894cddbafd6d483901b2bacf2dba7fc52d311772cbb9369c"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/inference/0_chosen_judgement.part1.json": {
+      "bytes": 1535,
+      "sha256": "73713c2aa358cba4ae2382fb6c907e0eb3d967cdeae97d83c4df2da091c2be19"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/inference/0_chosen_judgement.part2.json": {
+      "bytes": 1519,
+      "sha256": "b2242df12ec8d5332e820f882d06ab4d7dd914ea0b13199f835082bd4df4c441"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/inference/0_chosen_judgement.part3.json": {
+      "bytes": 1518,
+      "sha256": "8ad3229d88f170d36272f93680c3e0be3181e4901bcd19347541998f9a63f206"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/inference/0_chosen_judgement.part4.json": {
+      "bytes": 1558,
+      "sha256": "acf0471187de2d608f88af297b751ea0b04fc902bfd9fdb060ecc005e3b875ea"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/inference/0_chosen_judgement.part5.json": {
+      "bytes": 1520,
+      "sha256": "4420028e413bedc740010e1cd535dc8ce2ca9586403561524423d52e4008c2b8"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/inference/0_chosen_judgement.part6.json": {
+      "bytes": 1520,
+      "sha256": "6585c1d4acf5b5cade13d67bbbcbd9e35259873e34b0232695fcf194b3850367"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/inference/0_chosen_judgement.part7.json": {
+      "bytes": 1518,
+      "sha256": "75a7a8c15d97de1450aafd8dbf5d06b058ecc782d7a66a4333ea6050a03db099"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/inference/0_future_judgement.part0.json": {
+      "bytes": 1269,
+      "sha256": "a55a88c5a37cf8e1da163a7d909d2706d295354cde46f5daf5ae854c089712fe"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/inference/0_future_judgement.part1.json": {
+      "bytes": 1268,
+      "sha256": "bf31dc060b5e79bc0f78386f9b29b867a1d9321441a3ba9ae7939600e9f0b36c"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/inference/0_future_judgement.part2.json": {
+      "bytes": 1268,
+      "sha256": "bc28147bf71721ff3ebe62401be93a4699f93e120a9d65728add36c49d27ab40"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/inference/0_future_judgement.part3.json": {
+      "bytes": 1259,
+      "sha256": "b878ccd4ca371b9777d51aecc626962c6ecf6d3ee31425b6b4c6dbdb158d1b49"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/inference/0_future_judgement.part4.json": {
+      "bytes": 1267,
+      "sha256": "fe63c7642a83633284b69455622fbf7a19594dccc29dad0e31449371330413f3"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/inference/0_future_judgement.part5.json": {
+      "bytes": 1269,
+      "sha256": "f9e522a408f3818e3ffe6cfa97efbd79e4a7bba35ac84c15fcf3eba1f3144880"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/inference/0_future_judgement.part6.json": {
+      "bytes": 1258,
+      "sha256": "b3e31454776182832e06003f79ed5a0b510b7df431a4fbfd2c0536f342c2d899"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/inference/0_future_judgement.part7.json": {
+      "bytes": 1256,
+      "sha256": "740cf1e3e5586ed9ec69b1fd8839d73e72f208a07de10c07e135ef78be70bd5b"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/inference/0_future_response.part0.json": {
+      "bytes": 630,
+      "sha256": "70f55dd1265071135a370cb6d753d982ccaac4b722a9363aed3ba69808930fad"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/inference/0_future_response.part1.json": {
+      "bytes": 632,
+      "sha256": "51422a0110af7cb23d37f0f4df13172976e1839eec418ede1630dcbfa846566c"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/inference/0_future_response.part2.json": {
+      "bytes": 631,
+      "sha256": "e586dfb8ff32d4a9cc418507965c5e67a996676a35c07c85351006d23cdfc893"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/inference/0_future_response.part3.json": {
+      "bytes": 631,
+      "sha256": "091cec76d57933952173649008bbabf139075351e618fc5abb35d194ccbb2c06"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/inference/0_future_response.part4.json": {
+      "bytes": 632,
+      "sha256": "18562d5b6be669169b189c101a54725f38c2d0b81bfb6f4b8a20eb2a799cc303"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/inference/0_future_response.part5.json": {
+      "bytes": 632,
+      "sha256": "6156ce34b7718c85378a76e0d70d814fea50a446cc0650d9ee29d159113f888d"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/inference/0_future_response.part6.json": {
+      "bytes": 631,
+      "sha256": "2589259a170d10f45b7a237c6fcecf2b63685d7db2364cb93b5b973e30672366"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/inference/0_future_response.part7.json": {
+      "bytes": 631,
+      "sha256": "f38e4bf7c45adc9f1ef7ef19533fd402516091fded7e6a78c264818fd8d0c4cb"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/inference/1_chosen_judgement.part0.json": {
+      "bytes": 2368,
+      "sha256": "55401ba8054e5ba768eeed6871b6b1220de462f9c0b152b918755cc97ae4df03"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/inference/1_chosen_judgement.part1.json": {
+      "bytes": 2381,
+      "sha256": "d76e02615f34406ffa64b060cfe78a2efc104874e0ca3abe4e6328b9ac88ece0"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/inference/1_chosen_judgement.part2.json": {
+      "bytes": 2308,
+      "sha256": "abdef75c43e1aee150151ecc9e96ef717ddc1fc10f7cb2e7e10468422bd33b99"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/inference/1_chosen_judgement.part3.json": {
+      "bytes": 2334,
+      "sha256": "a4d6578d46144d4b25a30bb582c957f1e8f344cb860d7f1ca82f67a1568307c2"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/inference/1_chosen_judgement.part4.json": {
+      "bytes": 2296,
+      "sha256": "75bb3d1afec5d7b26ab3a9e53bab7af0c64113dd7859cc866889089a43597144"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/inference/1_chosen_judgement.part5.json": {
+      "bytes": 2308,
+      "sha256": "32b74cf80dfc81a88d33cdd5e44f9ae28f5ef3b4a4576feedfd4b64b5741f949"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/inference/1_chosen_judgement.part6.json": {
+      "bytes": 2335,
+      "sha256": "b13bc1c4c7628719cb605f359c277644d9253010bc597c29b4acaa1bab46576a"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/inference/1_chosen_judgement.part7.json": {
+      "bytes": 2309,
+      "sha256": "a539e30ca2625eb36155c4d3577155c57961c660154c0fa00c839ff63e4176fe"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/inference/1_future_judgement.part0.json": {
+      "bytes": 1188,
+      "sha256": "97c53e92cf82fc942307b648430a2cb5f869bc040e23be2f34a8b89872955e36"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/inference/1_future_judgement.part1.json": {
+      "bytes": 1207,
+      "sha256": "846af9d00ae3788e9fdc2375beb1ec14aaa97ce3e18adf743b6b6d482ff4f1d6"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/inference/1_future_judgement.part2.json": {
+      "bytes": 1206,
+      "sha256": "72accbc912532f1a6ea86f02b36e258a7449ffdcb274cc8db29dbdb323c5980e"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/inference/1_future_judgement.part3.json": {
+      "bytes": 1191,
+      "sha256": "1ad61e20118508a5ad0a5931092c106bdaa254d347a14f939c4eedb2218c6067"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/inference/1_future_judgement.part4.json": {
+      "bytes": 1243,
+      "sha256": "6f7506f7a423812bf6f15ecc6dee5653ae6136f960351de63ae9dd604605e42b"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/inference/1_future_judgement.part5.json": {
+      "bytes": 1207,
+      "sha256": "4d151b66a6b720219bfdcedccb1ff1e68f8f5df7171dff3dccc96d2a2c6980ef"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/inference/1_future_judgement.part6.json": {
+      "bytes": 1209,
+      "sha256": "4a990d2b02a2fd546ba3db762a1a7c7bb0a300edbb176b4224a589eb8f3d8f54"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/inference/1_future_judgement.part7.json": {
+      "bytes": 1188,
+      "sha256": "88163db852198482517709c00ef268b47f8bbb3432149d5ec7c3e8e0cbffbdd2"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/inference/1_future_response.part0.json": {
+      "bytes": 632,
+      "sha256": "7d7f303ec894ac9822bc158cc6ba6163ad346794030d0418ce23dcfacaf35abc"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/inference/1_future_response.part1.json": {
+      "bytes": 632,
+      "sha256": "d7edb0d972193393e27118e453b1a416e14d90ab2105d985cffa5ede1b92944d"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/inference/1_future_response.part2.json": {
+      "bytes": 632,
+      "sha256": "c428ddf2df23d69793fee282f97cc403e550f76e023fd6fcbac88c477bac42f5"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/inference/1_future_response.part3.json": {
+      "bytes": 631,
+      "sha256": "725db1d9459f2e3338b6135ea9c7815b50e660c73b9061a534f4a4fdbc76d806"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/inference/1_future_response.part4.json": {
+      "bytes": 632,
+      "sha256": "85140a23dbed13904d8bdc0c60b08b4e330f88d837b3703ab7cd047321f25ecc"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/inference/1_future_response.part5.json": {
+      "bytes": 632,
+      "sha256": "168c21d1f6f5b1868e5128c627e7a8ec56ff348f631f4f3df537b6c6228f84dc"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/inference/1_future_response.part6.json": {
+      "bytes": 631,
+      "sha256": "e576bbba8fbf523d76380ef1ade9c1520ddd5a049c3af759c7fe365866b30822"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/inference/1_future_response.part7.json": {
+      "bytes": 633,
+      "sha256": "13cf959bd766397328c99a57a9a5e3909c3e3ea91de17d305aee4f7caa6efe90"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/inference/1_rejected_response.part0.json": {
+      "bytes": 631,
+      "sha256": "2d42ceaa61678f38e05593887f4e803a04f77f879e6a0c5baa019a02840e09c9"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/inference/1_rejected_response.part1.json": {
+      "bytes": 630,
+      "sha256": "5de7ca72a24866a97500204a6d1b84cc96de121e96f920080071579aeb60ca93"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/inference/1_rejected_response.part2.json": {
+      "bytes": 632,
+      "sha256": "b80b368ab37d816e8948619c296fca10f0aeb4ecb0a486cd9f31a19d227ac1c4"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/inference/1_rejected_response.part3.json": {
+      "bytes": 630,
+      "sha256": "7029476f5eb9610c736a1bbf1ade6aa04dd5e553114163f5fbbee4ff757b2033"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/inference/1_rejected_response.part4.json": {
+      "bytes": 631,
+      "sha256": "13514319eb4232622047aa7ee790e71f89daeb4b777eba5ac5d65fbaabbb77cb"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/inference/1_rejected_response.part5.json": {
+      "bytes": 631,
+      "sha256": "31a3540ff300e7a576c58c7f79bd5543c155ffde56f193b8bb5aa6010283ac81"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/inference/1_rejected_response.part6.json": {
+      "bytes": 631,
+      "sha256": "f47f6f2bed7ebcc6fcd54de04be6c62cef2d17aaec7327c13d4433d059d343d3"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/inference/1_rejected_response.part7.json": {
+      "bytes": 631,
+      "sha256": "f31e36be4f26633375a463449a18812df2ba0261eaa501af1754136bf0a04817"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/iter0-consumed-caches.json": {
+      "bytes": 835,
+      "sha256": "eadea8db3b0f1d0700183c52c8505acebb8d51e34b982cb44d4f41f2a19bb3dd"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/iter1-consumed-caches.json": {
+      "bytes": 1286,
+      "sha256": "f987d4f9c12c12d919c32c97e7f64aacb36acdc82446faf2ac5b1b1730cb6a95"
+    },
+    "runs/tsr-llama31-8b-cap2500-judge0-1113a/training_metrics/self-judge-temperature-validation.json": {
+      "bytes": 3198,
+      "sha256": "76c57167f14d7e64976a51f45be2d1566b87ce952824162999191dd29149e2e1"
+    },
+    "validation/offline-checks.json": {
+      "bytes": 576,
+      "sha256": "c9b48bdb1a3b25b0af7756501c587cc74b10c4611491e8477e006da3eb6677d0"
+    }
+  }
+}
