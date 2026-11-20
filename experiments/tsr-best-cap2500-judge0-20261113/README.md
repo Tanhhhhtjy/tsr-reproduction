@@ -18,6 +18,7 @@ These are native training losses. Only final M2 was evaluated; this run has no p
 - `inputs/alpaca_reference.json`: exact frozen 805-question reference.
 - `metrics/results.csv` and `results.json`: this run's final metrics only; `pair-filtering.csv`: the four canonical preference-dataset summaries.
 - Run `training/` and `training_metrics/`: five stages' scalar histories, inference timings/sampling settings, cache-cleanup manifests and self-judge-temperature validation.
+- Run [`console_logs/`](runs/tsr-llama31-8b-cap2500-judge0-1113a/console_logs/): 67 original console logs for training, generation, self-judging, pair construction, job startup, and final scoring; credentials and private provider URLs redacted.
 - Run `pair_statistics/`: pair counts, score/source/text/character-cap filtering evidence and hashes of canonical training data. Training pair texts are not included in this Git archive.
 - Run `configs/`, `provenance/`, `lifecycle.json`: actual stage configs, input/model manifests, job details, source hashes and completion markers. Provider URLs and credential fields were removed from exported metadata.
 - Run `source_snapshot/`: immutable source used by the executed experiment. Historical defaults in this snapshot are overridden by the frozen run plan and actual configs.
