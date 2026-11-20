@@ -1,0 +1,1138 @@
+[2026-11-12 17:51:56,136] [INFO] [real_accelerator.py:219:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+df: /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/triton: No such file or directory
+INFO:root:Using nproc_per_node=8.
+Downloading readme:   0%|          | 0.00/6.52k [00:00<?, ?B/s]Downloading readme:   0%|          | 0.00/6.52k [00:00<?, ?B/s]Downloading readme:   0%|          | 0.00/6.52k [00:00<?, ?B/s]Downloading readme:   0%|          | 0.00/6.52k [00:00<?, ?B/s]Downloading readme:   0%|          | 0.00/6.52k [00:00<?, ?B/s]Downloading readme:   0%|          | 0.00/6.52k [00:00<?, ?B/s]Downloading readme:   0%|          | 0.00/6.52k [00:00<?, ?B/s]Downloading readme:   0%|          | 0.00/6.52k [00:00<?, ?B/s]Downloading readme: 100%|██████████| 6.52k/6.52k [00:00<00:00, 12.3kB/s]Downloading readme: 100%|██████████| 6.52k/6.52k [00:00<00:00, 12.3kB/s]
+Downloading readme: 100%|██████████| 6.52k/6.52k [00:00<00:00, 12.0kB/s]Downloading readme: 100%|██████████| 6.52k/6.52k [00:00<00:00, 12.0kB/s]
+Downloading readme: 100%|██████████| 6.52k/6.52k [00:00<00:00, 12.1kB/s]Downloading readme: 100%|██████████| 6.52k/6.52k [00:00<00:00, 12.1kB/s]
+Downloading readme: 100%|██████████| 6.52k/6.52k [00:00<00:00, 12.0kB/s]Downloading readme: 100%|██████████| 6.52k/6.52k [00:00<00:00, 12.0kB/s]
+Downloading readme: 100%|██████████| 6.52k/6.52k [00:00<00:00, 11.8kB/s]Downloading readme: 100%|██████████| 6.52k/6.52k [00:00<00:00, 11.8kB/s]
+Downloading readme: 100%|██████████| 6.52k/6.52k [00:00<00:00, 12.0kB/s]Downloading readme: 100%|██████████| 6.52k/6.52k [00:00<00:00, 12.0kB/s]
+Downloading readme: 100%|██████████| 6.52k/6.52k [00:00<00:00, 12.1kB/s]Downloading readme: 100%|██████████| 6.52k/6.52k [00:00<00:00, 12.1kB/s]
+Downloading readme: 100%|██████████| 6.52k/6.52k [00:00<00:00, 11.8kB/s]Downloading readme: 100%|██████████| 6.52k/6.52k [00:00<00:00, 11.8kB/s]
+Downloading data:   0%|          | 0.00/83.9k [00:00<?, ?B/s]Downloading data:   0%|          | 0.00/83.9k [00:00<?, ?B/s]Downloading data:   0%|          | 0.00/83.9k [00:00<?, ?B/s]Downloading data:   0%|          | 0.00/83.9k [00:00<?, ?B/s]Downloading data:   0%|          | 0.00/83.9k [00:00<?, ?B/s]Downloading data:   0%|          | 0.00/83.9k [00:00<?, ?B/s]Downloading data:   0%|          | 0.00/83.9k [00:00<?, ?B/s]Downloading data:   0%|          | 0.00/83.9k [00:00<?, ?B/s]Downloading data: 100%|██████████| 83.9k/83.9k [00:00<00:00, 90.6kB/s]Downloading data: 100%|██████████| 83.9k/83.9k [00:00<00:00, 90.6kB/s]
+Downloading data: 100%|██████████| 83.9k/83.9k [00:00<00:00, 91.7kB/s]Downloading data: 100%|██████████| 83.9k/83.9k [00:00<00:00, 91.7kB/s]
+Downloading data: 100%|██████████| 83.9k/83.9k [00:00<00:00, 89.7kB/s]Downloading data: 100%|██████████| 83.9k/83.9k [00:00<00:00, 89.7kB/s]
+Downloading data: 100%|██████████| 83.9k/83.9k [00:00<00:00, 93.2kB/s]Downloading data: 100%|██████████| 83.9k/83.9k [00:00<00:00, 93.2kB/s]
+Downloading data: 100%|██████████| 83.9k/83.9k [00:00<00:00, 91.4kB/s]Downloading data: 100%|██████████| 83.9k/83.9k [00:00<00:00, 91.3kB/s]
+Downloading data: 100%|██████████| 83.9k/83.9k [00:00<00:00, 91.9kB/s]Downloading data: 100%|██████████| 83.9k/83.9k [00:00<00:00, 91.8kB/s]
+Generating test split:   0%|          | 0/164 [00:00<?, ? examples/s]Generating test split:   0%|          | 0/164 [00:00<?, ? examples/s]Downloading data: 100%|██████████| 83.9k/83.9k [00:00<00:00, 89.6kB/s]Downloading data: 100%|██████████| 83.9k/83.9k [00:00<00:00, 89.5kB/s]
+Generating test split:   0%|          | 0/164 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 164/164 [00:00<00:00, 2622.31 examples/s]
+Generating test split: 100%|██████████| 164/164 [00:00<00:00, 8224.62 examples/s]
+Generating test split: 100%|██████████| 164/164 [00:00<00:00, 2837.71 examples/s]
+Generating test split:   0%|          | 0/164 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 164/164 [00:00<00:00, 23459.84 examples/s]
+Generating test split:   0%|          | 0/164 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 164/164 [00:00<00:00, 23975.81 examples/s]
+Generating test split:   0%|          | 0/164 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 164/164 [00:00<00:00, 19854.12 examples/s]
+Generating test split:   0%|          | 0/164 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 164/164 [00:00<00:00, 21726.65 examples/s]
+Downloading data: 100%|██████████| 83.9k/83.9k [00:00<00:00, 92.0kB/s]Downloading data: 100%|██████████| 83.9k/83.9k [00:00<00:00, 91.9kB/s]
+Generating test split:   0%|          | 0/164 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 164/164 [00:00<00:00, 20330.01 examples/s]
+[2026-11-12 17:52:43,145] [INFO] [real_accelerator.py:219:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2026-11-12 17:52:43,423] [INFO] [real_accelerator.py:219:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2026-11-12 17:52:43,501] [INFO] [real_accelerator.py:219:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2026-11-12 17:52:43,767] [INFO] [real_accelerator.py:219:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2026-11-12 17:52:43,785] [INFO] [real_accelerator.py:219:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2026-11-12 17:52:43,811] [INFO] [real_accelerator.py:219:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2026-11-12 17:52:43,832] [INFO] [real_accelerator.py:219:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2026-11-12 17:52:43,840] [INFO] [real_accelerator.py:219:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2026-11-12 17:52:45,820] [INFO] [comm.py:652:init_distributed] cdb=None
+[W1112 17:52:45.016082219 CUDAAllocatorConfig.h:28] Warning: expandable_segments not supported on this platform (function operator())
+[2026-11-12 17:52:46,025] [INFO] [comm.py:652:init_distributed] cdb=None
+[W1112 17:52:46.215487443 CUDAAllocatorConfig.h:28] Warning: expandable_segments not supported on this platform (function operator())
+[2026-11-12 17:52:46,032] [INFO] [comm.py:652:init_distributed] cdb=None
+[2026-11-12 17:52:46,032] [INFO] [comm.py:683:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+[W1112 17:52:46.222477227 CUDAAllocatorConfig.h:28] Warning: expandable_segments not supported on this platform (function operator())
+[2026-11-12 17:52:46,254] [INFO] [comm.py:652:init_distributed] cdb=None
+[W1112 17:52:46.445072356 CUDAAllocatorConfig.h:28] Warning: expandable_segments not supported on this platform (function operator())
+[2026-11-12 17:52:46,258] [INFO] [comm.py:652:init_distributed] cdb=None
+[W1112 17:52:46.448870615 CUDAAllocatorConfig.h:28] Warning: expandable_segments not supported on this platform (function operator())
+[2026-11-12 17:52:46,262] [INFO] [comm.py:652:init_distributed] cdb=None
+[W1112 17:52:46.452955401 CUDAAllocatorConfig.h:28] Warning: expandable_segments not supported on this platform (function operator())
+[2026-11-12 17:52:46,267] [INFO] [comm.py:652:init_distributed] cdb=None
+[W1112 17:52:46.458267715 CUDAAllocatorConfig.h:28] Warning: expandable_segments not supported on this platform (function operator())
+[2026-11-12 17:52:46,272] [INFO] [comm.py:652:init_distributed] cdb=None
+[W1112 17:52:46.462282169 CUDAAllocatorConfig.h:28] Warning: expandable_segments not supported on this platform (function operator())
+2026-11-12 17:52:46 - WARNING - __main__ - Process rank: 3, device: cuda:3, n_gpu: 1 distributed training: True, 16-bits training: False
+2026-11-12 17:52:46 - WARNING - __main__ - Process rank: 0, device: cuda:0, n_gpu: 1 distributed training: True, 16-bits training: False
+2026-11-12 17:52:46 - INFO - __main__ - Model parameters ModelArguments(base_model_revision=None, model_name_or_path='/mnt/sn-007/zaninzeng/tsr-reproduction/work/base/Llama-3.1-8B', model_revision='main', model_code_revision=None, torch_dtype='bfloat16', tokenizer_name_or_path=None, trust_remote_code=False, attn_implementation='flash_attention_2', use_peft=False, lora_r=16, lora_alpha=32, lora_dropout=0.05, lora_target_modules=None, lora_modules_to_save=None, load_in_8bit=False, load_in_4bit=False, bnb_4bit_quant_type='nf4', use_bnb_nested_quant=False, bnb_4bit_quant_storage='uint8')
+2026-11-12 17:52:46 - INFO - __main__ - Data parameters DataArguments(chat_template="{% for message in messages %}\n{% if message['role'] == 'user' %}\n{{ '<|user|>\n' + message['content'] + eos_token }}\n{% elif message['role'] == 'system' %}\n{{ '<|system|>\n' + message['content'] + eos_token }}\n{% elif message['role'] == 'assistant' %}\n{{ '<|assistant|>\n'  + message['content'] + eos_token }}\n{% endif %}\n{% if loop.last and add_generation_prompt %}\n{{ '<|assistant|>' }}\n{% endif %}\n{% endfor %}", dataset_mixer={'/mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/bundle/third_party/TSR/data/sft_data': 1.0}, text_column='text', dataset_splits=['train', 'test'], dataset_configs=None, preprocessing_num_workers=12, truncation_side=None, auto_insert_empty_system_msg=True)
+2026-11-12 17:52:46 - INFO - __main__ - Training/evaluation parameters SFTConfig(
+_n_gpu=1,
+accelerator_config={'split_batches': False, 'dispatch_batches': None, 'even_batches': True, 'use_seedable_sampler': True, 'non_blocking': False, 'gradient_accumulation_kwargs': None, 'use_configured_state': False},
+adafactor=False,
+adam_beta1=0.9,
+adam_beta2=0.999,
+adam_epsilon=1e-08,
+auto_find_batch_size=False,
+average_tokens_across_devices=False,
+batch_eval_metrics=False,
+bf16=True,
+bf16_full_eval=False,
+chars_per_token=<CHARS_PER_TOKEN>,
+data_seed=42,
+dataloader_drop_last=False,
+dataloader_num_workers=0,
+dataloader_persistent_workers=False,
+dataloader_pin_memory=True,
+dataloader_prefetch_factor=None,
+dataset_batch_size=1000,
+dataset_kwargs=None,
+dataset_num_proc=None,
+dataset_text_field=text,
+ddp_backend=None,
+ddp_broadcast_buffers=None,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+ddp_timeout=1800,
+debug=[],
+deepspeed=None,
+disable_tqdm=False,
+dispatch_batches=None,
+do_eval=True,
+do_predict=False,
+do_train=False,
+eval_accumulation_steps=None,
+eval_delay=0,
+eval_do_concat_batches=True,
+eval_on_start=False,
+eval_packing=None,
+eval_steps=None,
+eval_strategy=IntervalStrategy.EPOCH,
+eval_use_gather_object=False,
+evaluation_strategy=None,
+fp16=False,
+fp16_backend=auto,
+fp16_full_eval=False,
+fp16_opt_level=O1,
+fsdp=[],
+fsdp_config={'min_num_params': 0, 'xla': False, 'xla_fsdp_v2': False, 'xla_fsdp_grad_ckpt': False},
+fsdp_min_num_params=0,
+fsdp_transformer_layer_cls_to_wrap=None,
+full_determinism=False,
+gradient_accumulation_steps=2,
+gradient_checkpointing=True,
+gradient_checkpointing_kwargs={'use_reentrant': False},
+greater_is_better=None,
+group_by_length=False,
+half_precision_backend=auto,
+hub_always_push=False,
+hub_model_id=M0,
+hub_model_revision=main,
+hub_private_repo=False,
+hub_strategy=HubStrategy.EVERY_SAVE,
+hub_token=<HUB_TOKEN>,
+ignore_data_skip=False,
+include_for_metrics=[],
+include_inputs_for_metrics=False,
+include_num_input_tokens_seen=False,
+include_tokens_per_second=False,
+jit_mode_eval=False,
+label_names=None,
+label_smoothing_factor=0.0,
+learning_rate=2e-06,
+length_column_name=length,
+load_best_model_at_end=False,
+local_rank=0,
+log_level=info,
+log_level_replica=warning,
+log_on_each_node=True,
+logging_dir=/tmp/tsr-tensorboard-zaninzeng-tsr-llama31-8b-cap2500-judge0-1113a-wblrs/M0-ea49aa317c6c,
+logging_first_step=True,
+logging_nan_inf_filter=False,
+logging_steps=5,
+logging_strategy=IntervalStrategy.STEPS,
+lr_scheduler_kwargs={},
+lr_scheduler_type=SchedulerType.COSINE,
+max_grad_norm=1.0,
+max_seq_length=2048,
+max_steps=-1,
+metric_for_best_model=None,
+model_init_kwargs=None,
+mp_parameters=,
+neftune_noise_alpha=None,
+no_cuda=False,
+num_of_sequences=1024,
+num_train_epochs=3,
+optim=OptimizerNames.ADAMW_TORCH,
+optim_args=None,
+optim_target_modules=None,
+output_dir=/mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/trial/models/M0,
+overwrite_output_dir=True,
+packing=False,
+past_index=-1,
+per_device_eval_batch_size=2,
+per_device_train_batch_size=2,
+prediction_loss_only=False,
+push_to_hub=False,
+push_to_hub_model_id=None,
+push_to_hub_organization=None,
+push_to_hub_token=<PUSH_TO_HUB_TOKEN>,
+ray_scope=last,
+remove_unused_columns=True,
+report_to=['tensorboard'],
+restore_callback_states_from_checkpoint=False,
+resume_from_checkpoint=None,
+run_name=/mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/trial/models/M0,
+save_on_each_node=False,
+save_only_model=True,
+save_safetensors=True,
+save_steps=500,
+save_strategy=IntervalStrategy.NO,
+save_total_limit=1,
+seed=42,
+skip_memory_metrics=True,
+split_batches=None,
+tf32=None,
+torch_compile=False,
+torch_compile_backend=None,
+torch_compile_mode=None,
+torch_empty_cache_steps=None,
+torchdynamo=None,
+tpu_metrics_debug=False,
+tpu_num_cores=None,
+use_cpu=False,
+use_ipex=False,
+use_legacy_prediction_loop=False,
+use_liger=False,
+use_liger_kernel=False,
+use_mps_device=False,
+warmup_ratio=0.1,
+warmup_steps=0,
+weight_decay=0.0,
+)
+No config specified, defaulting to the single config: sft_data/default
+2026-11-12 17:52:47 - INFO - datasets.builder - No config specified, defaulting to the single config: sft_data/default
+Loading Dataset Infos from /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/bundle/.venv/lib/python3.11/site-packages/datasets/packaged_modules/json
+2026-11-12 17:52:47 - INFO - datasets.info - Loading Dataset Infos from /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/bundle/.venv/lib/python3.11/site-packages/datasets/packaged_modules/json
+Generating dataset sft_data (/mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547)
+2026-11-12 17:52:47 - INFO - datasets.builder - Generating dataset sft_data (/mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547)
+Downloading and preparing dataset sft_data/default to /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547...
+2026-11-12 17:52:47 - INFO - datasets.builder - Downloading and preparing dataset sft_data/default to /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547...
+Downloading took 0.0 min
+2026-11-12 17:52:47 - INFO - datasets.download.download_manager - Downloading took 0.0 min
+Checksum Computation took 0.0 min
+2026-11-12 17:52:47 - INFO - datasets.download.download_manager - Checksum Computation took 0.0 min
+Generating train split
+2026-11-12 17:52:47 - INFO - datasets.builder - Generating train split
+Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 0 examples [00:00, ? examples/s]2026-11-12 17:52:47 - WARNING - __main__ - Process rank: 5, device: cuda:5, n_gpu: 1 distributed training: True, 16-bits training: False
+Generating train split: 6871 examples [00:00, 64090.22 examples/s]Generating train split: 6871 examples [00:00, 62082.22 examples/s]
+Generating train split: 6871 examples [00:00, 62148.36 examples/s]Generating test split: 0 examples [00:00, ? examples/s]Generating train split: 6871 examples [00:00, 59958.52 examples/s]
+Generating test split
+2026-11-12 17:52:47 - INFO - datasets.builder - Generating test split
+Generating test split: 0 examples [00:00, ? examples/s]Generating test split: 1000 examples [00:00, 38312.54 examples/s]
+Generating test split: 1000 examples [00:00, 44131.06 examples/s]
+Unable to verify splits sizes.
+2026-11-12 17:52:47 - INFO - datasets.utils.info_utils - Unable to verify splits sizes.
+Dataset sft_data downloaded and prepared to /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547. Subsequent calls will reuse this data.
+2026-11-12 17:52:47 - INFO - datasets.builder - Dataset sft_data downloaded and prepared to /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547. Subsequent calls will reuse this data.
+No config specified, defaulting to the single config: sft_data/default
+2026-11-12 17:52:47 - INFO - datasets.builder - No config specified, defaulting to the single config: sft_data/default
+Loading Dataset Infos from /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/bundle/.venv/lib/python3.11/site-packages/datasets/packaged_modules/json
+2026-11-12 17:52:47 - INFO - datasets.info - Loading Dataset Infos from /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/bundle/.venv/lib/python3.11/site-packages/datasets/packaged_modules/json
+Overwrite dataset info from restored data version if exists.
+2026-11-12 17:52:47 - INFO - datasets.builder - Overwrite dataset info from restored data version if exists.
+Loading Dataset info from /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547
+2026-11-12 17:52:47 - INFO - datasets.info - Loading Dataset info from /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547
+Found cached dataset sft_data (/mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547)
+2026-11-12 17:52:47 - INFO - datasets.builder - Found cached dataset sft_data (/mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547)
+Loading Dataset info from /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547
+2026-11-12 17:52:47 - INFO - datasets.info - Loading Dataset info from /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547
+Caching indices mapping at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-7d6e2fddd81b61a3.arrow
+2026-11-12 17:52:47 - INFO - datasets.arrow_dataset - Caching indices mapping at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-7d6e2fddd81b61a3.arrow
+Caching indices mapping at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-6558709e90157fa7.arrow
+2026-11-12 17:52:47 - INFO - datasets.arrow_dataset - Caching indices mapping at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-6558709e90157fa7.arrow
+2026-11-12 17:52:47 - INFO - __main__ - Training on the following datasets and their proportions: ['train : 6871', 'test : 1000']
+[INFO|tokenization_utils_base.py:2209] 2026-11-12 17:52:47,455 >> loading file tokenizer.json
+[INFO|tokenization_utils_base.py:2209] 2026-11-12 17:52:47,455 >> loading file tokenizer.model
+[INFO|tokenization_utils_base.py:2209] 2026-11-12 17:52:47,455 >> loading file added_tokens.json
+[INFO|tokenization_utils_base.py:2209] 2026-11-12 17:52:47,455 >> loading file special_tokens_map.json
+[INFO|tokenization_utils_base.py:2209] 2026-11-12 17:52:47,455 >> loading file tokenizer_config.json
+Generating train split: 0 examples [00:00, ? examples/s]2026-11-12 17:52:47 - WARNING - __main__ - Process rank: 1, device: cuda:1, n_gpu: 1 distributed training: True, 16-bits training: False
+2026-11-12 17:52:47 - WARNING - __main__ - Process rank: 7, device: cuda:7, n_gpu: 1 distributed training: True, 16-bits training: False
+2026-11-12 17:52:47 - WARNING - __main__ - Process rank: 6, device: cuda:6, n_gpu: 1 distributed training: True, 16-bits training: False
+2026-11-12 17:52:47 - WARNING - __main__ - Process rank: 4, device: cuda:4, n_gpu: 1 distributed training: True, 16-bits training: False
+2026-11-12 17:52:47 - WARNING - __main__ - Process rank: 2, device: cuda:2, n_gpu: 1 distributed training: True, 16-bits training: False
+Generating train split: 6871 examples [00:00, 78821.15 examples/s]
+Generating test split: 0 examples [00:00, ? examples/s]Generating test split: 1000 examples [00:00, 47686.39 examples/s]
+Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 0 examples [00:00, ? examples/s][INFO|tokenization_utils_base.py:2475] 2026-11-12 17:52:47,820 >> Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+2026-11-12 17:52:47 - INFO - __main__ - *** Load pretrained model ***
+Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 6871 examples [00:00, 76769.56 examples/s]
+Generating test split: 0 examples [00:00, ? examples/s]Generating test split: 1000 examples [00:00, 46009.35 examples/s]
+Generating train split: 6871 examples [00:00, 74034.18 examples/s]
+Generating test split: 0 examples [00:00, ? examples/s]Generating train split: 6871 examples [00:00, 71677.98 examples/s]
+Generating test split: 0 examples [00:00, ? examples/s]Generating test split: 1000 examples [00:00, 42300.48 examples/s]
+Generating train split: 6871 examples [00:00, 77765.98 examples/s]
+Generating test split: 0 examples [00:00, ? examples/s]Generating test split: 1000 examples [00:00, 43634.31 examples/s]
+Generating train split: 6871 examples [00:00, 73641.82 examples/s]
+Generating test split: 0 examples [00:00, ? examples/s]Generating test split: 1000 examples [00:00, 48691.71 examples/s]
+Generating test split: 1000 examples [00:00, 41439.96 examples/s]
+Process #0 will write at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-592b8b10c2ff9df7_00000_of_00012.arrow
+2026-11-12 17:52:47 - INFO - datasets.arrow_dataset - Process #0 will write at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-592b8b10c2ff9df7_00000_of_00012.arrow
+Process #1 will write at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-592b8b10c2ff9df7_00001_of_00012.arrow
+2026-11-12 17:52:47 - INFO - datasets.arrow_dataset - Process #1 will write at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-592b8b10c2ff9df7_00001_of_00012.arrow
+Process #2 will write at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-592b8b10c2ff9df7_00002_of_00012.arrow
+2026-11-12 17:52:47 - INFO - datasets.arrow_dataset - Process #2 will write at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-592b8b10c2ff9df7_00002_of_00012.arrow
+Process #3 will write at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-592b8b10c2ff9df7_00003_of_00012.arrow
+2026-11-12 17:52:47 - INFO - datasets.arrow_dataset - Process #3 will write at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-592b8b10c2ff9df7_00003_of_00012.arrow
+Process #4 will write at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-592b8b10c2ff9df7_00004_of_00012.arrow
+2026-11-12 17:52:47 - INFO - datasets.arrow_dataset - Process #4 will write at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-592b8b10c2ff9df7_00004_of_00012.arrow
+Process #5 will write at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-592b8b10c2ff9df7_00005_of_00012.arrow
+2026-11-12 17:52:47 - INFO - datasets.arrow_dataset - Process #5 will write at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-592b8b10c2ff9df7_00005_of_00012.arrow
+Process #6 will write at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-592b8b10c2ff9df7_00006_of_00012.arrow
+2026-11-12 17:52:47 - INFO - datasets.arrow_dataset - Process #6 will write at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-592b8b10c2ff9df7_00006_of_00012.arrow
+Process #7 will write at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-592b8b10c2ff9df7_00007_of_00012.arrow
+2026-11-12 17:52:47 - INFO - datasets.arrow_dataset - Process #7 will write at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-592b8b10c2ff9df7_00007_of_00012.arrow
+Process #8 will write at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-592b8b10c2ff9df7_00008_of_00012.arrow
+2026-11-12 17:52:47 - INFO - datasets.arrow_dataset - Process #8 will write at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-592b8b10c2ff9df7_00008_of_00012.arrow
+Process #9 will write at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-592b8b10c2ff9df7_00009_of_00012.arrow
+2026-11-12 17:52:47 - INFO - datasets.arrow_dataset - Process #9 will write at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-592b8b10c2ff9df7_00009_of_00012.arrow
+Process #10 will write at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-592b8b10c2ff9df7_00010_of_00012.arrow
+2026-11-12 17:52:47 - INFO - datasets.arrow_dataset - Process #10 will write at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-592b8b10c2ff9df7_00010_of_00012.arrow
+Process #11 will write at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-592b8b10c2ff9df7_00011_of_00012.arrow
+2026-11-12 17:52:47 - INFO - datasets.arrow_dataset - Process #11 will write at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-592b8b10c2ff9df7_00011_of_00012.arrow
+Spawning 12 processes
+2026-11-12 17:52:48 - INFO - datasets.arrow_dataset - Spawning 12 processes
+Applying chat template (num_proc=12):   0%|          | 0/6871 [00:00<?, ? examples/s]Applying chat template (num_proc=12):   0%|          | 0/6871 [00:00<?, ? examples/s]Applying chat template (num_proc=12):   0%|          | 0/6871 [00:00<?, ? examples/s]Applying chat template (num_proc=12):   0%|          | 0/6871 [00:00<?, ? examples/s]Applying chat template (num_proc=12):   0%|          | 0/6871 [00:00<?, ? examples/s]Applying chat template (num_proc=12):   0%|          | 0/6871 [00:00<?, ? examples/s]Applying chat template (num_proc=12):   0%|          | 0/6871 [00:00<?, ? examples/s]Caching processed dataset at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-592b8b10c2ff9df7_00000_of_00012.arrow
+2026-11-12 17:52:48 - INFO - datasets.arrow_dataset - Caching processed dataset at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-592b8b10c2ff9df7_00000_of_00012.arrow
+Applying chat template (num_proc=12):   0%|          | 0/6871 [00:00<?, ? examples/s]Applying chat template (num_proc=12):   5%|▍         | 323/6871 [00:00<00:16, 408.26 examples/s]Caching processed dataset at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-592b8b10c2ff9df7_00001_of_00012.arrow
+2026-11-12 17:52:48 - INFO - datasets.arrow_dataset - Caching processed dataset at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-592b8b10c2ff9df7_00001_of_00012.arrow
+Applying chat template (num_proc=12):   5%|▌         | 358/6871 [00:00<00:15, 428.17 examples/s]Applying chat template (num_proc=12):  14%|█▎        | 940/6871 [00:00<00:05, 1152.07 examples/s]Caching processed dataset at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-592b8b10c2ff9df7_00002_of_00012.arrow
+2026-11-12 17:52:49 - INFO - datasets.arrow_dataset - Caching processed dataset at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-592b8b10c2ff9df7_00002_of_00012.arrow
+Caching processed dataset at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-592b8b10c2ff9df7_00003_of_00012.arrow
+2026-11-12 17:52:49 - INFO - datasets.arrow_dataset - Caching processed dataset at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-592b8b10c2ff9df7_00003_of_00012.arrow
+Applying chat template (num_proc=12):   5%|▌         | 359/6871 [00:00<00:14, 443.84 examples/s]Applying chat template (num_proc=12):  14%|█▎        | 929/6871 [00:01<00:05, 1033.77 examples/s]Applying chat template (num_proc=12):  22%|██▏       | 1505/6871 [00:01<00:03, 1687.50 examples/s]Caching processed dataset at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-592b8b10c2ff9df7_00004_of_00012.arrow
+2026-11-12 17:52:49 - INFO - datasets.arrow_dataset - Caching processed dataset at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-592b8b10c2ff9df7_00004_of_00012.arrow
+Applying chat template (num_proc=12):  30%|███       | 2086/6871 [00:01<00:02, 2293.48 examples/s]Caching processed dataset at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-592b8b10c2ff9df7_00005_of_00012.arrow
+2026-11-12 17:52:49 - INFO - datasets.arrow_dataset - Caching processed dataset at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-592b8b10c2ff9df7_00005_of_00012.arrow
+Applying chat template (num_proc=12):  14%|█▎        | 928/6871 [00:01<00:05, 1002.76 examples/s]Applying chat template (num_proc=12):  33%|███▎      | 2292/6871 [00:01<00:02, 2263.61 examples/s]Applying chat template (num_proc=12):   5%|▌         | 353/6871 [00:00<00:16, 404.29 examples/s]Applying chat template (num_proc=12):   5%|▌         | 364/6871 [00:00<00:15, 418.26 examples/s]Applying chat template (num_proc=12):  42%|████▏     | 2865/6871 [00:01<00:01, 2712.25 examples/s]Applying chat template (num_proc=12):   5%|▍         | 334/6871 [00:00<00:16, 384.55 examples/s]Caching processed dataset at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-592b8b10c2ff9df7_00006_of_00012.arrow
+2026-11-12 17:52:49 - INFO - datasets.arrow_dataset - Caching processed dataset at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-592b8b10c2ff9df7_00006_of_00012.arrow
+Applying chat template (num_proc=12):   4%|▍         | 309/6871 [00:00<00:19, 342.66 examples/s]Applying chat template (num_proc=12):  25%|██▌       | 1719/6871 [00:01<00:03, 1676.71 examples/s]Applying chat template (num_proc=12):  47%|████▋     | 3228/6871 [00:01<00:01, 2797.78 examples/s]Applying chat template (num_proc=12):   5%|▌         | 347/6871 [00:00<00:16, 407.68 examples/s]Applying chat template (num_proc=12):  14%|█▎        | 929/6871 [00:01<00:05, 1073.77 examples/s]Applying chat template (num_proc=12):   8%|▊         | 573/6871 [00:01<00:10, 612.38 examples/s]Applying chat template (num_proc=12):   8%|▊         | 573/6871 [00:01<00:10, 603.21 examples/s]Applying chat template (num_proc=12):  50%|█████     | 3438/6871 [00:01<00:01, 2656.81 examples/s]Caching processed dataset at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-592b8b10c2ff9df7_00007_of_00012.arrow
+2026-11-12 17:52:49 - INFO - datasets.arrow_dataset - Caching processed dataset at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-592b8b10c2ff9df7_00007_of_00012.arrow
+Applying chat template (num_proc=12):  17%|█▋        | 1146/6871 [00:01<00:04, 1352.16 examples/s]Applying chat template (num_proc=12):  13%|█▎        | 920/6871 [00:01<00:06, 970.10 examples/s]Applying chat template (num_proc=12):   8%|▊         | 573/6871 [00:01<00:10, 613.27 examples/s]Applying chat template (num_proc=12):  22%|██▏       | 1512/6871 [00:01<00:03, 1663.69 examples/s]Applying chat template (num_proc=12):  63%|██████▎   | 4361/6871 [00:01<00:00, 3471.50 examples/s]Applying chat template (num_proc=12):  39%|███▊      | 2653/6871 [00:01<00:01, 2357.94 examples/s]Applying chat template (num_proc=12):  22%|██▏       | 1499/6871 [00:01<00:02, 1835.11 examples/s]Applying chat template (num_proc=12):  30%|██▉       | 2058/6871 [00:01<00:02, 2131.07 examples/s]Caching processed dataset at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-592b8b10c2ff9df7_00008_of_00012.arrow
+2026-11-12 17:52:50 - INFO - datasets.arrow_dataset - Caching processed dataset at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-592b8b10c2ff9df7_00008_of_00012.arrow
+Applying chat template (num_proc=12):  25%|██▌       | 1719/6871 [00:01<00:02, 1914.62 examples/s]Applying chat template (num_proc=12):  58%|█████▊    | 4011/6871 [00:01<00:01, 2652.08 examples/s]Applying chat template (num_proc=12):  22%|██▏       | 1497/6871 [00:01<00:03, 1730.05 examples/s]Applying chat template (num_proc=12):  30%|███       | 2075/6871 [00:01<00:02, 2332.57 examples/s]Applying chat template (num_proc=12):  22%|██▏       | 1500/6871 [00:01<00:03, 1410.05 examples/s]Applying chat template (num_proc=12):  72%|███████▏  | 4949/6871 [00:02<00:00, 3354.58 examples/s]Applying chat template (num_proc=12):  47%|████▋     | 3228/6871 [00:01<00:01, 2425.72 examples/s]Applying chat template (num_proc=12):  42%|████▏     | 2865/6871 [00:01<00:01, 2981.20 examples/s]Applying chat template (num_proc=12):  30%|██▉       | 2058/6871 [00:01<00:02, 1891.90 examples/s]Applying chat template (num_proc=12):  30%|██▉       | 2059/6871 [00:01<00:02, 2155.81 examples/s]Caching processed dataset at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-592b8b10c2ff9df7_00009_of_00012.arrow
+2026-11-12 17:52:50 - INFO - datasets.arrow_dataset - Caching processed dataset at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-592b8b10c2ff9df7_00009_of_00012.arrow
+Applying chat template (num_proc=12):  72%|███████▏  | 4935/6871 [00:02<00:00, 3094.88 examples/s]Applying chat template (num_proc=12):  25%|██▌       | 1719/6871 [00:01<00:03, 1312.18 examples/s]Applying chat template (num_proc=12):  80%|████████  | 5504/6871 [00:02<00:00, 3214.82 examples/s]Applying chat template (num_proc=12):  50%|█████     | 3438/6871 [00:01<00:01, 3276.82 examples/s]Applying chat template (num_proc=12):  39%|███▊      | 2649/6871 [00:01<00:01, 2617.66 examples/s]Applying chat template (num_proc=12):  55%|█████▌    | 3784/6871 [00:02<00:01, 2361.33 examples/s]Applying chat template (num_proc=12):  47%|████▋     | 3219/6871 [00:01<00:01, 3247.83 examples/s]Applying chat template (num_proc=12):  38%|███▊      | 2627/6871 [00:01<00:02, 2046.05 examples/s]Applying chat template (num_proc=12):  80%|████████  | 5513/6871 [00:02<00:00, 3245.43 examples/s]Applying chat template (num_proc=12):  58%|█████▊    | 4011/6871 [00:01<00:00, 3518.93 examples/s]Caching processed dataset at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-592b8b10c2ff9df7_00010_of_00012.arrow
+2026-11-12 17:52:50 - INFO - datasets.arrow_dataset - Caching processed dataset at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-592b8b10c2ff9df7_00010_of_00012.arrow
+Applying chat template (num_proc=12):  55%|█████▌    | 3785/6871 [00:01<00:00, 3455.25 examples/s]Applying chat template (num_proc=12):  88%|████████▊ | 6065/6871 [00:02<00:00, 2973.40 examples/s]Applying chat template (num_proc=12):  39%|███▊      | 2655/6871 [00:01<00:01, 2128.47 examples/s]Applying chat template (num_proc=12):  47%|████▋     | 3230/6871 [00:01<00:01, 2841.51 examples/s]Applying chat template (num_proc=12):  64%|██████▍   | 4385/6871 [00:02<00:00, 2535.37 examples/s]Applying chat template (num_proc=12):  46%|████▋     | 3192/6871 [00:01<00:01, 2270.70 examples/s]Applying chat template (num_proc=12):  64%|██████▎   | 4367/6871 [00:01<00:00, 3724.09 examples/s]Applying chat template (num_proc=12):  72%|███████▏  | 4939/6871 [00:01<00:00, 3749.99 examples/s]Applying chat template (num_proc=12):  89%|████████▊ | 6086/6871 [00:02<00:00, 2891.25 examples/s]Caching processed dataset at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-592b8b10c2ff9df7_00011_of_00012.arrow
+2026-11-12 17:52:50 - INFO - datasets.arrow_dataset - Caching processed dataset at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-592b8b10c2ff9df7_00011_of_00012.arrow
+Applying chat template (num_proc=12):  55%|█████▌    | 3795/6871 [00:01<00:01, 2995.24 examples/s]Applying chat template (num_proc=12):  97%|█████████▋| 6672/6871 [00:02<00:00, 2982.78 examples/s]Applying chat template (num_proc=12):  47%|████▋     | 3222/6871 [00:02<00:01, 2250.11 examples/s]Applying chat template (num_proc=12):  63%|██████▎   | 4350/6871 [00:02<00:00, 3382.45 examples/s]Applying chat template (num_proc=12):  72%|███████▏  | 4951/6871 [00:02<00:00, 2686.31 examples/s]Applying chat template (num_proc=12):  80%|████████  | 5503/6871 [00:02<00:00, 3919.71 examples/s]Applying chat template (num_proc=12):  72%|███████▏  | 4942/6871 [00:02<00:00, 3560.19 examples/s]Applying chat template (num_proc=12):  64%|██████▎   | 4368/6871 [00:01<00:00, 3274.36 examples/s]Applying chat template (num_proc=12): 100%|██████████| 6871/6871 [00:02<00:00, 2487.06 examples/s]
+Applying chat template (num_proc=12):  97%|█████████▋| 6663/6871 [00:02<00:00, 2939.49 examples/s]Applying chat template (num_proc=12):  75%|███████▌  | 5155/6871 [00:02<00:00, 4097.47 examples/s]Concatenating 12 shards
+2026-11-12 17:52:50 - INFO - datasets.arrow_dataset - Concatenating 12 shards
+Applying chat template (num_proc=12):  92%|█████████▏| 6299/6871 [00:02<00:00, 4562.04 examples/s]Applying chat template (num_proc=12):  55%|█████▌    | 3792/6871 [00:02<00:01, 2506.39 examples/s]Applying chat template (num_proc=12):  80%|████████  | 5526/6871 [00:02<00:00, 3775.33 examples/s]Applying chat template (num_proc=12):  75%|███████▌  | 5155/6871 [00:02<00:00, 3983.98 examples/s]Applying chat template (num_proc=12): 100%|██████████| 6871/6871 [00:02<00:00, 2417.73 examples/s]
+Applying chat template (num_proc=12):  80%|████████  | 5523/6871 [00:02<00:00, 2601.13 examples/s]Applying chat template (num_proc=12):  83%|████████▎ | 5727/6871 [00:02<00:00, 3912.62 examples/s]Applying chat template (num_proc=12): 100%|██████████| 6871/6871 [00:02<00:00, 4372.84 examples/s]Process #0 will write at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-4ba272f6b43f5fb5_00000_of_00012.arrow
+2026-11-12 17:52:51 - INFO - datasets.arrow_dataset - Process #0 will write at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-4ba272f6b43f5fb5_00000_of_00012.arrow
+Process #1 will write at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-4ba272f6b43f5fb5_00001_of_00012.arrow
+2026-11-12 17:52:51 - INFO - datasets.arrow_dataset - Process #1 will write at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-4ba272f6b43f5fb5_00001_of_00012.arrow
+Process #2 will write at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-4ba272f6b43f5fb5_00002_of_00012.arrow
+2026-11-12 17:52:51 - INFO - datasets.arrow_dataset - Process #2 will write at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-4ba272f6b43f5fb5_00002_of_00012.arrow
+Process #3 will write at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-4ba272f6b43f5fb5_00003_of_00012.arrow
+2026-11-12 17:52:51 - INFO - datasets.arrow_dataset - Process #3 will write at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-4ba272f6b43f5fb5_00003_of_00012.arrow
+Process #4 will write at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-4ba272f6b43f5fb5_00004_of_00012.arrow
+2026-11-12 17:52:51 - INFO - datasets.arrow_dataset - Process #4 will write at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-4ba272f6b43f5fb5_00004_of_00012.arrow
+Process #5 will write at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-4ba272f6b43f5fb5_00005_of_00012.arrow
+2026-11-12 17:52:51 - INFO - datasets.arrow_dataset - Process #5 will write at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-4ba272f6b43f5fb5_00005_of_00012.arrow
+Process #6 will write at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-4ba272f6b43f5fb5_00006_of_00012.arrow
+2026-11-12 17:52:51 - INFO - datasets.arrow_dataset - Process #6 will write at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-4ba272f6b43f5fb5_00006_of_00012.arrow
+Process #7 will write at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-4ba272f6b43f5fb5_00007_of_00012.arrow
+2026-11-12 17:52:51 - INFO - datasets.arrow_dataset - Process #7 will write at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-4ba272f6b43f5fb5_00007_of_00012.arrow
+Process #8 will write at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-4ba272f6b43f5fb5_00008_of_00012.arrow
+2026-11-12 17:52:51 - INFO - datasets.arrow_dataset - Process #8 will write at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-4ba272f6b43f5fb5_00008_of_00012.arrow
+Process #9 will write at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-4ba272f6b43f5fb5_00009_of_00012.arrow
+2026-11-12 17:52:51 - INFO - datasets.arrow_dataset - Process #9 will write at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-4ba272f6b43f5fb5_00009_of_00012.arrow
+Process #10 will write at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-4ba272f6b43f5fb5_00010_of_00012.arrow
+2026-11-12 17:52:51 - INFO - datasets.arrow_dataset - Process #10 will write at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-4ba272f6b43f5fb5_00010_of_00012.arrow
+Process #11 will write at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-4ba272f6b43f5fb5_00011_of_00012.arrow
+2026-11-12 17:52:51 - INFO - datasets.arrow_dataset - Process #11 will write at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-4ba272f6b43f5fb5_00011_of_00012.arrow
+Applying chat template (num_proc=12):  89%|████████▊ | 6092/6871 [00:02<00:00, 3652.61 examples/s]Applying chat template (num_proc=12): 100%|██████████| 6871/6871 [00:02<00:00, 2792.40 examples/s]
+Applying chat template (num_proc=12):  87%|████████▋ | 5950/6871 [00:02<00:00, 3808.11 examples/s]Applying chat template (num_proc=12):  89%|████████▊ | 6089/6871 [00:02<00:00, 2697.77 examples/s]Applying chat template (num_proc=12):  63%|██████▎   | 4360/6871 [00:02<00:01, 2233.88 examples/s]Applying chat template (num_proc=12):  97%|█████████▋| 6656/6871 [00:02<00:00, 3995.85 examples/s]Applying chat template (num_proc=12):  92%|█████████▏| 6299/6871 [00:02<00:00, 3358.15 examples/s]Applying chat template (num_proc=12):  97%|█████████▋| 6653/6871 [00:02<00:00, 3035.28 examples/s]Applying chat template (num_proc=12):  72%|███████▏  | 4949/6871 [00:02<00:00, 2696.81 examples/s]Applying chat template (num_proc=12): 100%|██████████| 6871/6871 [00:02<00:00, 2593.79 examples/s]
+Applying chat template (num_proc=12): 100%|██████████| 6871/6871 [00:02<00:00, 3766.54 examples/s]Spawning 12 processes
+2026-11-12 17:52:51 - INFO - datasets.arrow_dataset - Spawning 12 processes
+Applying chat template (num_proc=12):   0%|          | 0/1000 [00:00<?, ? examples/s]Applying chat template (num_proc=12):  97%|█████████▋| 6657/6871 [00:02<00:00, 3535.53 examples/s]Applying chat template (num_proc=12): 100%|██████████| 6871/6871 [00:03<00:00, 2240.29 examples/s]
+Applying chat template (num_proc=12): 100%|██████████| 6871/6871 [00:02<00:00, 2516.81 examples/s]
+Applying chat template (num_proc=12):   0%|          | 0/1000 [00:00<?, ? examples/s]Applying chat template (num_proc=12):  80%|████████  | 5502/6871 [00:02<00:00, 2866.37 examples/s]Applying chat template (num_proc=12): 100%|██████████| 6871/6871 [00:02<00:00, 2546.94 examples/s]
+Applying chat template (num_proc=12):   0%|          | 0/1000 [00:00<?, ? examples/s]Applying chat template (num_proc=12):  89%|████████▊ | 6095/6871 [00:02<00:00, 3150.05 examples/s]Applying chat template (num_proc=12):   0%|          | 0/1000 [00:00<?, ? examples/s]Applying chat template (num_proc=12):  97%|█████████▋| 6662/6871 [00:03<00:00, 3154.64 examples/s]Applying chat template (num_proc=12): 100%|██████████| 6871/6871 [00:03<00:00, 2127.02 examples/s]
+Applying chat template (num_proc=12):   0%|          | 0/1000 [00:00<?, ? examples/s]Applying chat template (num_proc=12):   0%|          | 0/1000 [00:00<?, ? examples/s]Applying chat template (num_proc=12):   0%|          | 0/1000 [00:00<?, ? examples/s]Caching processed dataset at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-4ba272f6b43f5fb5_00000_of_00012.arrow
+2026-11-12 17:52:52 - INFO - datasets.arrow_dataset - Caching processed dataset at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-4ba272f6b43f5fb5_00000_of_00012.arrow
+Applying chat template (num_proc=12):   8%|▊         | 84/1000 [00:00<00:08, 104.28 examples/s]Applying chat template (num_proc=12):   8%|▊         | 84/1000 [00:00<00:09, 93.14 examples/s]Caching processed dataset at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-4ba272f6b43f5fb5_00001_of_00012.arrow
+2026-11-12 17:52:52 - INFO - datasets.arrow_dataset - Caching processed dataset at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-4ba272f6b43f5fb5_00001_of_00012.arrow
+Applying chat template (num_proc=12):   8%|▊         | 84/1000 [00:00<00:08, 109.13 examples/s]Applying chat template (num_proc=12):  17%|█▋        | 168/1000 [00:00<00:04, 193.39 examples/s]Caching processed dataset at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-4ba272f6b43f5fb5_00002_of_00012.arrow
+2026-11-12 17:52:52 - INFO - datasets.arrow_dataset - Caching processed dataset at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-4ba272f6b43f5fb5_00002_of_00012.arrow
+Applying chat template (num_proc=12):  17%|█▋        | 168/1000 [00:01<00:04, 170.34 examples/s]Applying chat template (num_proc=12):   0%|          | 0/1000 [00:00<?, ? examples/s]Applying chat template (num_proc=12):  17%|█▋        | 168/1000 [00:00<00:03, 213.85 examples/s]Caching processed dataset at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-4ba272f6b43f5fb5_00003_of_00012.arrow
+2026-11-12 17:52:52 - INFO - datasets.arrow_dataset - Caching processed dataset at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-4ba272f6b43f5fb5_00003_of_00012.arrow
+Applying chat template (num_proc=12):   8%|▊         | 84/1000 [00:00<00:08, 103.23 examples/s]Applying chat template (num_proc=12):  25%|██▌       | 252/1000 [00:01<00:02, 249.43 examples/s]Caching processed dataset at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-4ba272f6b43f5fb5_00004_of_00012.arrow
+2026-11-12 17:52:52 - INFO - datasets.arrow_dataset - Caching processed dataset at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-4ba272f6b43f5fb5_00004_of_00012.arrow
+Applying chat template (num_proc=12):  34%|███▎      | 336/1000 [00:01<00:02, 326.96 examples/s]Applying chat template (num_proc=12):  17%|█▋        | 168/1000 [00:00<00:04, 197.05 examples/s]Applying chat template (num_proc=12):  25%|██▌       | 252/1000 [00:01<00:03, 242.18 examples/s]Applying chat template (num_proc=12):   8%|▊         | 84/1000 [00:00<00:08, 106.14 examples/s]Caching processed dataset at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-4ba272f6b43f5fb5_00005_of_00012.arrow
+2026-11-12 17:52:52 - INFO - datasets.arrow_dataset - Caching processed dataset at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-4ba272f6b43f5fb5_00005_of_00012.arrow
+Applying chat template (num_proc=12):  34%|███▎      | 336/1000 [00:01<00:02, 283.59 examples/s]Applying chat template (num_proc=12):  25%|██▌       | 252/1000 [00:01<00:02, 280.85 examples/s]Applying chat template (num_proc=12):   8%|▊         | 84/1000 [00:00<00:08, 105.94 examples/s]Applying chat template (num_proc=12):  50%|█████     | 502/1000 [00:01<00:01, 458.12 examples/s]Applying chat template (num_proc=12):   8%|▊         | 84/1000 [00:00<00:09, 91.61 examples/s]Applying chat template (num_proc=12):  17%|█▋        | 168/1000 [00:00<00:04, 200.47 examples/s]Caching processed dataset at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-4ba272f6b43f5fb5_00006_of_00012.arrow
+2026-11-12 17:52:53 - INFO - datasets.arrow_dataset - Caching processed dataset at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-4ba272f6b43f5fb5_00006_of_00012.arrow
+Applying chat template (num_proc=12):  17%|█▋        | 168/1000 [00:00<00:04, 199.37 examples/s]Applying chat template (num_proc=12):  50%|█████     | 502/1000 [00:01<00:01, 427.12 examples/s]Applying chat template (num_proc=12):  58%|█████▊    | 585/1000 [00:01<00:00, 445.72 examples/s]Applying chat template (num_proc=12):  42%|████▏     | 419/1000 [00:01<00:01, 353.68 examples/s]Applying chat template (num_proc=12):  17%|█▋        | 168/1000 [00:01<00:04, 170.25 examples/s]Applying chat template (num_proc=12):  25%|██▌       | 252/1000 [00:01<00:02, 275.81 examples/s]Applying chat template (num_proc=12):  42%|████▏     | 419/1000 [00:01<00:01, 391.32 examples/s]Applying chat template (num_proc=12):  25%|██▌       | 252/1000 [00:01<00:02, 289.05 examples/s]Applying chat template (num_proc=12):  58%|█████▊    | 585/1000 [00:01<00:00, 496.49 examples/s]Applying chat template (num_proc=12):  34%|███▎      | 336/1000 [00:01<00:01, 346.48 examples/s]Caching processed dataset at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-4ba272f6b43f5fb5_00007_of_00012.arrow
+2026-11-12 17:52:53 - INFO - datasets.arrow_dataset - Caching processed dataset at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-4ba272f6b43f5fb5_00007_of_00012.arrow
+Applying chat template (num_proc=12):  58%|█████▊    | 585/1000 [00:01<00:01, 403.02 examples/s]Applying chat template (num_proc=12):  58%|█████▊    | 585/1000 [00:01<00:00, 547.93 examples/s]Applying chat template (num_proc=12):  67%|██████▋   | 668/1000 [00:01<00:00, 415.38 examples/s]Applying chat template (num_proc=12):  25%|██▌       | 252/1000 [00:01<00:03, 227.20 examples/s]Applying chat template (num_proc=12):  34%|███▎      | 336/1000 [00:01<00:01, 354.14 examples/s]Applying chat template (num_proc=12):  67%|██████▋   | 668/1000 [00:01<00:00, 500.39 examples/s]Applying chat template (num_proc=12):   8%|▊         | 84/1000 [00:00<00:10, 89.26 examples/s]Applying chat template (num_proc=12):  42%|████▏     | 419/1000 [00:01<00:01, 391.26 examples/s]Caching processed dataset at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-4ba272f6b43f5fb5_00008_of_00012.arrow
+2026-11-12 17:52:53 - INFO - datasets.arrow_dataset - Caching processed dataset at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-4ba272f6b43f5fb5_00008_of_00012.arrow
+Applying chat template (num_proc=12):  67%|██████▋   | 668/1000 [00:01<00:00, 521.27 examples/s]Applying chat template (num_proc=12):  75%|███████▌  | 751/1000 [00:02<00:00, 411.82 examples/s]Applying chat template (num_proc=12):  67%|██████▋   | 668/1000 [00:02<00:00, 389.86 examples/s]Applying chat template (num_proc=12):  34%|███▎      | 336/1000 [00:01<00:02, 259.29 examples/s]Applying chat template (num_proc=12):  50%|█████     | 502/1000 [00:01<00:01, 435.70 examples/s]Applying chat template (num_proc=12):  42%|████▏     | 419/1000 [00:01<00:01, 320.88 examples/s]Applying chat template (num_proc=12):  17%|█▋        | 168/1000 [00:01<00:05, 162.32 examples/s]Caching processed dataset at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-4ba272f6b43f5fb5_00009_of_00012.arrow
+2026-11-12 17:52:53 - INFO - datasets.arrow_dataset - Caching processed dataset at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-4ba272f6b43f5fb5_00009_of_00012.arrow
+Applying chat template (num_proc=12):  83%|████████▎ | 834/1000 [00:02<00:00, 436.42 examples/s]Applying chat template (num_proc=12):  75%|███████▌  | 751/1000 [00:02<00:00, 414.56 examples/s]Applying chat template (num_proc=12):  83%|████████▎ | 834/1000 [00:02<00:00, 528.99 examples/s]Applying chat template (num_proc=12):  83%|████████▎ | 834/1000 [00:01<00:00, 575.11 examples/s]Applying chat template (num_proc=12):  58%|█████▊    | 585/1000 [00:01<00:00, 442.21 examples/s]Applying chat template (num_proc=12):  42%|████▏     | 419/1000 [00:01<00:01, 295.65 examples/s]Applying chat template (num_proc=12):  25%|██▌       | 252/1000 [00:01<00:03, 238.04 examples/s]Applying chat template (num_proc=12):  92%|█████████▏| 917/1000 [00:02<00:00, 533.59 examples/s]Applying chat template (num_proc=12):  92%|█████████▏| 917/1000 [00:02<00:00, 574.80 examples/s]Applying chat template (num_proc=12):  58%|█████▊    | 585/1000 [00:01<00:00, 426.97 examples/s]Applying chat template (num_proc=12):  83%|████████▎ | 834/1000 [00:02<00:00, 417.94 examples/s]Caching processed dataset at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-4ba272f6b43f5fb5_00010_of_00012.arrow
+2026-11-12 17:52:53 - INFO - datasets.arrow_dataset - Caching processed dataset at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-4ba272f6b43f5fb5_00010_of_00012.arrow
+Applying chat template (num_proc=12):  67%|██████▋   | 668/1000 [00:01<00:00, 472.43 examples/s]Applying chat template (num_proc=12):  92%|█████████▏| 917/1000 [00:02<00:00, 408.63 examples/s]Applying chat template (num_proc=12): 100%|██████████| 1000/1000 [00:02<00:00, 538.14 examples/s]Applying chat template (num_proc=12):  50%|█████     | 502/1000 [00:02<00:01, 318.89 examples/s]Applying chat template (num_proc=12): 100%|██████████| 1000/1000 [00:02<00:00, 582.48 examples/s]Applying chat template (num_proc=12):  75%|███████▌  | 751/1000 [00:01<00:00, 560.95 examples/s]Caching processed dataset at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-4ba272f6b43f5fb5_00011_of_00012.arrow
+2026-11-12 17:52:54 - INFO - datasets.arrow_dataset - Caching processed dataset at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-4ba272f6b43f5fb5_00011_of_00012.arrow
+Applying chat template (num_proc=12):  92%|█████████▏| 917/1000 [00:02<00:00, 425.69 examples/s]Applying chat template (num_proc=12): 100%|██████████| 1000/1000 [00:02<00:00, 400.14 examples/s]
+Applying chat template (num_proc=12): 100%|██████████| 1000/1000 [00:02<00:00, 428.24 examples/s]Applying chat template (num_proc=12): 100%|██████████| 1000/1000 [00:02<00:00, 423.35 examples/s]
+Applying chat template (num_proc=12):  83%|████████▎ | 834/1000 [00:02<00:00, 555.38 examples/s]Applying chat template (num_proc=12):  34%|███▎      | 336/1000 [00:01<00:02, 232.06 examples/s]Applying chat template (num_proc=12): 100%|██████████| 1000/1000 [00:02<00:00, 352.06 examples/s]
+Filter:   0%|          | 0/6871 [00:00<?, ? examples/s]Filter:   0%|          | 0/6871 [00:00<?, ? examples/s]Applying chat template (num_proc=12):  83%|████████▎ | 834/1000 [00:02<00:00, 550.70 examples/s]Applying chat template (num_proc=12):  58%|█████▊    | 585/1000 [00:02<00:01, 327.62 examples/s]Concatenating 12 shards
+2026-11-12 17:52:54 - INFO - datasets.arrow_dataset - Concatenating 12 shards
+Filter:   0%|          | 0/6871 [00:00<?, ? examples/s]Applying chat template (num_proc=12): 100%|██████████| 1000/1000 [00:02<00:00, 419.98 examples/s]Applying chat template (num_proc=12):  92%|█████████▏| 917/1000 [00:02<00:00, 537.90 examples/s]Applying chat template (num_proc=12):  42%|████▏     | 419/1000 [00:01<00:01, 292.55 examples/s]Applying chat template (num_proc=12): 100%|██████████| 1000/1000 [00:02<00:00, 338.25 examples/s]
+Applying chat template (num_proc=12):  67%|██████▋   | 668/1000 [00:02<00:00, 368.72 examples/s]Applying chat template (num_proc=12):  50%|█████     | 502/1000 [00:01<00:01, 363.53 examples/s]Filter:   0%|          | 0/6871 [00:00<?, ? examples/s]Applying chat template (num_proc=12): 100%|██████████| 1000/1000 [00:02<00:00, 521.88 examples/s]Applying chat template (num_proc=12): 100%|██████████| 1000/1000 [00:02<00:00, 559.21 examples/s]Applying chat template (num_proc=12):  58%|█████▊    | 585/1000 [00:02<00:00, 423.19 examples/s]Applying chat template (num_proc=12): 100%|██████████| 1000/1000 [00:02<00:00, 387.29 examples/s]
+Applying chat template (num_proc=12):  75%|███████▌  | 751/1000 [00:02<00:00, 395.66 examples/s]Applying chat template (num_proc=12): 100%|██████████| 1000/1000 [00:02<00:00, 397.32 examples/s]
+Filter:   0%|          | 0/6871 [00:00<?, ? examples/s]Filter:   0%|          | 0/6871 [00:00<?, ? examples/s]Applying chat template (num_proc=12):  67%|██████▋   | 668/1000 [00:02<00:00, 445.67 examples/s]Applying chat template (num_proc=12):  83%|████████▎ | 834/1000 [00:02<00:00, 383.67 examples/s]Applying chat template (num_proc=12):  75%|███████▌  | 751/1000 [00:02<00:00, 481.42 examples/s]Applying chat template (num_proc=12):  92%|█████████▏| 917/1000 [00:03<00:00, 408.27 examples/s]Applying chat template (num_proc=12):  83%|████████▎ | 834/1000 [00:02<00:00, 538.40 examples/s]Applying chat template (num_proc=12): 100%|██████████| 1000/1000 [00:03<00:00, 478.86 examples/s]Applying chat template (num_proc=12):  92%|█████████▏| 917/1000 [00:02<00:00, 579.00 examples/s]Applying chat template (num_proc=12): 100%|██████████| 1000/1000 [00:03<00:00, 312.42 examples/s]
+Applying chat template (num_proc=12): 100%|██████████| 1000/1000 [00:02<00:00, 594.41 examples/s]Filter:   0%|          | 0/6871 [00:00<?, ? examples/s]Applying chat template (num_proc=12): 100%|██████████| 1000/1000 [00:02<00:00, 350.36 examples/s]
+Filter:   0%|          | 0/6871 [00:00<?, ? examples/s]Filter: 100%|██████████| 6871/6871 [00:07<00:00, 879.54 examples/s]Filter: 100%|██████████| 6871/6871 [00:07<00:00, 879.15 examples/s]
+Filter:   0%|          | 0/1000 [00:00<?, ? examples/s]Filter: 100%|██████████| 6871/6871 [00:07<00:00, 868.32 examples/s]Filter: 100%|██████████| 6871/6871 [00:07<00:00, 867.89 examples/s]
+Filter:   0%|          | 0/1000 [00:00<?, ? examples/s]Caching processed dataset at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-f2fd8916c8fbb05b.arrow
+2026-11-12 17:53:02 - INFO - datasets.arrow_dataset - Caching processed dataset at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-f2fd8916c8fbb05b.arrow
+Filter: 100%|██████████| 6871/6871 [00:07<00:00, 860.85 examples/s]Filter: 100%|██████████| 6871/6871 [00:07<00:00, 860.44 examples/s]
+Filter:   0%|          | 0/1000 [00:00<?, ? examples/s]Filter: 100%|██████████| 6871/6871 [00:07<00:00, 862.24 examples/s]Filter: 100%|██████████| 6871/6871 [00:07<00:00, 861.80 examples/s]
+Filter:   0%|          | 0/1000 [00:00<?, ? examples/s]Filter: 100%|██████████| 6871/6871 [00:07<00:00, 868.69 examples/s]Filter: 100%|██████████| 6871/6871 [00:07<00:00, 868.28 examples/s]
+Filter:   0%|          | 0/1000 [00:00<?, ? examples/s]Filter: 100%|██████████| 6871/6871 [00:07<00:00, 865.63 examples/s]Filter: 100%|██████████| 6871/6871 [00:07<00:00, 865.17 examples/s]
+Filter:   0%|          | 0/1000 [00:00<?, ? examples/s]Filter: 100%|██████████| 6871/6871 [00:07<00:00, 867.03 examples/s]Filter: 100%|██████████| 6871/6871 [00:07<00:00, 866.60 examples/s]
+Filter:   0%|          | 0/1000 [00:00<?, ? examples/s]Filter: 100%|██████████| 6871/6871 [00:07<00:00, 868.48 examples/s]Filter: 100%|██████████| 6871/6871 [00:07<00:00, 868.09 examples/s]
+Filter:   0%|          | 0/1000 [00:00<?, ? examples/s]Filter: 100%|██████████| 1000/1000 [00:01<00:00, 701.43 examples/s]Filter: 100%|██████████| 1000/1000 [00:01<00:00, 699.81 examples/s]
+[rank4]:[W1112 17:53:03.745310567 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 4]  using GPU 4 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+Filter: 100%|██████████| 1000/1000 [00:01<00:00, 720.83 examples/s]Filter: 100%|██████████| 1000/1000 [00:01<00:00, 718.91 examples/s]
+[rank2]:[W1112 17:53:03.780872095 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 2]  using GPU 2 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+Caching processed dataset at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-52335d98ed1bc5cd.arrow
+2026-11-12 17:53:03 - INFO - datasets.arrow_dataset - Caching processed dataset at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/sft_data/default/0.0.0/b7c454a9b40d4547/cache-52335d98ed1bc5cd.arrow
+Filter: 100%|██████████| 1000/1000 [00:01<00:00, 707.02 examples/s]Filter: 100%|██████████| 1000/1000 [00:01<00:00, 705.21 examples/s]
+2026-11-12 17:53:03 - INFO - __main__ - Decontaminated 0 (0.00%) samples from the training set.
+2026-11-12 17:53:03 - INFO - __main__ - Sample 5238 of the processed training set:
+
+<|system|>
+You are a helpful, respectful, and knowledgeable assistant. Your goal is to provide accurate, concise, and relevant answers to user queries. If you are unsure about something, politely let the user know and avoid making assumptions. Always prioritize clarity and helpfulness in your responses.<|end_of_text|>
+<|user|>
+write nginx reverse proxy configuration that forwards port 8000 to 8011 and 8014<|end_of_text|>
+<|assistant|>
+To configure Nginx as a reverse proxy server that forwards incoming requests on port 8000 to ports 8011 and 8014, you need to create a new Nginx configuration file. Here's an example of how to set up this configuration:
+
+1. First, create a new file called `proxy.conf` (or use an existing configuration file if you have one). The contents should look like this:
+```nginx
+upstream backend {
+    server 127.0.0.1:8011;
+    server 127.0.0.1:8014;
+}
+
+server {
+    listen 8000;
+    server_name localhost;
+
+    location / {
+        proxy_pass http://backend;
+        proxy_redir off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_buffering off;
+    }
+}
+```
+1. Ensure you have the `http_proxy_module` loaded in your Nginx configuration. You can check this by running the following command:
+```bash
+sudo nginx -T -V
+```
+Look for `--with-http_proxy_module` in the output to see if it's enabled. If not, you'll need to recompile Nginx with this module or install a version that includes it.
+2. Now, include the new `proxy.conf` file in your main Nginx configuration file, typically located at `/etc/nginx/nginx.conf`. Add the following line to the `http` section:
+```nginx
+include /etc/nginx/conf.d/*.conf;
+```
+This assumes that you've saved the `proxy.conf` file in the `/etc/nginx/conf.d` directory. If you have it in a different location, adjust the path accordingly.
+1. Save the changes, then restart Nginx for the new configuration to take effect:
+```bash
+sudo systemctl restart nginx
+```
+
+Now, when Nginx receives incoming connections on port 8000, it will forward those requests to ports 8011 and 8014, distributing the incoming connections to both backend servers. The `proxy_buffering off;` directive ensures that Nginx does not buffer responses, allowing for faster response times.
+
+Remember to replace `localhost` in the `server_name` directive with the hostname or IP address of your server if you're using a public domain name or IP for your server.<|end_of_text|>
+
+2026-11-12 17:53:03 - INFO - __main__ - Sample 912 of the processed training set:
+
+<|system|>
+You are a helpful and precise evaluator. Provide objective, constructive, and detailed feedback. Be concise, clear, and tailored to the context. Your goal is to support refinement and informed decision-making.<|end_of_text|>
+<|user|>
+Review the user’s question and the corresponding response using the additive 5-point scoring system described below. Points are accumulated based on the satisfaction of each criterion:
+- Add 1 point if the response is relevant and provides some information related to the user’s inquiry, even if it is incomplete or contains some irrelevant content.
+- Add another point if the response addresses a substantial portion of the user’s question, but does not completely resolve the query or provide a direct answer.
+- Award a third point if the response answers the basic elements of the user’s question in a useful way, regardless of whether it seems to have been written by an AI Assistant or if it has elements typically found in blogs or search results.
+- Grant a fourth point if the response is clearly written from an AI Assistant’s perspective, addressing the user’s question directly and comprehensively, and is well-organized and helpful, even if there is slight room for improvement in clarity, conciseness or focus.
+- Bestow a fifth point for a response that is impeccably tailored to the user’s question by an AI Assistant, without extraneous information, reflecting expert knowledge, and demonstrating a high-quality, engaging, and insightful answer.
+
+User: In this task, given a sentence in the Central Khmer language, your task is to convert it into the English language.
+
+Let me give you an example: អំពីការលុបចោល លោកហ្គារី បេតមេន បានិយាយថា "ភាពអាម៉ាស​នៃរឿងនេះ​គឺថា អ្នកគាំទ្រមានភាពប្រសើរជាង​។"
+The answer to this example can be: Speaking about the cancellation, Gary Bettman said "The shame of this is that our fans deserve better."
+Here is why: The above sentence is correctly translated from Khmer to English
+
+OK. solve this:
+អ្នកដែលប្រឆាំងទៅនឹងច្បាប់ថ្មី និយាយថា វាកម្រិតសេរីភាពក្នុងការបញ្ចេញមតិ និងសេរីភាពសាសនា ចំណែកអ្នកគាំទ្រវិញអះអាងថា ស្រ្តីត្រូវបានបន្ថោកដោយសារការពាក់ស្បៃគ្របមុខនេះ ហើយច្បាប់នេះមានបំណងផ្តល់អំណាចដល់ស្រ្តីទាំងនោះ ព្រមទាំងបង្កើនសន្តិសុខសាធារណៈផងដែរ។
+Answer:
+<response>Sure, I'm ready to help! Please provide the sentence in Central Khmer language that you would like me to translate into English, and I will do my best to provide an accurate translation with a high confidence level.</response>
+
+After examining the user’s instruction and the response:
+- Briefly justify your total score, up to 100 words.
+- Conclude with the score using the format: “Score: <total points>”
+
+Remember to assess from the AI Assistant perspective, utilizing web search knowledge as necessary. To evaluate the response in alignment with this additive scoring model, we’ll systematically attribute points based on the outlined criteria.<|end_of_text|>
+<|assistant|>
+The response does not translate the provided Central Khmer sentence into English, which is the primary task requested by the user. While the response indicates readiness to help with the translation, it does not provide any relevant information or attempt to answer the user's specific question. Thus, it fails to demonstrate any expert knowledge or to engage with the user's request meaningfully. Since the task is a translation, a translation attempt should be made regardless of the accuracy, which the response lacks entirely.
+
+Score: 0<|end_of_text|>
+
+2026-11-12 17:53:03 - INFO - __main__ - Sample 204 of the processed training set:
+
+<|system|>
+You are a helpful, respectful, and knowledgeable assistant. Your goal is to provide accurate, concise, and relevant answers to user queries. If you are unsure about something, politely let the user know and avoid making assumptions. Always prioritize clarity and helpfulness in your responses.<|end_of_text|>
+<|user|>
+Which birds can add up numbers just as well as humans?<|end_of_text|>
+<|assistant|>
+Some studies suggest that African Grey Parrots have the ability to perform numerical tasks and understand quantities. They can add up numbers and solve simple arithmetic problems. However, it might not be appropriate to compare their mathematical abilities directly to humans, as human math skills can vary greatly and can go beyond basic arithmetic to more complex calculations. Keep in mind that these findings are based on experiments and may not represent the abilities of all African Grey Parrots or other bird species.<|end_of_text|>
+
+[rank0]:[W1112 17:53:03.099029299 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 0]  using GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+Filter: 100%|██████████| 1000/1000 [00:01<00:00, 722.59 examples/s]Filter: 100%|██████████| 1000/1000 [00:01<00:00, 720.59 examples/s]
+[rank3]:[W1112 17:53:03.109477995 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 3]  using GPU 3 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+Filter: 100%|██████████| 1000/1000 [00:01<00:00, 717.65 examples/s]Filter: 100%|██████████| 1000/1000 [00:01<00:00, 715.93 examples/s]
+Filter: 100%|██████████| 1000/1000 [00:01<00:00, 718.80 examples/s][rank6]:[W1112 17:53:04.279358630 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 6]  using GPU 6 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+Filter: 100%|██████████| 1000/1000 [00:01<00:00, 716.65 examples/s]
+[rank5]:[W1112 17:53:04.286658093 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 5]  using GPU 5 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+Filter: 100%|██████████| 1000/1000 [00:01<00:00, 712.14 examples/s]Filter: 100%|██████████| 1000/1000 [00:01<00:00, 710.24 examples/s]
+[rank1]:[W1112 17:53:04.921239117 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 1]  using GPU 1 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+Filter: 100%|██████████| 1000/1000 [00:01<00:00, 704.50 examples/s]Filter: 100%|██████████| 1000/1000 [00:01<00:00, 702.81 examples/s]
+[rank7]:[W1112 17:53:04.055627346 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 7]  using GPU 7 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+/mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/bundle/.venv/lib/python3.11/site-packages/huggingface_hub/utils/_deprecation.py:100: FutureWarning: Deprecated argument(s) used in '__init__': model_init_kwargs, dataset_text_field, max_seq_length, packing. Will not be supported from version '0.13.0'.
+
+Deprecated positional argument(s) used in SFTTrainer, please use the SFTConfig to set these arguments instead.
+  warnings.warn(message, FutureWarning)
+/mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/bundle/.venv/lib/python3.11/site-packages/huggingface_hub/utils/_deprecation.py:100: FutureWarning: Deprecated argument(s) used in '__init__': model_init_kwargs, dataset_text_field, max_seq_length, packing. Will not be supported from version '0.13.0'.
+
+Deprecated positional argument(s) used in SFTTrainer, please use the SFTConfig to set these arguments instead.
+  warnings.warn(message, FutureWarning)
+/mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/bundle/.venv/lib/python3.11/site-packages/huggingface_hub/utils/_deprecation.py:100: FutureWarning: Deprecated argument(s) used in '__init__': model_init_kwargs, dataset_text_field, max_seq_length, packing. Will not be supported from version '0.13.0'.
+
+Deprecated positional argument(s) used in SFTTrainer, please use the SFTConfig to set these arguments instead.
+  warnings.warn(message, FutureWarning)
+/mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/bundle/.venv/lib/python3.11/site-packages/huggingface_hub/utils/_deprecation.py:100: FutureWarning: Deprecated argument(s) used in '__init__': model_init_kwargs, dataset_text_field, max_seq_length, packing. Will not be supported from version '0.13.0'.
+
+Deprecated positional argument(s) used in SFTTrainer, please use the SFTConfig to set these arguments instead.
+  warnings.warn(message, FutureWarning)
+/mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/bundle/.venv/lib/python3.11/site-packages/huggingface_hub/utils/_deprecation.py:100: FutureWarning: Deprecated argument(s) used in '__init__': model_init_kwargs, dataset_text_field, max_seq_length, packing. Will not be supported from version '0.13.0'.
+
+Deprecated positional argument(s) used in SFTTrainer, please use the SFTConfig to set these arguments instead.
+  warnings.warn(message, FutureWarning)
+/mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/bundle/.venv/lib/python3.11/site-packages/huggingface_hub/utils/_deprecation.py:100: FutureWarning: Deprecated argument(s) used in '__init__': model_init_kwargs, dataset_text_field, max_seq_length, packing. Will not be supported from version '0.13.0'.
+
+Deprecated positional argument(s) used in SFTTrainer, please use the SFTConfig to set these arguments instead.
+  warnings.warn(message, FutureWarning)
+/mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/bundle/.venv/lib/python3.11/site-packages/huggingface_hub/utils/_deprecation.py:100: FutureWarning: Deprecated argument(s) used in '__init__': model_init_kwargs, dataset_text_field, max_seq_length, packing. Will not be supported from version '0.13.0'.
+
+Deprecated positional argument(s) used in SFTTrainer, please use the SFTConfig to set these arguments instead.
+  warnings.warn(message, FutureWarning)
+/mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/bundle/.venv/lib/python3.11/site-packages/huggingface_hub/utils/_deprecation.py:100: FutureWarning: Deprecated argument(s) used in '__init__': model_init_kwargs, dataset_text_field, max_seq_length, packing. Will not be supported from version '0.13.0'.
+
+Deprecated positional argument(s) used in SFTTrainer, please use the SFTConfig to set these arguments instead.
+  warnings.warn(message, FutureWarning)
+/mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/bundle/.venv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:175: UserWarning: You passed `model_init_kwargs` to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+/mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/bundle/.venv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:175: UserWarning: You passed `model_init_kwargs` to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+/mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/bundle/.venv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:202: UserWarning: You passed a model_id to the SFTTrainer. This will automatically create an `AutoModelForCausalLM` or a `PeftModel` (if you passed a `peft_config`) for you.
+  warnings.warn(
+/mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/bundle/.venv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:202: UserWarning: You passed a model_id to the SFTTrainer. This will automatically create an `AutoModelForCausalLM` or a `PeftModel` (if you passed a `peft_config`) for you.
+  warnings.warn(
+/mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/bundle/.venv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:175: UserWarning: You passed `model_init_kwargs` to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+/mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/bundle/.venv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:175: UserWarning: You passed `model_init_kwargs` to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+/mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/bundle/.venv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:202: UserWarning: You passed a model_id to the SFTTrainer. This will automatically create an `AutoModelForCausalLM` or a `PeftModel` (if you passed a `peft_config`) for you.
+  warnings.warn(
+/mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/bundle/.venv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:202: UserWarning: You passed a model_id to the SFTTrainer. This will automatically create an `AutoModelForCausalLM` or a `PeftModel` (if you passed a `peft_config`) for you.
+  warnings.warn(
+/mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/bundle/.venv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:175: UserWarning: You passed `model_init_kwargs` to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+/mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/bundle/.venv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:175: UserWarning: You passed `model_init_kwargs` to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+/mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/bundle/.venv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:202: UserWarning: You passed a model_id to the SFTTrainer. This will automatically create an `AutoModelForCausalLM` or a `PeftModel` (if you passed a `peft_config`) for you.
+  warnings.warn(
+/mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/bundle/.venv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:202: UserWarning: You passed a model_id to the SFTTrainer. This will automatically create an `AutoModelForCausalLM` or a `PeftModel` (if you passed a `peft_config`) for you.
+  warnings.warn(
+/mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/bundle/.venv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:175: UserWarning: You passed `model_init_kwargs` to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+/mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/bundle/.venv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:175: UserWarning: You passed `model_init_kwargs` to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+/mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/bundle/.venv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:202: UserWarning: You passed a model_id to the SFTTrainer. This will automatically create an `AutoModelForCausalLM` or a `PeftModel` (if you passed a `peft_config`) for you.
+  warnings.warn(
+/mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/bundle/.venv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:202: UserWarning: You passed a model_id to the SFTTrainer. This will automatically create an `AutoModelForCausalLM` or a `PeftModel` (if you passed a `peft_config`) for you.
+  warnings.warn(
+[INFO|configuration_utils.py:677] 2026-11-12 17:53:08,017 >> loading configuration file /mnt/sn-007/zaninzeng/tsr-reproduction/work/base/Llama-3.1-8B/config.json
+[INFO|configuration_utils.py:746] 2026-11-12 17:53:08,018 >> Model config LlamaConfig {
+  "_name_or_path": "/mnt/sn-007/zaninzeng/tsr-reproduction/work/base/Llama-3.1-8B",
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "bos_token_id": 128000,
+  "eos_token_id": 128001,
+  "head_dim": 128,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 14336,
+  "max_position_embeddings": 131072,
+  "mlp_bias": false,
+  "model_type": "llama",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 32,
+  "num_key_value_heads": 8,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-05,
+  "rope_scaling": {
+    "factor": 8.0,
+    "high_freq_factor": 4.0,
+    "low_freq_factor": 1.0,
+    "original_max_position_embeddings": 8192,
+    "rope_type": "llama3"
+  },
+  "rope_theta": 500000.0,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.46.3",
+  "use_cache": false,
+  "vocab_size": 128256
+}
+
+[INFO|modeling_utils.py:3934] 2026-11-12 17:53:08,033 >> loading weights file /mnt/sn-007/zaninzeng/tsr-reproduction/work/base/Llama-3.1-8B/model.safetensors.index.json
+[INFO|modeling_utils.py:1670] 2026-11-12 17:53:08,035 >> Instantiating LlamaForCausalLM model under default dtype torch.bfloat16.
+[WARNING|logging.py:328] 2026-11-12 17:53:08,039 >> You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+[WARNING|logging.py:328] 2026-11-12 17:53:08,039 >> You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+[WARNING|logging.py:328] 2026-11-12 17:53:08,039 >> You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+[WARNING|logging.py:328] 2026-11-12 17:53:08,039 >> You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+[WARNING|logging.py:328] 2026-11-12 17:53:08,039 >> You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+[WARNING|logging.py:328] 2026-11-12 17:53:08,039 >> You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+[WARNING|logging.py:328] 2026-11-12 17:53:08,039 >> You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+[WARNING|logging.py:328] 2026-11-12 17:53:08,039 >> You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+[INFO|configuration_utils.py:1096] 2026-11-12 17:53:08,040 >> Generate config GenerationConfig {
+  "bos_token_id": 128000,
+  "eos_token_id": 128001,
+  "use_cache": false
+}
+
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:01,  2.04it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:01,  1.94it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:01,  1.81it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:01,  1.77it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:01,  1.76it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:01,  1.73it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:01,  1.72it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:01,  1.70it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  2.54it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  2.46it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  2.42it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  2.42it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  2.39it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  2.39it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  2.35it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  2.36it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:01<00:00,  2.82it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:01<00:00,  2.76it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:01<00:00,  2.72it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:01<00:00,  2.77it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:01<00:00,  2.72it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:01<00:00,  2.71it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:01<00:00,  2.72it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:01<00:00,  2.72it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:01<00:00,  3.48it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:01<00:00,  3.06it/s]
+[INFO|modeling_utils.py:4800] 2026-11-12 17:53:09,535 >> All model checkpoint weights were used when initializing LlamaForCausalLM.
+
+[INFO|modeling_utils.py:4808] 2026-11-12 17:53:09,535 >> All the weights of LlamaForCausalLM were initialized from the model checkpoint at /mnt/sn-007/zaninzeng/tsr-reproduction/work/base/Llama-3.1-8B.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use LlamaForCausalLM for predictions without further training.
+[INFO|configuration_utils.py:1049] 2026-11-12 17:53:09,541 >> loading configuration file /mnt/sn-007/zaninzeng/tsr-reproduction/work/base/Llama-3.1-8B/generation_config.json
+[INFO|configuration_utils.py:1096] 2026-11-12 17:53:09,541 >> Generate config GenerationConfig {
+  "bos_token_id": 128000,
+  "do_sample": true,
+  "eos_token_id": 128001,
+  "temperature": 0.6,
+  "top_p": 0.9
+}
+
+/mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/bundle/.venv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:212: UserWarning: You passed a `packing` argument to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+/mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/bundle/.venv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:300: UserWarning: You passed a `max_seq_length` argument to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+/mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/bundle/.venv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:328: UserWarning: You passed a `dataset_text_field` argument to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+Loading checkpoint shards: 100%|██████████| 4/4 [00:01<00:00,  3.45it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:01<00:00,  3.00it/s]
+/mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/bundle/.venv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:212: UserWarning: You passed a `packing` argument to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+/mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/bundle/.venv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:300: UserWarning: You passed a `max_seq_length` argument to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+/mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/bundle/.venv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:328: UserWarning: You passed a `dataset_text_field` argument to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+Loading checkpoint shards: 100%|██████████| 4/4 [00:01<00:00,  3.25it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:01<00:00,  2.85it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:01<00:00,  3.20it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:01<00:00,  2.84it/s]
+/mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/bundle/.venv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:212: UserWarning: You passed a `packing` argument to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+/mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/bundle/.venv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:300: UserWarning: You passed a `max_seq_length` argument to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+/mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/bundle/.venv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:328: UserWarning: You passed a `dataset_text_field` argument to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+/mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/bundle/.venv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:212: UserWarning: You passed a `packing` argument to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+/mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/bundle/.venv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:300: UserWarning: You passed a `max_seq_length` argument to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+/mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/bundle/.venv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:328: UserWarning: You passed a `dataset_text_field` argument to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+Loading checkpoint shards: 100%|██████████| 4/4 [00:01<00:00,  3.23it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:01<00:00,  2.83it/s]
+/mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/bundle/.venv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:212: UserWarning: You passed a `packing` argument to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+/mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/bundle/.venv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:300: UserWarning: You passed a `max_seq_length` argument to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+/mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/bundle/.venv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:328: UserWarning: You passed a `dataset_text_field` argument to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+Loading checkpoint shards: 100%|██████████| 4/4 [00:01<00:00,  3.15it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:01<00:00,  2.80it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:01<00:00,  3.15it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:01<00:00,  2.80it/s]
+/mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/bundle/.venv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:212: UserWarning: You passed a `packing` argument to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+/mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/bundle/.venv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:300: UserWarning: You passed a `max_seq_length` argument to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+/mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/bundle/.venv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:328: UserWarning: You passed a `dataset_text_field` argument to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+/mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/bundle/.venv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:212: UserWarning: You passed a `packing` argument to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+/mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/bundle/.venv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:300: UserWarning: You passed a `max_seq_length` argument to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+/mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/bundle/.venv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:328: UserWarning: You passed a `dataset_text_field` argument to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+Loading checkpoint shards: 100%|██████████| 4/4 [00:01<00:00,  3.13it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:01<00:00,  2.77it/s]
+/mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/bundle/.venv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:212: UserWarning: You passed a `packing` argument to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+/mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/bundle/.venv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:300: UserWarning: You passed a `max_seq_length` argument to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+/mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/bundle/.venv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:328: UserWarning: You passed a `dataset_text_field` argument to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+Using custom data configuration default-8c1778c132d0e573
+2026-11-12 17:53:09 - INFO - datasets.builder - Using custom data configuration default-8c1778c132d0e573
+Loading Dataset Infos from /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/bundle/.venv/lib/python3.11/site-packages/datasets/packaged_modules/generator
+2026-11-12 17:53:09 - INFO - datasets.info - Loading Dataset Infos from /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/bundle/.venv/lib/python3.11/site-packages/datasets/packaged_modules/generator
+Generating dataset generator (/mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/generator/default-8c1778c132d0e573/0.0.0)
+2026-11-12 17:53:09 - INFO - datasets.builder - Generating dataset generator (/mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/generator/default-8c1778c132d0e573/0.0.0)
+Downloading and preparing dataset generator/default to /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/generator/default-8c1778c132d0e573/0.0.0...
+2026-11-12 17:53:09 - INFO - datasets.builder - Downloading and preparing dataset generator/default to /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/generator/default-8c1778c132d0e573/0.0.0...
+Generating train split
+2026-11-12 17:53:09 - INFO - datasets.builder - Generating train split
+Generating train split: 0 examples [00:00, ? examples/s][WARNING|tokenization_utils_base.py:4089] 2026-11-12 17:53:12,237 >> Token indices sequence length is longer than the specified maximum sequence length for this model (2690 > 2048). Running this sequence through the model will result in indexing errors
+Generating train split: 1 examples [00:02,  2.52s/ examples]Generating train split: 593 examples [00:02, 317.63 examples/s]Generating train split: 1000 examples [00:05, 204.87 examples/s]Generating train split: 1562 examples [00:06, 275.79 examples/s]Generating train split: 1929 examples [00:06, 284.31 examples/s]
+Unable to verify splits sizes.
+2026-11-12 17:53:16 - INFO - datasets.utils.info_utils - Unable to verify splits sizes.
+Dataset generator downloaded and prepared to /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/generator/default-8c1778c132d0e573/0.0.0. Subsequent calls will reuse this data.
+2026-11-12 17:53:16 - INFO - datasets.builder - Dataset generator downloaded and prepared to /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/generator/default-8c1778c132d0e573/0.0.0. Subsequent calls will reuse this data.
+Using custom data configuration default-8a94e0eee825c2ea
+2026-11-12 17:53:16 - INFO - datasets.builder - Using custom data configuration default-8a94e0eee825c2ea
+Loading Dataset Infos from /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/bundle/.venv/lib/python3.11/site-packages/datasets/packaged_modules/generator
+2026-11-12 17:53:16 - INFO - datasets.info - Loading Dataset Infos from /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/bundle/.venv/lib/python3.11/site-packages/datasets/packaged_modules/generator
+Generating dataset generator (/mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/generator/default-8a94e0eee825c2ea/0.0.0)
+2026-11-12 17:53:16 - INFO - datasets.builder - Generating dataset generator (/mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/generator/default-8a94e0eee825c2ea/0.0.0)
+Downloading and preparing dataset generator/default to /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/generator/default-8a94e0eee825c2ea/0.0.0...
+2026-11-12 17:53:16 - INFO - datasets.builder - Downloading and preparing dataset generator/default to /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/generator/default-8a94e0eee825c2ea/0.0.0...
+Generating train split
+2026-11-12 17:53:16 - INFO - datasets.builder - Generating train split
+Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 1 examples [00:01,  1.91s/ examples]Generating train split: 522 examples [00:02, 362.94 examples/s]Generating train split: 606 examples [00:02, 290.38 examples/s]
+Unable to verify splits sizes.
+2026-11-12 17:53:18 - INFO - datasets.utils.info_utils - Unable to verify splits sizes.
+Dataset generator downloaded and prepared to /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/generator/default-8a94e0eee825c2ea/0.0.0. Subsequent calls will reuse this data.
+2026-11-12 17:53:18 - INFO - datasets.builder - Dataset generator downloaded and prepared to /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/runtime/datasets/rank-0/generator/default-8a94e0eee825c2ea/0.0.0. Subsequent calls will reuse this data.
+Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 0 examples [00:00, ? examples/s][INFO|trainer.py:699] 2026-11-12 17:53:19,716 >> Using auto half precision backend
+2026-11-12 17:53:19 - INFO - __main__ - *** Train ***
+[2026-11-12 17:53:19,931] [INFO] [logging.py:128:log_dist] [Rank 0] DeepSpeed info: version=0.15.4, git-hash=unknown, git-branch=unknown
+[2026-11-12 17:53:19,931] [INFO] [config.py:733:__init__] Config mesh_device None world_size = 8
+[WARNING|tokenization_utils_base.py:4089] 2026-11-12 17:53:21,472 >> Token indices sequence length is longer than the specified maximum sequence length for this model (2690 > 2048). Running this sequence through the model will result in indexing errors
+[WARNING|tokenization_utils_base.py:4089] 2026-11-12 17:53:21,510 >> Token indices sequence length is longer than the specified maximum sequence length for this model (2690 > 2048). Running this sequence through the model will result in indexing errors
+[WARNING|tokenization_utils_base.py:4089] 2026-11-12 17:53:21,522 >> Token indices sequence length is longer than the specified maximum sequence length for this model (2690 > 2048). Running this sequence through the model will result in indexing errors
+[WARNING|tokenization_utils_base.py:4089] 2026-11-12 17:53:21,526 >> Token indices sequence length is longer than the specified maximum sequence length for this model (2690 > 2048). Running this sequence through the model will result in indexing errors
+[WARNING|tokenization_utils_base.py:4089] 2026-11-12 17:53:21,544 >> Token indices sequence length is longer than the specified maximum sequence length for this model (2690 > 2048). Running this sequence through the model will result in indexing errors
+[WARNING|tokenization_utils_base.py:4089] 2026-11-12 17:53:21,567 >> Token indices sequence length is longer than the specified maximum sequence length for this model (2690 > 2048). Running this sequence through the model will result in indexing errors
+Generating train split: 1 examples [00:02,  2.48s/ examples][WARNING|tokenization_utils_base.py:4089] 2026-11-12 17:53:21,604 >> Token indices sequence length is longer than the specified maximum sequence length for this model (2690 > 2048). Running this sequence through the model will result in indexing errors
+Generating train split: 1 examples [00:02,  2.49s/ examples]Generating train split: 1 examples [00:02,  2.53s/ examples]Generating train split: 1 examples [00:02,  2.48s/ examples]Generating train split: 1 examples [00:02,  2.52s/ examples]Generating train split: 588 examples [00:02, 320.27 examples/s]Generating train split: 1 examples [00:02,  2.55s/ examples]Generating train split: 1 examples [00:02,  2.53s/ examples]Generating train split: 571 examples [00:02, 309.65 examples/s]Generating train split: 591 examples [00:02, 315.32 examples/s]Generating train split: 594 examples [00:02, 323.54 examples/s]Generating train split: 588 examples [00:02, 314.83 examples/s]Generating train split: 555 examples [00:02, 293.78 examples/s]Generating train split: 588 examples [00:02, 314.06 examples/s]Generating train split: 1000 examples [00:05, 209.64 examples/s]Generating train split: 1000 examples [00:05, 210.03 examples/s]Generating train split: 1000 examples [00:05, 209.07 examples/s]Generating train split: 1530 examples [00:05, 388.25 examples/s]Generating train split: 1000 examples [00:05, 205.01 examples/s]Generating train split: 1000 examples [00:05, 204.89 examples/s]Generating train split: 1000 examples [00:05, 204.45 examples/s]Generating train split: 1000 examples [00:05, 204.24 examples/s]Generating train split: 1562 examples [00:06, 280.91 examples/s]Generating train split: 1562 examples [00:06, 280.12 examples/s]Generating train split: 1929 examples [00:06, 357.77 examples/s]Generating train split: 1929 examples [00:06, 289.32 examples/s]
+Generating train split: 1562 examples [00:06, 274.74 examples/s]Generating train split: 1562 examples [00:06, 274.71 examples/s]Generating train split: 1929 examples [00:06, 288.29 examples/s]
+Generating train split: 1929 examples [00:06, 289.14 examples/s]
+Generating train split: 1562 examples [00:06, 272.46 examples/s]Generating train split: 1562 examples [00:06, 272.72 examples/s]Generating train split: 1929 examples [00:06, 283.21 examples/s]
+Generating train split: 1929 examples [00:06, 283.25 examples/s]
+Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 1929 examples [00:06, 279.02 examples/s]
+Generating train split: 1929 examples [00:06, 281.30 examples/s]
+Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 1 examples [00:01,  1.88s/ examples]Generating train split: 1 examples [00:01,  1.88s/ examples]Generating train split: 1 examples [00:01,  1.88s/ examples]Generating train split: 523 examples [00:01, 369.42 examples/s]Generating train split: 479 examples [00:01, 337.30 examples/s]Generating train split: 606 examples [00:02, 296.31 examples/s]
+Generating train split: 519 examples [00:01, 365.68 examples/s]Generating train split: 1 examples [00:01,  1.92s/ examples]Generating train split: 1 examples [00:01,  1.93s/ examples]Generating train split: 606 examples [00:02, 293.42 examples/s]
+Generating train split: 606 examples [00:02, 294.51 examples/s]
+Generating train split: 515 examples [00:02, 356.73 examples/s]Generating train split: 1 examples [00:01,  1.92s/ examples]Generating train split: 518 examples [00:02, 357.14 examples/s]Generating train split: 606 examples [00:02, 289.48 examples/s]
+Generating train split: 606 examples [00:02, 287.93 examples/s]
+Generating train split: 1 examples [00:01,  1.96s/ examples]Generating train split: 467 examples [00:02, 323.11 examples/s]Generating train split: 606 examples [00:02, 287.18 examples/s]
+Generating train split: 474 examples [00:02, 322.05 examples/s]Generating train split: 606 examples [00:02, 282.20 examples/s]
+[2026-11-12 17:55:24,902] [INFO] [logging.py:128:log_dist] [Rank 0] DeepSpeed Flops Profiler Enabled: False
+[2026-11-12 17:55:24,904] [INFO] [logging.py:128:log_dist] [Rank 0] Using client Optimizer as basic optimizer
+[2026-11-12 17:55:24,904] [INFO] [logging.py:128:log_dist] [Rank 0] Removing param_group that has no 'params' in the basic Optimizer
+[2026-11-12 17:55:24,911] [INFO] [logging.py:128:log_dist] [Rank 0] DeepSpeed Basic Optimizer = AdamW
+[2026-11-12 17:55:24,911] [INFO] [utils.py:59:is_zero_supported_optimizer] Checking ZeRO support for optimizer=AdamW type=<class 'torch.optim.adamw.AdamW'>
+[2026-11-12 17:55:24,911] [INFO] [logging.py:128:log_dist] [Rank 0] Creating torch.bfloat16 ZeRO stage 2 optimizer
+[2026-11-12 17:55:24,911] [INFO] [stage_1_and_2.py:149:__init__] Reduce bucket size 50000000
+[2026-11-12 17:55:24,911] [INFO] [stage_1_and_2.py:150:__init__] Allgather bucket size 50000000
+[2026-11-12 17:55:24,911] [INFO] [stage_1_and_2.py:151:__init__] CPU Offload: False
+[2026-11-12 17:55:24,911] [INFO] [stage_1_and_2.py:152:__init__] Round robin gradient partitioning: False
+[2026-11-12 17:55:41,962] [INFO] [utils.py:781:see_memory_usage] Before initializing optimizer states
+[2026-11-12 17:55:41,964] [INFO] [utils.py:782:see_memory_usage] MA 18.7 GB         Max_MA 18.7 GB         CA 18.71 GB         Max_CA 19 GB 
+[2026-11-12 17:55:41,964] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 121.47 GB, percent = 6.1%
+[2026-11-12 17:55:42,279] [INFO] [utils.py:781:see_memory_usage] After initializing optimizer states
+[2026-11-12 17:55:42,280] [INFO] [utils.py:782:see_memory_usage] MA 18.7 GB         Max_MA 22.44 GB         CA 22.46 GB         Max_CA 22 GB 
+[2026-11-12 17:55:42,280] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 121.49 GB, percent = 6.1%
+[2026-11-12 17:55:42,280] [INFO] [stage_1_and_2.py:544:__init__] optimizer state initialized
+[2026-11-12 17:55:42,564] [INFO] [utils.py:781:see_memory_usage] After initializing ZeRO optimizer
+[2026-11-12 17:55:42,564] [INFO] [utils.py:782:see_memory_usage] MA 18.7 GB         Max_MA 18.7 GB         CA 22.46 GB         Max_CA 22 GB 
+[2026-11-12 17:55:42,565] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 121.49 GB, percent = 6.1%
+[2026-11-12 17:55:42,566] [INFO] [logging.py:128:log_dist] [Rank 0] DeepSpeed Final Optimizer = DeepSpeedZeroOptimizer
+[2026-11-12 17:55:42,566] [INFO] [logging.py:128:log_dist] [Rank 0] DeepSpeed using configured LR scheduler = None
+[2026-11-12 17:55:42,566] [INFO] [logging.py:128:log_dist] [Rank 0] DeepSpeed LR Scheduler = None
+[2026-11-12 17:55:42,566] [INFO] [logging.py:128:log_dist] [Rank 0] step=0, skipped=0, lr=[0.0, 0.0], mom=[(0.9, 0.999), (0.9, 0.999)]
+[2026-11-12 17:55:42,567] [INFO] [config.py:999:print] DeepSpeedEngine configuration:
+[2026-11-12 17:55:42,567] [INFO] [config.py:1003:print]   activation_checkpointing_config  {
+    "partition_activations": false, 
+    "contiguous_memory_optimization": false, 
+    "cpu_checkpointing": false, 
+    "number_checkpoints": null, 
+    "synchronize_checkpoint_boundary": false, 
+    "profile": false
+}
+[2026-11-12 17:55:42,567] [INFO] [config.py:1003:print]   aio_config ................... {'block_size': 1048576, 'queue_depth': 8, 'thread_count': 1, 'single_submit': False, 'overlap_events': True, 'use_gds': False}
+[2026-11-12 17:55:42,567] [INFO] [config.py:1003:print]   amp_enabled .................. False
+[2026-11-12 17:55:42,567] [INFO] [config.py:1003:print]   amp_params ................... False
+[2026-11-12 17:55:42,567] [INFO] [config.py:1003:print]   autotuning_config ............ {
+    "enabled": false, 
+    "start_step": null, 
+    "end_step": null, 
+    "metric_path": null, 
+    "arg_mappings": null, 
+    "metric": "throughput", 
+    "model_info": null, 
+    "results_dir": "autotuning_results", 
+    "exps_dir": "autotuning_exps", 
+    "overwrite": true, 
+    "fast": true, 
+    "start_profile_step": 3, 
+    "end_profile_step": 5, 
+    "tuner_type": "gridsearch", 
+    "tuner_early_stopping": 5, 
+    "tuner_num_trials": 50, 
+    "model_info_path": null, 
+    "mp_size": 1, 
+    "max_train_batch_size": null, 
+    "min_train_batch_size": 1, 
+    "max_train_micro_batch_size_per_gpu": 1.024000e+03, 
+    "min_train_micro_batch_size_per_gpu": 1, 
+    "num_tuning_micro_batch_sizes": 3
+}
+[2026-11-12 17:55:42,567] [INFO] [config.py:1003:print]   bfloat16_enabled ............. True
+[2026-11-12 17:55:42,567] [INFO] [config.py:1003:print]   bfloat16_immediate_grad_update  False
+[2026-11-12 17:55:42,568] [INFO] [config.py:1003:print]   checkpoint_parallel_write_pipeline  False
+[2026-11-12 17:55:42,568] [INFO] [config.py:1003:print]   checkpoint_tag_validation_enabled  True
+[2026-11-12 17:55:42,568] [INFO] [config.py:1003:print]   checkpoint_tag_validation_fail  False
+[2026-11-12 17:55:42,568] [INFO] [config.py:1003:print]   comms_config ................. <deepspeed.comm.config.DeepSpeedCommsConfig object at 0x7efcb7747a10>
+[2026-11-12 17:55:42,568] [INFO] [config.py:1003:print]   communication_data_type ...... None
+[2026-11-12 17:55:42,568] [INFO] [config.py:1003:print]   compression_config ........... {'weight_quantization': {'shared_parameters': {'enabled': False, 'quantizer_kernel': False, 'schedule_offset': 0, 'quantize_groups': 1, 'quantize_verbose': False, 'quantization_type': 'symmetric', 'quantize_weight_in_forward': False, 'rounding': 'nearest', 'fp16_mixed_quantize': False, 'quantize_change_ratio': 0.001}, 'different_groups': {}}, 'activation_quantization': {'shared_parameters': {'enabled': False, 'quantization_type': 'symmetric', 'range_calibration': 'dynamic', 'schedule_offset': 1000}, 'different_groups': {}}, 'sparse_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'row_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'head_pruning': {'shared_parameters': {'enabled': False, 'method': 'topk', 'schedule_offset': 1000}, 'different_groups': {}}, 'channel_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'layer_reduction': {'enabled': False}}
+[2026-11-12 17:55:42,568] [INFO] [config.py:1003:print]   curriculum_enabled_legacy .... False
+[2026-11-12 17:55:42,568] [INFO] [config.py:1003:print]   curriculum_params_legacy ..... False
+[2026-11-12 17:55:42,568] [INFO] [config.py:1003:print]   data_efficiency_config ....... {'enabled': False, 'seed': 1234, 'data_sampling': {'enabled': False, 'num_epochs': 1000, 'num_workers': 0, 'curriculum_learning': {'enabled': False}}, 'data_routing': {'enabled': False, 'random_ltd': {'enabled': False, 'layer_token_lr_schedule': {'enabled': False}}}}
+[2026-11-12 17:55:42,568] [INFO] [config.py:1003:print]   data_efficiency_enabled ...... False
+[2026-11-12 17:55:42,568] [INFO] [config.py:1003:print]   dataloader_drop_last ......... False
+[2026-11-12 17:55:42,568] [INFO] [config.py:1003:print]   disable_allgather ............ False
+[2026-11-12 17:55:42,568] [INFO] [config.py:1003:print]   dump_state ................... False
+[2026-11-12 17:55:42,568] [INFO] [config.py:1003:print]   dynamic_loss_scale_args ...... None
+[2026-11-12 17:55:42,568] [INFO] [config.py:1003:print]   eigenvalue_enabled ........... False
+[2026-11-12 17:55:42,568] [INFO] [config.py:1003:print]   eigenvalue_gas_boundary_resolution  1
+[2026-11-12 17:55:42,568] [INFO] [config.py:1003:print]   eigenvalue_layer_name ........ bert.encoder.layer
+[2026-11-12 17:55:42,568] [INFO] [config.py:1003:print]   eigenvalue_layer_num ......... 0
+[2026-11-12 17:55:42,568] [INFO] [config.py:1003:print]   eigenvalue_max_iter .......... 100
+[2026-11-12 17:55:42,568] [INFO] [config.py:1003:print]   eigenvalue_stability ......... 1e-06
+[2026-11-12 17:55:42,568] [INFO] [config.py:1003:print]   eigenvalue_tol ............... 0.01
+[2026-11-12 17:55:42,568] [INFO] [config.py:1003:print]   eigenvalue_verbose ........... False
+[2026-11-12 17:55:42,568] [INFO] [config.py:1003:print]   elasticity_enabled ........... False
+[2026-11-12 17:55:42,568] [INFO] [config.py:1003:print]   flops_profiler_config ........ {
+    "enabled": false, 
+    "recompute_fwd_factor": 0.0, 
+    "profile_step": 1, 
+    "module_depth": -1, 
+    "top_modules": 1, 
+    "detailed": true, 
+    "output_file": null
+}
+[2026-11-12 17:55:42,568] [INFO] [config.py:1003:print]   fp16_auto_cast ............... None
+[2026-11-12 17:55:42,568] [INFO] [config.py:1003:print]   fp16_enabled ................. False
+[2026-11-12 17:55:42,568] [INFO] [config.py:1003:print]   fp16_master_weights_and_gradients  False
+[2026-11-12 17:55:42,568] [INFO] [config.py:1003:print]   global_rank .................. 0
+[2026-11-12 17:55:42,568] [INFO] [config.py:1003:print]   grad_accum_dtype ............. None
+[2026-11-12 17:55:42,568] [INFO] [config.py:1003:print]   gradient_accumulation_steps .. 2
+[2026-11-12 17:55:42,568] [INFO] [config.py:1003:print]   gradient_clipping ............ 1.0
+[2026-11-12 17:55:42,568] [INFO] [config.py:1003:print]   gradient_predivide_factor .... 1.0
+[2026-11-12 17:55:42,568] [INFO] [config.py:1003:print]   graph_harvesting ............. False
+[2026-11-12 17:55:42,568] [INFO] [config.py:1003:print]   hybrid_engine ................ enabled=False max_out_tokens=512 inference_tp_size=1 release_inference_cache=False pin_parameters=True tp_gather_partition_size=8
+[2026-11-12 17:55:42,568] [INFO] [config.py:1003:print]   initial_dynamic_scale ........ 1
+[2026-11-12 17:55:42,568] [INFO] [config.py:1003:print]   load_universal_checkpoint .... False
+[2026-11-12 17:55:42,568] [INFO] [config.py:1003:print]   loss_scale ................... 1.0
+[2026-11-12 17:55:42,568] [INFO] [config.py:1003:print]   memory_breakdown ............. False
+[2026-11-12 17:55:42,568] [INFO] [config.py:1003:print]   mics_hierarchial_params_gather  False
+[2026-11-12 17:55:42,568] [INFO] [config.py:1003:print]   mics_shard_size .............. -1
+[2026-11-12 17:55:42,569] [INFO] [config.py:1003:print]   monitor_config ............... tensorboard=TensorBoardConfig(enabled=False, output_path='', job_name='DeepSpeedJobName') comet=CometConfig(enabled=False, samples_log_interval=100, project=None, workspace=None, api_key=None, experiment_name=None, experiment_key=None, online=None, mode=None) wandb=WandbConfig(enabled=False, group=None, team=None, project='deepspeed') csv_monitor=CSVConfig(enabled=False, output_path='', job_name='DeepSpeedJobName')
+[2026-11-12 17:55:42,569] [INFO] [config.py:1003:print]   nebula_config ................ {
+    "enabled": false, 
+    "persistent_storage_path": null, 
+    "persistent_time_interval": 100, 
+    "num_of_version_in_retention": 2, 
+    "enable_nebula_load": true, 
+    "load_path": null
+}
+[2026-11-12 17:55:42,569] [INFO] [config.py:1003:print]   optimizer_legacy_fusion ...... False
+[2026-11-12 17:55:42,569] [INFO] [config.py:1003:print]   optimizer_name ............... None
+[2026-11-12 17:55:42,569] [INFO] [config.py:1003:print]   optimizer_params ............. None
+[2026-11-12 17:55:42,569] [INFO] [config.py:1003:print]   pipeline ..................... {'stages': 'auto', 'partition': 'best', 'seed_layers': False, 'activation_checkpoint_interval': 0, 'pipe_partitioned': True, 'grad_partitioned': True}
+[2026-11-12 17:55:42,569] [INFO] [config.py:1003:print]   pld_enabled .................. False
+[2026-11-12 17:55:42,569] [INFO] [config.py:1003:print]   pld_params ................... False
+[2026-11-12 17:55:42,569] [INFO] [config.py:1003:print]   prescale_gradients ........... False
+[2026-11-12 17:55:42,569] [INFO] [config.py:1003:print]   scheduler_name ............... None
+[2026-11-12 17:55:42,569] [INFO] [config.py:1003:print]   scheduler_params ............. None
+[2026-11-12 17:55:42,569] [INFO] [config.py:1003:print]   seq_parallel_communication_data_type  torch.float32
+[2026-11-12 17:55:42,569] [INFO] [config.py:1003:print]   sparse_attention ............. None
+[2026-11-12 17:55:42,569] [INFO] [config.py:1003:print]   sparse_gradients_enabled ..... False
+[2026-11-12 17:55:42,569] [INFO] [config.py:1003:print]   steps_per_print .............. inf
+[2026-11-12 17:55:42,569] [INFO] [config.py:1003:print]   timers_config ................ enabled=True synchronized=True
+[2026-11-12 17:55:42,569] [INFO] [config.py:1003:print]   train_batch_size ............. 32
+[2026-11-12 17:55:42,569] [INFO] [config.py:1003:print]   train_micro_batch_size_per_gpu  2
+[2026-11-12 17:55:42,569] [INFO] [config.py:1003:print]   use_data_before_expert_parallel_  False
+[2026-11-12 17:55:42,569] [INFO] [config.py:1003:print]   use_node_local_storage ....... False
+[2026-11-12 17:55:42,569] [INFO] [config.py:1003:print]   wall_clock_breakdown ......... False
+[2026-11-12 17:55:42,569] [INFO] [config.py:1003:print]   weight_quantization_config ... None
+[2026-11-12 17:55:42,569] [INFO] [config.py:1003:print]   world_size ................... 8
+[2026-11-12 17:55:42,569] [INFO] [config.py:1003:print]   zero_allow_untested_optimizer  True
+[2026-11-12 17:55:42,569] [INFO] [config.py:1003:print]   zero_config .................. stage=2 contiguous_gradients=True reduce_scatter=True reduce_bucket_size=50000000 use_multi_rank_bucket_allreduce=True allgather_partitions=True allgather_bucket_size=50000000 overlap_comm=False load_from_fp32_weights=True elastic_checkpoint=False offload_param=None offload_optimizer=None sub_group_size=1000000000 cpu_offload_param=None cpu_offload_use_pin_memory=None cpu_offload=None prefetch_bucket_size=50000000 param_persistence_threshold=100000 model_persistence_threshold=9223372036854775807 max_live_parameters=1000000000 max_reuse_distance=1000000000 gather_16bit_weights_on_model_save=False use_all_reduce_for_fetch_params=False stage3_gather_fp16_weights_on_model_save=False ignore_unused_parameters=True legacy_stage1=False round_robin_gradients=False zero_hpz_partition_size=1 zero_quantized_weights=False zero_quantized_nontrainable_weights=False zero_quantized_gradients=False mics_shard_size=-1 mics_hierarchical_params_gather=False memory_efficient_linear=True pipeline_loading_checkpoint=False override_module_apply=True
+[2026-11-12 17:55:42,569] [INFO] [config.py:1003:print]   zero_enabled ................. True
+[2026-11-12 17:55:42,569] [INFO] [config.py:1003:print]   zero_force_ds_cpu_optimizer .. True
+[2026-11-12 17:55:42,569] [INFO] [config.py:1003:print]   zero_optimization_stage ...... 2
+[2026-11-12 17:55:42,569] [INFO] [config.py:989:print_user_config]   json = {
+    "train_batch_size": 32, 
+    "train_micro_batch_size_per_gpu": 2, 
+    "gradient_accumulation_steps": 2, 
+    "gradient_clipping": 1.0, 
+    "bf16": {
+        "enabled": true
+    }, 
+    "zero_optimization": {
+        "stage": 2, 
+        "overlap_comm": false, 
+        "contiguous_gradients": true, 
+        "reduce_bucket_size": 5.000000e+07, 
+        "allgather_bucket_size": 5.000000e+07
+    }, 
+    "steps_per_print": inf, 
+    "wall_clock_breakdown": false, 
+    "fp16": {
+        "enabled": false
+    }, 
+    "zero_allow_untested_optimizer": true
+}
+[INFO|trainer.py:2314] 2026-11-12 17:55:42,571 >> ***** Running training *****
+[INFO|trainer.py:2315] 2026-11-12 17:55:42,571 >>   Num examples = 1,929
+[INFO|trainer.py:2316] 2026-11-12 17:55:42,571 >>   Num Epochs = 3
+[INFO|trainer.py:2317] 2026-11-12 17:55:42,571 >>   Instantaneous batch size per device = 2
+[INFO|trainer.py:2320] 2026-11-12 17:55:42,571 >>   Total train batch size (w. parallel, distributed & accumulation) = 32
+[INFO|trainer.py:2321] 2026-11-12 17:55:42,571 >>   Gradient Accumulation steps = 2
+[INFO|trainer.py:2322] 2026-11-12 17:55:42,571 >>   Total optimization steps = 180
+[INFO|trainer.py:2323] 2026-11-12 17:55:42,572 >>   Number of trainable parameters = 8,030,261,248
+  0%|          | 0/180 [00:00<?, ?it/s]  1%|          | 1/180 [00:02<07:08,  2.39s/it]                                               {'loss': 1.6534, 'grad_norm': 8.75121021270752, 'learning_rate': 1.111111111111111e-07, 'epoch': 0.02}
+  1%|          | 1/180 [00:02<07:08,  2.39s/it]  1%|          | 2/180 [00:03<05:12,  1.75s/it]  2%|▏         | 3/180 [00:05<04:34,  1.55s/it]  2%|▏         | 4/180 [00:06<04:16,  1.46s/it]  3%|▎         | 5/180 [00:07<04:05,  1.40s/it]                                               {'loss': 1.6525, 'grad_norm': 9.491094589233398, 'learning_rate': 5.555555555555555e-07, 'epoch': 0.08}
+  3%|▎         | 5/180 [00:07<04:05,  1.40s/it]  3%|▎         | 6/180 [00:08<03:59,  1.37s/it]  4%|▍         | 7/180 [00:10<03:53,  1.35s/it]  4%|▍         | 8/180 [00:11<03:50,  1.34s/it]  5%|▌         | 9/180 [00:12<03:47,  1.33s/it]  6%|▌         | 10/180 [00:14<03:44,  1.32s/it]                                                {'loss': 1.6136, 'grad_norm': 3.3196818828582764, 'learning_rate': 1.111111111111111e-06, 'epoch': 0.17}
+  6%|▌         | 10/180 [00:14<03:44,  1.32s/it]  6%|▌         | 11/180 [00:15<03:43,  1.32s/it]  7%|▋         | 12/180 [00:16<03:41,  1.32s/it]  7%|▋         | 13/180 [00:18<03:40,  1.32s/it]  8%|▊         | 14/180 [00:19<03:38,  1.32s/it]  8%|▊         | 15/180 [00:20<03:37,  1.32s/it]                                                {'loss': 1.5031, 'grad_norm': 1.9870532751083374, 'learning_rate': 1.6666666666666667e-06, 'epoch': 0.25}
+  8%|▊         | 15/180 [00:20<03:37,  1.32s/it]  9%|▉         | 16/180 [00:22<03:35,  1.32s/it]  9%|▉         | 17/180 [00:23<03:34,  1.32s/it] 10%|█         | 18/180 [00:24<03:33,  1.32s/it] 11%|█         | 19/180 [00:26<03:32,  1.32s/it] 11%|█         | 20/180 [00:27<03:30,  1.32s/it]                                                {'loss': 1.3238, 'grad_norm': 1.7746745347976685, 'learning_rate': 1.99924795250423e-06, 'epoch': 0.33}
+ 11%|█         | 20/180 [00:27<03:30,  1.32s/it] 12%|█▏        | 21/180 [00:28<03:29,  1.32s/it] 12%|█▏        | 22/180 [00:30<03:43,  1.41s/it] 13%|█▎        | 23/180 [00:31<03:37,  1.39s/it] 13%|█▎        | 24/180 [00:32<03:33,  1.37s/it] 14%|█▍        | 25/180 [00:34<03:30,  1.36s/it]                                                {'loss': 1.1375, 'grad_norm': 1.193979024887085, 'learning_rate': 1.990800403364845e-06, 'epoch': 0.41}
+ 14%|█▍        | 25/180 [00:34<03:30,  1.36s/it] 14%|█▍        | 26/180 [00:35<03:27,  1.35s/it] 15%|█▌        | 27/180 [00:36<03:25,  1.34s/it] 16%|█▌        | 28/180 [00:38<03:23,  1.34s/it] 16%|█▌        | 29/180 [00:39<03:21,  1.34s/it] 17%|█▋        | 30/180 [00:40<03:20,  1.33s/it]                                                {'loss': 1.0875, 'grad_norm': 0.8195088505744934, 'learning_rate': 1.9730448705798236e-06, 'epoch': 0.5}
+ 17%|█▋        | 30/180 [00:40<03:20,  1.33s/it] 17%|█▋        | 31/180 [00:42<03:18,  1.33s/it] 18%|█▊        | 32/180 [00:43<03:17,  1.33s/it] 18%|█▊        | 33/180 [00:44<03:15,  1.33s/it] 19%|█▉        | 34/180 [00:46<03:14,  1.33s/it] 19%|█▉        | 35/180 [00:47<03:13,  1.33s/it]                                                {'loss': 1.0657, 'grad_norm': 0.7743673920631409, 'learning_rate': 1.9461481568757504e-06, 'epoch': 0.58}
+ 19%|█▉        | 35/180 [00:47<03:13,  1.33s/it] 20%|██        | 36/180 [00:48<03:12,  1.33s/it] 21%|██        | 37/180 [00:50<03:10,  1.33s/it] 21%|██        | 38/180 [00:51<03:09,  1.34s/it] 22%|██▏       | 39/180 [00:52<03:08,  1.34s/it] 22%|██▏       | 40/180 [00:54<03:06,  1.34s/it]                                                {'loss': 1.077, 'grad_norm': 0.7847611904144287, 'learning_rate': 1.9103629409661467e-06, 'epoch': 0.66}
+ 22%|██▏       | 40/180 [00:54<03:06,  1.34s/it] 23%|██▎       | 41/180 [00:55<03:05,  1.34s/it] 23%|██▎       | 42/180 [00:56<03:04,  1.34s/it] 24%|██▍       | 43/180 [00:58<03:03,  1.34s/it] 24%|██▍       | 44/180 [00:59<03:13,  1.43s/it] 25%|██▌       | 45/180 [01:01<03:19,  1.48s/it]                                                {'loss': 1.0277, 'grad_norm': 0.7375413775444031, 'learning_rate': 1.8660254037844386e-06, 'epoch': 0.74}
+ 25%|██▌       | 45/180 [01:01<03:19,  1.48s/it] 26%|██▌       | 46/180 [01:02<03:12,  1.44s/it] 26%|██▌       | 47/180 [01:04<03:06,  1.40s/it] 27%|██▋       | 48/180 [01:05<03:02,  1.38s/it] 27%|██▋       | 49/180 [01:06<02:58,  1.36s/it] 28%|██▊       | 50/180 [01:08<02:55,  1.35s/it]                                                {'loss': 1.0288, 'grad_norm': 0.6949740052223206, 'learning_rate': 1.8135520702629674e-06, 'epoch': 0.83}
+ 28%|██▊       | 50/180 [01:08<02:55,  1.35s/it] 28%|██▊       | 51/180 [01:09<02:53,  1.35s/it] 29%|██▉       | 52/180 [01:10<02:51,  1.34s/it] 29%|██▉       | 53/180 [01:12<02:49,  1.34s/it] 30%|███       | 54/180 [01:13<02:47,  1.33s/it] 31%|███       | 55/180 [01:14<02:46,  1.33s/it]                                                {'loss': 1.0114, 'grad_norm': 0.6467567086219788, 'learning_rate': 1.7534358963276605e-06, 'epoch': 0.91}
+ 31%|███       | 55/180 [01:14<02:46,  1.33s/it] 31%|███       | 56/180 [01:16<02:44,  1.33s/it] 32%|███▏      | 57/180 [01:17<02:43,  1.33s/it] 32%|███▏      | 58/180 [01:18<02:41,  1.33s/it] 33%|███▎      | 59/180 [01:20<02:40,  1.32s/it] 33%|███▎      | 60/180 [01:21<02:39,  1.33s/it]                                                {'loss': 0.9902, 'grad_norm': 0.6528159379959106, 'learning_rate': 1.6862416378687337e-06, 'epoch': 0.99}
+ 33%|███▎      | 60/180 [01:21<02:39,  1.33s/it][INFO|trainer.py:4128] 2026-11-12 17:57:04,602 >> 
+***** Running Evaluation *****
+[INFO|trainer.py:4130] 2026-11-12 17:57:04,602 >>   Num examples = 606
+[INFO|trainer.py:4133] 2026-11-12 17:57:04,602 >>   Batch size = 2
+
+  0%|          | 0/38 [00:00<?, ?it/s][A
+  5%|▌         | 2/38 [00:00<00:02, 13.91it/s][A
+ 11%|█         | 4/38 [00:00<00:03,  8.54it/s][A
+ 13%|█▎        | 5/38 [00:00<00:04,  7.92it/s][A
+ 16%|█▌        | 6/38 [00:00<00:04,  7.65it/s][A
+ 18%|█▊        | 7/38 [00:00<00:04,  7.40it/s][A
+ 21%|██        | 8/38 [00:01<00:04,  7.13it/s][A
+ 24%|██▎       | 9/38 [00:01<00:04,  7.03it/s][A
+ 26%|██▋       | 10/38 [00:01<00:04,  6.94it/s][A
+ 29%|██▉       | 11/38 [00:01<00:03,  6.82it/s][A
+ 32%|███▏      | 12/38 [00:01<00:03,  6.85it/s][A
+ 34%|███▍      | 13/38 [00:01<00:03,  6.89it/s][A
+ 37%|███▋      | 14/38 [00:01<00:03,  6.88it/s][A
+ 39%|███▉      | 15/38 [00:02<00:03,  6.82it/s][A
+ 42%|████▏     | 16/38 [00:02<00:03,  6.81it/s][A
+ 45%|████▍     | 17/38 [00:02<00:03,  6.79it/s][A
+ 47%|████▋     | 18/38 [00:02<00:02,  6.83it/s][A
+ 50%|█████     | 19/38 [00:02<00:02,  6.83it/s][A
+ 53%|█████▎    | 20/38 [00:02<00:02,  6.74it/s][A
+ 55%|█████▌    | 21/38 [00:02<00:02,  6.84it/s][A
+ 58%|█████▊    | 22/38 [00:03<00:02,  6.82it/s][A
+ 61%|██████    | 23/38 [00:03<00:02,  6.75it/s][A
+ 63%|██████▎   | 24/38 [00:03<00:02,  6.80it/s][A
+ 66%|██████▌   | 25/38 [00:03<00:01,  6.71it/s][A
+ 68%|██████▊   | 26/38 [00:03<00:01,  6.75it/s][A
+ 71%|███████   | 27/38 [00:03<00:01,  6.79it/s][A
+ 74%|███████▎  | 28/38 [00:03<00:01,  6.85it/s][A
+ 76%|███████▋  | 29/38 [00:04<00:01,  6.89it/s][A
+ 79%|███████▉  | 30/38 [00:04<00:01,  6.90it/s][A
+ 82%|████████▏ | 31/38 [00:04<00:01,  6.84it/s][A
+ 84%|████████▍ | 32/38 [00:04<00:00,  6.80it/s][A
+ 87%|████████▋ | 33/38 [00:04<00:00,  6.80it/s][A
+ 89%|████████▉ | 34/38 [00:04<00:00,  6.73it/s][A
+ 92%|█████████▏| 35/38 [00:05<00:00,  6.81it/s][A
+ 95%|█████████▍| 36/38 [00:05<00:00,  6.82it/s][A
+ 97%|█████████▋| 37/38 [00:05<00:00,  6.76it/s][A
+100%|██████████| 38/38 [00:05<00:00,  6.80it/s][A                                                
+                                               [A{'eval_loss': 1.1493346691131592, 'eval_runtime': 5.5967, 'eval_samples_per_second': 108.277, 'eval_steps_per_second': 6.79, 'epoch': 0.99}
+ 33%|███▎      | 60/180 [01:27<02:39,  1.33s/it]
+100%|██████████| 38/38 [00:05<00:00,  6.80it/s][A
+                                               [A 34%|███▍      | 61/180 [01:28<05:57,  3.00s/it] 34%|███▍      | 62/180 [01:29<04:54,  2.50s/it] 35%|███▌      | 63/180 [01:30<04:10,  2.14s/it] 36%|███▌      | 64/180 [01:32<03:40,  1.90s/it] 36%|███▌      | 65/180 [01:33<03:18,  1.72s/it]                                                {'loss': 1.0441, 'grad_norm': 0.6023629307746887, 'learning_rate': 1.6126005451932027e-06, 'epoch': 1.07}
+ 36%|███▌      | 65/180 [01:33<03:18,  1.72s/it] 37%|███▋      | 66/180 [01:34<03:02,  1.60s/it] 37%|███▋      | 67/180 [01:36<02:51,  1.52s/it] 38%|███▊      | 68/180 [01:37<02:53,  1.55s/it] 38%|███▊      | 69/180 [01:39<02:54,  1.57s/it] 39%|███▉      | 70/180 [01:40<02:44,  1.50s/it]                                                {'loss': 0.9588, 'grad_norm': 0.6325454115867615, 'learning_rate': 1.5332044328016912e-06, 'epoch': 1.16}
+ 39%|███▉      | 70/180 [01:40<02:44,  1.50s/it] 39%|███▉      | 71/180 [01:42<02:37,  1.45s/it] 40%|████      | 72/180 [01:43<02:32,  1.41s/it] 41%|████      | 73/180 [01:44<02:27,  1.38s/it] 41%|████      | 74/180 [01:46<02:24,  1.36s/it] 42%|████▏     | 75/180 [01:47<02:21,  1.35s/it]                                                {'loss': 0.9441, 'grad_norm': 0.657090961933136, 'learning_rate': 1.4487991802004622e-06, 'epoch': 1.24}
+ 42%|████▏     | 75/180 [01:47<02:21,  1.35s/it] 42%|████▏     | 76/180 [01:48<02:19,  1.34s/it] 43%|████▎     | 77/180 [01:50<02:17,  1.34s/it] 43%|████▎     | 78/180 [01:51<02:16,  1.33s/it] 44%|████▍     | 79/180 [01:52<02:14,  1.33s/it] 44%|████▍     | 80/180 [01:54<02:13,  1.33s/it]                                                {'loss': 0.9274, 'grad_norm': 0.7083590030670166, 'learning_rate': 1.3601777248047103e-06, 'epoch': 1.32}
+ 44%|████▍     | 80/180 [01:54<02:13,  1.33s/it] 45%|████▌     | 81/180 [01:55<02:11,  1.33s/it] 46%|████▌     | 82/180 [01:56<02:10,  1.33s/it] 46%|████▌     | 83/180 [01:58<02:08,  1.33s/it] 47%|████▋     | 84/180 [01:59<02:07,  1.33s/it] 47%|████▋     | 85/180 [02:00<02:06,  1.33s/it]                                                {'loss': 0.9239, 'grad_norm': 0.6055960655212402, 'learning_rate': 1.2681726127606374e-06, 'epoch': 1.4}
+ 47%|████▋     | 85/180 [02:00<02:06,  1.33s/it] 48%|████▊     | 86/180 [02:02<02:05,  1.33s/it] 48%|████▊     | 87/180 [02:03<02:03,  1.33s/it] 49%|████▉     | 88/180 [02:04<02:02,  1.33s/it] 49%|████▉     | 89/180 [02:06<02:01,  1.33s/it] 50%|█████     | 90/180 [02:07<01:59,  1.33s/it]                                                {'loss': 0.9113, 'grad_norm': 0.6503748893737793, 'learning_rate': 1.1736481776669305e-06, 'epoch': 1.49}
+ 50%|█████     | 90/180 [02:07<01:59,  1.33s/it] 51%|█████     | 91/180 [02:08<01:58,  1.33s/it] 51%|█████     | 92/180 [02:10<02:06,  1.44s/it] 52%|█████▏    | 93/180 [02:11<02:09,  1.49s/it] 52%|█████▏    | 94/180 [02:13<02:03,  1.44s/it] 53%|█████▎    | 95/180 [02:14<01:59,  1.40s/it]                                                {'loss': 0.9229, 'grad_norm': 0.6338998079299927, 'learning_rate': 1.077492420671931e-06, 'epoch': 1.57}
+ 53%|█████▎    | 95/180 [02:14<01:59,  1.40s/it] 53%|█████▎    | 96/180 [02:15<01:55,  1.38s/it] 54%|█████▍    | 97/180 [02:17<01:53,  1.36s/it] 54%|█████▍    | 98/180 [02:18<01:50,  1.35s/it] 55%|█████▌    | 99/180 [02:19<01:48,  1.34s/it] 56%|█████▌    | 100/180 [02:21<01:47,  1.34s/it]                                                 {'loss': 0.9117, 'grad_norm': 0.6578381657600403, 'learning_rate': 9.806086682281757e-07, 'epoch': 1.65}
+ 56%|█████▌    | 100/180 [02:21<01:47,  1.34s/it] 56%|█████▌    | 101/180 [02:22<01:45,  1.33s/it] 57%|█████▋    | 102/180 [02:23<01:43,  1.33s/it] 57%|█████▋    | 103/180 [02:25<01:42,  1.33s/it] 58%|█████▊    | 104/180 [02:26<01:40,  1.33s/it] 58%|█████▊    | 105/180 [02:27<01:39,  1.32s/it]                                                 {'loss': 0.9265, 'grad_norm': 0.6528377532958984, 'learning_rate': 8.839070858747696e-07, 'epoch': 1.74}
+ 58%|█████▊    | 105/180 [02:27<01:39,  1.32s/it] 59%|█████▉    | 106/180 [02:29<01:37,  1.32s/it] 59%|█████▉    | 107/180 [02:30<01:36,  1.32s/it] 60%|██████    | 108/180 [02:31<01:35,  1.32s/it] 61%|██████    | 109/180 [02:33<01:33,  1.32s/it] 61%|██████    | 110/180 [02:34<01:32,  1.32s/it]                                                 {'loss': 0.9049, 'grad_norm': 0.5936761498451233, 'learning_rate': 7.882961277705896e-07, 'epoch': 1.82}
+ 61%|██████    | 110/180 [02:34<01:32,  1.32s/it] 62%|██████▏   | 111/180 [02:35<01:31,  1.32s/it] 62%|██████▏   | 112/180 [02:37<01:29,  1.32s/it] 63%|██████▎   | 113/180 [02:38<01:28,  1.32s/it] 63%|██████▎   | 114/180 [02:39<01:27,  1.32s/it] 64%|██████▍   | 115/180 [02:41<01:31,  1.41s/it]                                                 {'loss': 0.8881, 'grad_norm': 0.6116104125976562, 'learning_rate': 6.946740023048869e-07, 'epoch': 1.9}
+ 64%|██████▍   | 115/180 [02:41<01:31,  1.41s/it] 64%|██████▍   | 116/180 [02:42<01:34,  1.47s/it] 65%|██████▌   | 117/180 [02:44<01:29,  1.43s/it] 66%|██████▌   | 118/180 [02:45<01:26,  1.39s/it] 66%|██████▌   | 119/180 [02:46<01:23,  1.37s/it] 67%|██████▋   | 120/180 [02:48<01:21,  1.36s/it]                                                 {'loss': 0.8901, 'grad_norm': 0.6039541363716125, 'learning_rate': 6.039202339608431e-07, 'epoch': 1.98}
+ 67%|██████▋   | 120/180 [02:48<01:21,  1.36s/it] 67%|██████▋   | 121/180 [02:49<01:19,  1.35s/it][INFO|trainer.py:4128] 2026-11-12 17:58:32,176 >> 
+***** Running Evaluation *****
+[INFO|trainer.py:4130] 2026-11-12 17:58:32,177 >>   Num examples = 606
+[INFO|trainer.py:4133] 2026-11-12 17:58:32,177 >>   Batch size = 2
+
+  0%|          | 0/38 [00:00<?, ?it/s][A
+  5%|▌         | 2/38 [00:00<00:02, 13.86it/s][A
+ 11%|█         | 4/38 [00:00<00:03,  8.76it/s][A
+ 13%|█▎        | 5/38 [00:00<00:04,  8.08it/s][A
+ 16%|█▌        | 6/38 [00:00<00:04,  7.68it/s][A
+ 18%|█▊        | 7/38 [00:00<00:04,  7.34it/s][A
+ 21%|██        | 8/38 [00:01<00:04,  7.10it/s][A
+ 24%|██▎       | 9/38 [00:01<00:04,  6.98it/s][A
+ 26%|██▋       | 10/38 [00:01<00:04,  6.98it/s][A
+ 29%|██▉       | 11/38 [00:01<00:03,  6.95it/s][A
+ 32%|███▏      | 12/38 [00:01<00:03,  6.92it/s][A
+ 34%|███▍      | 13/38 [00:01<00:03,  6.89it/s][A
+ 37%|███▋      | 14/38 [00:01<00:03,  6.83it/s][A
+ 39%|███▉      | 15/38 [00:02<00:03,  6.83it/s][A
+ 42%|████▏     | 16/38 [00:02<00:03,  6.75it/s][A
+ 45%|████▍     | 17/38 [00:02<00:03,  6.80it/s][A
+ 47%|████▋     | 18/38 [00:02<00:02,  6.84it/s][A
+ 50%|█████     | 19/38 [00:02<00:02,  6.81it/s][A
+ 53%|█████▎    | 20/38 [00:02<00:02,  6.81it/s][A
+ 55%|█████▌    | 21/38 [00:02<00:02,  6.82it/s][A
+ 58%|█████▊    | 22/38 [00:03<00:02,  6.75it/s][A
+ 61%|██████    | 23/38 [00:03<00:02,  6.77it/s][A
+ 63%|██████▎   | 24/38 [00:03<00:02,  6.74it/s][A
+ 66%|██████▌   | 25/38 [00:03<00:01,  6.76it/s][A
+ 68%|██████▊   | 26/38 [00:03<00:01,  6.79it/s][A
+ 71%|███████   | 27/38 [00:03<00:01,  6.80it/s][A
+ 74%|███████▎  | 28/38 [00:03<00:01,  6.81it/s][A
+ 76%|███████▋  | 29/38 [00:04<00:01,  6.78it/s][A
+ 79%|███████▉  | 30/38 [00:04<00:01,  6.75it/s][A
+ 82%|████████▏ | 31/38 [00:04<00:01,  6.79it/s][A
+ 84%|████████▍ | 32/38 [00:04<00:00,  6.74it/s][A
+ 87%|████████▋ | 33/38 [00:04<00:00,  6.75it/s][A
+ 89%|████████▉ | 34/38 [00:04<00:00,  6.81it/s][A
+ 92%|█████████▏| 35/38 [00:04<00:00,  6.82it/s][A
+ 95%|█████████▍| 36/38 [00:05<00:00,  6.82it/s][A
+ 97%|█████████▋| 37/38 [00:05<00:00,  6.80it/s][A
+100%|██████████| 38/38 [00:05<00:00,  6.82it/s][A                                                 
+                                               [A{'eval_loss': 1.153929352760315, 'eval_runtime': 5.5958, 'eval_samples_per_second': 108.295, 'eval_steps_per_second': 6.791, 'epoch': 2.0}
+ 67%|██████▋   | 121/180 [02:55<01:19,  1.35s/it]
+100%|██████████| 38/38 [00:05<00:00,  6.82it/s][A
+                                               [A 68%|██████▊   | 122/180 [02:56<02:55,  3.02s/it] 68%|██████▊   | 123/180 [02:57<02:23,  2.51s/it] 69%|██████▉   | 124/180 [02:59<02:00,  2.16s/it] 69%|██████▉   | 125/180 [03:00<01:44,  1.91s/it]                                                 {'loss': 0.9346, 'grad_norm': 0.6166810393333435, 'learning_rate': 5.168874007033615e-07, 'epoch': 2.07}
+ 69%|██████▉   | 125/180 [03:00<01:44,  1.91s/it] 70%|███████   | 126/180 [03:01<01:33,  1.74s/it] 71%|███████   | 127/180 [03:03<01:25,  1.61s/it] 71%|███████   | 128/180 [03:04<01:19,  1.53s/it] 72%|███████▏  | 129/180 [03:05<01:14,  1.47s/it] 72%|███████▏  | 130/180 [03:07<01:11,  1.42s/it]                                                 {'loss': 0.8685, 'grad_norm': 0.634066641330719, 'learning_rate': 4.3439312451346154e-07, 'epoch': 2.15}
+ 72%|███████▏  | 130/180 [03:07<01:11,  1.42s/it] 73%|███████▎  | 131/180 [03:08<01:08,  1.39s/it] 73%|███████▎  | 132/180 [03:09<01:05,  1.37s/it] 74%|███████▍  | 133/180 [03:11<01:03,  1.36s/it] 74%|███████▍  | 134/180 [03:12<01:02,  1.35s/it] 75%|███████▌  | 135/180 [03:13<01:00,  1.34s/it]                                                 {'loss': 0.8745, 'grad_norm': 0.617499053478241, 'learning_rate': 3.5721239031346063e-07, 'epoch': 2.23}
+ 75%|███████▌  | 135/180 [03:13<01:00,  1.34s/it] 76%|███████▌  | 136/180 [03:15<00:58,  1.34s/it] 76%|███████▌  | 137/180 [03:16<00:57,  1.33s/it] 77%|███████▋  | 138/180 [03:17<00:55,  1.33s/it] 77%|███████▋  | 139/180 [03:19<00:58,  1.42s/it] 78%|███████▊  | 140/180 [03:20<00:58,  1.47s/it]                                                 {'loss': 0.8555, 'grad_norm': 0.5998976826667786, 'learning_rate': 2.860702654421011e-07, 'epoch': 2.31}
+ 78%|███████▊  | 140/180 [03:20<00:58,  1.47s/it] 78%|███████▊  | 141/180 [03:22<00:55,  1.43s/it] 79%|███████▉  | 142/180 [03:23<00:53,  1.40s/it] 79%|███████▉  | 143/180 [03:24<00:50,  1.37s/it] 80%|████████  | 144/180 [03:26<00:48,  1.36s/it] 81%|████████  | 145/180 [03:27<00:47,  1.35s/it]                                                 {'loss': 0.8528, 'grad_norm': 0.6568955779075623, 'learning_rate': 2.2163508807583998e-07, 'epoch': 2.4}
+ 81%|████████  | 145/180 [03:27<00:47,  1.35s/it] 81%|████████  | 146/180 [03:28<00:45,  1.34s/it] 82%|████████▏ | 147/180 [03:30<00:44,  1.34s/it] 82%|████████▏ | 148/180 [03:31<00:42,  1.33s/it] 83%|████████▎ | 149/180 [03:32<00:41,  1.33s/it] 83%|████████▎ | 150/180 [03:34<00:39,  1.33s/it]                                                 {'loss': 0.8081, 'grad_norm': 0.6523118019104004, 'learning_rate': 1.6451218858706372e-07, 'epoch': 2.48}
+ 83%|████████▎ | 150/180 [03:34<00:39,  1.33s/it] 84%|████████▍ | 151/180 [03:35<00:38,  1.33s/it] 84%|████████▍ | 152/180 [03:36<00:37,  1.33s/it] 85%|████████▌ | 153/180 [03:38<00:35,  1.33s/it] 86%|████████▌ | 154/180 [03:39<00:34,  1.32s/it] 86%|████████▌ | 155/180 [03:40<00:33,  1.32s/it]                                                 {'loss': 0.8491, 'grad_norm': 0.6358373761177063, 'learning_rate': 1.1523820282334218e-07, 'epoch': 2.56}
+ 86%|████████▌ | 155/180 [03:40<00:33,  1.32s/it] 87%|████████▋ | 156/180 [03:42<00:31,  1.32s/it] 87%|████████▋ | 157/180 [03:43<00:30,  1.32s/it] 88%|████████▊ | 158/180 [03:44<00:29,  1.32s/it] 88%|████████▊ | 159/180 [03:46<00:27,  1.32s/it] 89%|████████▉ | 160/180 [03:47<00:26,  1.32s/it]                                                 {'loss': 0.8451, 'grad_norm': 0.6411965489387512, 'learning_rate': 7.427603073110966e-08, 'epoch': 2.64}
+ 89%|████████▉ | 160/180 [03:47<00:26,  1.32s/it] 89%|████████▉ | 161/180 [03:48<00:25,  1.32s/it] 90%|█████████ | 162/180 [03:50<00:25,  1.41s/it] 91%|█████████ | 163/180 [03:51<00:23,  1.39s/it] 91%|█████████ | 164/180 [03:53<00:23,  1.46s/it] 92%|█████████▏| 165/180 [03:54<00:21,  1.42s/it]                                                 {'loss': 0.8593, 'grad_norm': 0.6346428394317627, 'learning_rate': 4.20104876845111e-08, 'epoch': 2.73}
+ 92%|█████████▏| 165/180 [03:54<00:21,  1.42s/it] 92%|█████████▏| 166/180 [03:56<00:19,  1.39s/it] 93%|█████████▎| 167/180 [03:57<00:17,  1.37s/it] 93%|█████████▎| 168/180 [03:58<00:16,  1.36s/it] 94%|█████████▍| 169/180 [03:59<00:14,  1.35s/it] 94%|█████████▍| 170/180 [04:01<00:13,  1.34s/it]                                                 {'loss': 0.8844, 'grad_norm': 0.6268596053123474, 'learning_rate': 1.8744689372615306e-08, 'epoch': 2.81}
+ 94%|█████████▍| 170/180 [04:01<00:13,  1.34s/it] 95%|█████████▌| 171/180 [04:02<00:12,  1.34s/it] 96%|█████████▌| 172/180 [04:03<00:10,  1.33s/it] 96%|█████████▌| 173/180 [04:05<00:09,  1.33s/it] 97%|█████████▋| 174/180 [04:06<00:07,  1.33s/it] 97%|█████████▋| 175/180 [04:07<00:06,  1.33s/it]                                                 {'loss': 0.8599, 'grad_norm': 0.6218960285186768, 'learning_rate': 4.697204206834171e-09, 'epoch': 2.89}
+ 97%|█████████▋| 175/180 [04:07<00:06,  1.33s/it] 98%|█████████▊| 176/180 [04:09<00:05,  1.33s/it] 98%|█████████▊| 177/180 [04:10<00:03,  1.33s/it] 99%|█████████▉| 178/180 [04:11<00:02,  1.33s/it] 99%|█████████▉| 179/180 [04:13<00:01,  1.33s/it]100%|██████████| 180/180 [04:14<00:00,  1.33s/it]                                                 {'loss': 0.8588, 'grad_norm': 0.6344063878059387, 'learning_rate': 0.0, 'epoch': 2.98}
+100%|██████████| 180/180 [04:14<00:00,  1.33s/it][INFO|trainer.py:4128] 2026-11-12 17:59:57,158 >> 
+***** Running Evaluation *****
+[INFO|trainer.py:4130] 2026-11-12 17:59:57,159 >>   Num examples = 606
+[INFO|trainer.py:4133] 2026-11-12 17:59:57,159 >>   Batch size = 2
+
+  0%|          | 0/38 [00:00<?, ?it/s][A
+  5%|▌         | 2/38 [00:00<00:02, 13.75it/s][A
+ 11%|█         | 4/38 [00:00<00:03,  8.80it/s][A
+ 13%|█▎        | 5/38 [00:00<00:04,  8.18it/s][A
+ 16%|█▌        | 6/38 [00:00<00:04,  7.69it/s][A
+ 18%|█▊        | 7/38 [00:00<00:04,  7.24it/s][A
+ 21%|██        | 8/38 [00:01<00:04,  7.11it/s][A
+ 24%|██▎       | 9/38 [00:01<00:04,  7.01it/s][A
+ 26%|██▋       | 10/38 [00:01<00:04,  6.98it/s][A
+ 29%|██▉       | 11/38 [00:01<00:03,  6.91it/s][A
+ 32%|███▏      | 12/38 [00:01<00:03,  6.95it/s][A
+ 34%|███▍      | 13/38 [00:01<00:03,  6.93it/s][A
+ 37%|███▋      | 14/38 [00:01<00:03,  6.82it/s][A
+ 39%|███▉      | 15/38 [00:02<00:03,  6.79it/s][A
+ 42%|████▏     | 16/38 [00:02<00:03,  6.79it/s][A
+ 45%|████▍     | 17/38 [00:02<00:03,  6.81it/s][A
+ 47%|████▋     | 18/38 [00:02<00:02,  6.80it/s][A
+ 50%|█████     | 19/38 [00:02<00:02,  6.83it/s][A
+ 53%|█████▎    | 20/38 [00:02<00:02,  6.84it/s][A
+ 55%|█████▌    | 21/38 [00:02<00:02,  6.81it/s][A
+ 58%|█████▊    | 22/38 [00:03<00:02,  6.75it/s][A
+ 61%|██████    | 23/38 [00:03<00:02,  6.78it/s][A
+ 63%|██████▎   | 24/38 [00:03<00:02,  6.81it/s][A
+ 66%|██████▌   | 25/38 [00:03<00:01,  6.83it/s][A
+ 68%|██████▊   | 26/38 [00:03<00:01,  6.87it/s][A
+ 71%|███████   | 27/38 [00:03<00:01,  6.83it/s][A
+ 74%|███████▎  | 28/38 [00:03<00:01,  6.78it/s][A
+ 76%|███████▋  | 29/38 [00:04<00:01,  6.74it/s][A
+ 79%|███████▉  | 30/38 [00:04<00:01,  6.78it/s][A
+ 82%|████████▏ | 31/38 [00:04<00:01,  6.79it/s][A
+ 84%|████████▍ | 32/38 [00:04<00:00,  6.80it/s][A
+ 87%|████████▋ | 33/38 [00:04<00:00,  6.81it/s][A
+ 89%|████████▉ | 34/38 [00:04<00:00,  6.81it/s][A
+ 92%|█████████▏| 35/38 [00:04<00:00,  6.78it/s][A
+ 95%|█████████▍| 36/38 [00:05<00:00,  6.76it/s][A
+ 97%|█████████▋| 37/38 [00:05<00:00,  6.78it/s][A
+100%|██████████| 38/38 [00:05<00:00,  6.81it/s][A                                                 
+                                               [A{'eval_loss': 1.1594579219818115, 'eval_runtime': 5.58, 'eval_samples_per_second': 108.603, 'eval_steps_per_second': 6.81, 'epoch': 2.98}
+100%|██████████| 180/180 [04:20<00:00,  1.33s/it]
+100%|██████████| 38/38 [00:05<00:00,  6.81it/s][A
+                                               [A[INFO|trainer.py:2591] 2026-11-12 18:00:02,738 >> 
+
+Training completed. Do not forget to share your model on huggingface.co/models =)
+
+
+                                                 {'train_runtime': 260.1669, 'train_samples_per_second': 22.243, 'train_steps_per_second': 0.692, 'train_loss': 1.0006467600663502, 'epoch': 2.98}
+100%|██████████| 180/180 [04:20<00:00,  1.33s/it]100%|██████████| 180/180 [04:20<00:00,  1.45s/it]
+***** train metrics *****
+  epoch                    =      2.9752
+  total_flos               = 494709407GF
+  train_loss               =      1.0006
+  train_runtime            =  0:04:20.16
+  train_samples            =        6871
+  train_samples_per_second =      22.243
+  train_steps_per_second   =       0.692
+2026-11-12 18:00:02 - INFO - __main__ - *** Save model ***
+[INFO|trainer.py:3812] 2026-11-12 18:00:13,341 >> Saving model checkpoint to /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/trial/models/M0
+[INFO|configuration_utils.py:414] 2026-11-12 18:00:13,346 >> Configuration saved in /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/trial/models/M0/config.json
+[INFO|configuration_utils.py:865] 2026-11-12 18:00:13,348 >> Configuration saved in /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/trial/models/M0/generation_config.json
+[INFO|modeling_utils.py:3043] 2026-11-12 18:00:28,652 >> The model is bigger than the maximum size per checkpoint (5GB) and is going to be split in 4 checkpoint shards. You can find where each parameters has been saved in the index located at /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/trial/models/M0/model.safetensors.index.json.
+[INFO|tokenization_utils_base.py:2646] 2026-11-12 18:00:28,657 >> tokenizer config file saved in /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/trial/models/M0/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2655] 2026-11-12 18:00:28,659 >> Special tokens file saved in /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/trial/models/M0/special_tokens_map.json
+2026-11-12 18:00:29 - INFO - __main__ - Model saved to /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/trial/models/M0
+2026-11-12 18:00:29 - WARNING - __main__ - skip model card: SFTTrainer.create_model_card() got an unexpected keyword argument 'finetuned_from'
+[INFO|configuration_utils.py:414] 2026-11-12 18:00:29,860 >> Configuration saved in /mnt/sn-007/zaninzeng/tsr-reproduction/work/runs/tsr-llama31-8b-cap2500-judge0-1113a/trial/models/M0/config.json
+2026-11-12 18:00:29 - INFO - __main__ - *** Evaluate ***
+[INFO|trainer.py:4128] 2026-11-12 18:00:29,863 >> 
+***** Running Evaluation *****
+[INFO|trainer.py:4130] 2026-11-12 18:00:29,863 >>   Num examples = 606
+[INFO|trainer.py:4133] 2026-11-12 18:00:29,863 >>   Batch size = 2
+  0%|          | 0/38 [00:00<?, ?it/s]  5%|▌         | 2/38 [00:00<00:02, 14.03it/s] 11%|█         | 4/38 [00:00<00:03,  8.83it/s] 13%|█▎        | 5/38 [00:00<00:04,  8.13it/s] 16%|█▌        | 6/38 [00:00<00:04,  7.19it/s] 18%|█▊        | 7/38 [00:00<00:04,  6.64it/s] 21%|██        | 8/38 [00:01<00:04,  6.74it/s] 24%|██▎       | 9/38 [00:01<00:04,  6.79it/s] 26%|██▋       | 10/38 [00:01<00:04,  6.84it/s] 29%|██▉       | 11/38 [00:01<00:03,  6.88it/s] 32%|███▏      | 12/38 [00:01<00:03,  6.93it/s] 34%|███▍      | 13/38 [00:01<00:03,  6.78it/s] 37%|███▋      | 14/38 [00:01<00:03,  6.80it/s] 39%|███▉      | 15/38 [00:02<00:03,  6.75it/s] 42%|████▏     | 16/38 [00:02<00:03,  6.82it/s] 45%|████▍     | 17/38 [00:02<00:03,  6.84it/s] 47%|████▋     | 18/38 [00:02<00:02,  6.89it/s] 50%|█████     | 19/38 [00:02<00:02,  6.90it/s] 53%|█████▎    | 20/38 [00:02<00:02,  6.83it/s] 55%|█████▌    | 21/38 [00:02<00:02,  6.85it/s] 58%|█████▊    | 22/38 [00:03<00:02,  6.84it/s] 61%|██████    | 23/38 [00:03<00:02,  6.83it/s] 63%|██████▎   | 24/38 [00:03<00:02,  6.91it/s] 66%|██████▌   | 25/38 [00:03<00:01,  6.85it/s] 68%|██████▊   | 26/38 [00:03<00:01,  6.94it/s] 71%|███████   | 27/38 [00:03<00:01,  6.84it/s] 74%|███████▎  | 28/38 [00:03<00:01,  6.86it/s] 76%|███████▋  | 29/38 [00:04<00:01,  6.84it/s] 79%|███████▉  | 30/38 [00:04<00:01,  6.77it/s] 82%|████████▏ | 31/38 [00:04<00:01,  6.84it/s] 84%|████████▍ | 32/38 [00:04<00:00,  6.82it/s] 87%|████████▋ | 33/38 [00:04<00:00,  6.79it/s] 89%|████████▉ | 34/38 [00:04<00:00,  6.81it/s] 92%|█████████▏| 35/38 [00:05<00:00,  6.85it/s] 95%|█████████▍| 36/38 [00:05<00:00,  6.82it/s] 97%|█████████▋| 37/38 [00:05<00:00,  6.84it/s]100%|██████████| 38/38 [00:05<00:00,  6.84it/s]100%|██████████| 38/38 [00:05<00:00,  6.94it/s]
+***** eval metrics *****
+  epoch                   =     2.9752
+  eval_loss               =     1.1595
+  eval_runtime            = 0:00:05.60
+  eval_samples            =       1000
+  eval_samples_per_second =    108.107
+  eval_steps_per_second   =      6.779
+2026-11-12 18:00:35 - INFO - __main__ - *** Training complete ***
+[rank0]:[W1112 18:00:36.209040059 ProcessGroupNCCL.cpp:1250] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
